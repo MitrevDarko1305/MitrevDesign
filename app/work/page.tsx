@@ -50,7 +50,7 @@ const PROJECTS = [
     description: "High-end website concept for security firm.",
     tag: "Concept Project",
     image: "/Projects-Images/Aegis-Project.png",
-    href: "https://classico-band.mitrevdarko.dev",
+    href: "https://aegis-sicherheit.mitrevdarko.dev/",
   },
   // add more here...
 ];

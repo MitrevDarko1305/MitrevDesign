@@ -68,19 +68,19 @@ export default function TeamSection() {
     "https://www.youtube.com/embed/ey_-989yq6Y?autoplay=1&mute=1&rel=0";
 
   return (
-    <section id="team" className="mx-auto max-w-3xl px-6 py-20">
-      <div className="mb-10 max-w-xl">
+    <section id="team" className="mx-auto max-w-3xl px-6 py-20 text-center md:text-left">
+      <div className="mb-10 max-w-xxl">
         <p className="text-xs font-medium text-zinc-300">Team</p>
         <h2 className="mt-2 text-3xl font-semibold tracking-tight md:text-4xl">
-          Small team. Full focus.
+          Small team. Full focus 
         </h2>
         <p className="mt-3 text-sm text-zinc-300/90 md:text-base">
           You’ll work directly with the people designing and building your
-          website — no layers, no handoffs.
+          website — no layers, no handoffs
         </p>
       </div>
 
-      <div className="mx-auto grid max-w-[660px] gap-6 md:grid-cols-2">
+      <div className="mx-auto grid max-w-[660px] gap-6 md:grid-cols-2 place-items-center">
         {TEAM.map((m) => (
           <div
             key={m.name}

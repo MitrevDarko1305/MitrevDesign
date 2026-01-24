@@ -5,19 +5,24 @@ import TeamSection from "./components/TeamSection";
 import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
 import Head from "next/head";
+import Header from "./components/Header";
+
+
+
+
+
 
 export default function Page() {
   return (
-    <main className="relative min-h-screen overflow-hidden  bg-[#070815] text-zinc-100">
+    <main className="relative min-h-screen   bg-[#070815] text-zinc-100">
+       <div className="pointer-events-none absolute inset-0 overflow-hidden">
       {/* ambient gradient blobs */}
       <div className="pointer-events-none absolute -top-32 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-fuchsia-500/20 blur-[120px]" />
       <div className="pointer-events-none absolute top-40 right-[-180px] h-[520px] w-[520px] rounded-full bg-indigo-500/20 blur-[120px]" />
       <div className="pointer-events-none absolute bottom-[-180px] left-[-180px] h-[520px] w-[520px] rounded-full bg-violet-500/20 blur-[120px]" />
-
+    </div>
       <Header />
       <Hero />
-
-      {/* Next sections (we'll build these one-by-one) */}
       <Services />
       <ProjectsSection/>
       <Approach/>
@@ -30,64 +35,12 @@ export default function Page() {
 }
 
 
-function Header() {
-  return (
-    <header className="
-    fixed  w-full
-    bg-[#070815]/60
-    backdrop-blur-xl
-    border-b border-white/10 z-99
-  ">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
-        <a href="#" className="flex items-center gap-2 font-semibold tracking-tight">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-fuchsia-500 to-indigo-500 text-white shadow-sm">
-            M
-          </span>
-          <span>MitrevDesign</span>
-        </a>
-
-        <nav className="hidden items-center gap-6 text-sm text-zinc-300 md:flex">
-          <a className="hover:text-violet-500  transition-colors duration-300" href="#services">
-            Services
-          </a>
-          <a className="hover:text-violet-500 transition-colors duration-300" href="#projects-1">
-            Projects
-          </a>
-          <a className="hover:text-violet-500  transition-colors duration-300 " href="#approach">
-            About
-          </a>
-          <a className="hover:text-violet-500 transition-colors duration-300" href="#team">
-            Team 
-          </a>
-          <a className="hover:text-violet-500 transition-colors duration-300" href="#faq">
-            FAQ
-          </a>
-          <a className="hover:text-violet-500 transition-colors duration-300" href="#footer">
-            Contact
-          </a>
-        </nav>
-
-        <a
-          href="#contact"
-          className="rounded-xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:opacity-95
-          transition-all duration-300 ease-out
-    hover:from-fuchsia-600 hover:to-indigo-600
-    hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]
-    hover:-translate-y-[1px]
-    active:translate-y-0"
-        >
-          Get a quote
-        </a>
-      </div>
-    </header>
-  );
-}
 
 function Hero() {
   return (
     <section className="relative">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-20 md:grid-cols-2 md:pt-38 md:pb-16">
-        <div className="flex flex-col justify-center">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-20 md:grid-cols-2 md:pt-36 md:pb-16 pt-[6rem]">
+        <div className="flex flex-col items-center text-center md:text-left md:items-start md:justify-center h-full">
           <p className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-300">
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
             Available for new projects
@@ -107,7 +60,7 @@ function Hero() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href="#contact"
+              href="#book-a-call"
               className="rounded-2xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-5 py-3 text-center text-sm font-medium text-white shadow-sm hover:opacity-95
               transition-all duration-300 ease-out
     hover:from-fuchsia-600 hover:to-indigo-600
@@ -117,11 +70,12 @@ function Hero() {
             >
               Get a free estimate
             </a>
-            <a
-              href="#work"
-              className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-center text-sm font-medium text-zinc-100 hover:bg-white/10"
+           
+          <a
+            href="/#projects"
+            className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-center text-sm font-medium text-zinc-100 hover:bg-white/10"
             >
-              View work
+            View work
             </a>
           </div>
 
@@ -160,7 +114,7 @@ function Hero() {
                   Send your idea — we’ll reply with a plan and a price range.
                 </p>
                 <a
-                  href="#contact"
+                  href="mailto:mitrevdaro@gmail.com" target="blank"
                   className="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-4 py-2 text-xs font-medium text-white hover:opacity-95
                   transition-all duration-300 ease-out
     hover:from-fuchsia-600 hover:to-indigo-600
@@ -225,7 +179,7 @@ function Services() {
   return (
     <section
       id="services"
-      className="mx-auto max-w-6xl px-4 py-16"
+      className="mx-auto max-w-6xl px-4 py-16 text-center md:text-left"
     >
       <div className="mb-10 max-w-2xl">
         <p className="text-xs font-medium text-zinc-300">Services</p>
@@ -238,9 +192,9 @@ function Services() {
         </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-2 text-center md:text-left">
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center justify-center md:justify-start gap-3">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code relative -top-[1px]"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
           <h3 className="text-lg font-semibold">Website with custom code
           </h3>
@@ -252,7 +206,7 @@ function Services() {
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center justify-center md:justify-start gap-3">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-layout-grid-icon lucide-layout-grid relative -top-[1px]"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
           <h3 className="text-lg font-semibold">Webflow website</h3>
           </div>
@@ -304,15 +258,15 @@ function ProjectCard({ title, description, tag, image, href }: ProjectCardProps)
 
 function ProjectsSection() {
   return (
-    <section className="mt-24 max-w-[1120px] mx-auto" id="projects-1">
-      <div className="mb-10">
+    <section className="mt-24 max-w-6xl mx-auto px-5  " id="projects-1">
+      <div className="mb-10 text-center md:text-left">
         <h2 className="text-3xl font-medium tracking-tight">Selected Projects</h2>
-        <p className="mt-2 max-w-xl text-white/60">
+        <p className="mt-2 max-w-xl mx-auto text-white/60 text-center md:text-left md:mx-0">
            Focused selection of recent work.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 text-center md:text-left gap-5 md:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
           title="Personal-Trainer Portfolio"
           description="Custom-coded  website focused on performance"
@@ -355,7 +309,7 @@ function ProjectsSection() {
 
 function Approach() {
   return (
-    <section id="approach" className="mx-auto max-w-6xl px-6 py-38 relative overflow-hidden" >
+    <section id="approach" className="mx-auto max-w-6xl px-6 py-36 text-center md:text-left relative overflow-hidden" >
       <div className="pointer-events-none absolute inset-0 -z-10"/>
        <div className="absolute right-[20%] top-[20%] h-[420px] w-[420px]  rounded-full
       bg-gradient-to-br from-fuchsia-500/30 to-indigo-500/30 blur-3xl" />
@@ -372,7 +326,7 @@ function Approach() {
             We design and build high-performance websites that load fast, scale effortlessly, and stay clear from strategy to launch.
           </p>
 
-          <div className="mt-10 space-y-6">
+          <div className="mt-10 space-y-6 text-left">
             <ApproachItem
               title="Performance first"
               text="Fast load times, clean structure, and reliable foundations."

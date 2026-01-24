@@ -35,11 +35,11 @@ export default function CTASection() {
 
           {/* LEFT COLUMN */}
           <div className="lg:col-span-6">
-            <p className="text-xs font-medium text-zinc-300">
+            <p className="text-xs font-medium text-zinc-300 text-center md:text-left">
               Let&apos;s work together
             </p>
 
-            <h2 className="mt-4 text-4xl font-semibold leading-tight text-white">
+            <h2 className="mt-4 text-4xl font-semibold leading-tight text-white text-center md:text-left">
               Websites{" "}
               <span className="bg-gradient-to-r from-fuchsia-300/80 to-indigo-300/80 bg-clip-text text-transparent">
                 built
@@ -47,7 +47,7 @@ export default function CTASection() {
               to <span>convert</span>
             </h2>
 
-            <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/60">
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/60 text-center md:text-left">
               A short call to clarify scope, timing, and next steps.
             </p>
 
