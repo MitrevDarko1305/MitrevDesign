@@ -89,11 +89,7 @@ export default function CTASection() {
                     </span>
                   </div>
 
-                  <form onSubmit={onSubmit} className="mt-5 space-y-3" 
-                  name="contact"
-                  method="POST"
-                  data-netlify="true"
-                   data-netlify-honeypot="bot-field">
+                  <form onSubmit={onSubmit} className="mt-5 space-y-3">
                 <div className="grid gap-3 sm:grid-cols-2">
                   <div>
                 <label className="text-[11px] text-white/45">Name</label>
