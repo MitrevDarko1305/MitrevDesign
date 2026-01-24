@@ -98,7 +98,7 @@ function Hero() {
             <span className="bg-gradient-to-r from-fuchsia-400 to-indigo-300 bg-clip-text text-transparent">
               premium
             </span>{" "}
-            feel.
+            feel
           </h1>
 
           <p className="mt-4 max-w-xl text-zinc-300/90 md:text-lg">
