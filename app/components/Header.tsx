@@ -21,7 +21,7 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
         {/* Logo should go home */}
-        <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
+        <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight text-white">
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-fuchsia-500 to-indigo-500 text-white shadow-sm">
             M
           </span>

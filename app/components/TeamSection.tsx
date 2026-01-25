@@ -99,7 +99,7 @@ export default function TeamSection() {
               <p className="mt-1 text-sm text-zinc-300">{m.role}</p>
 
               {m.socials && (
-                <div className="mt-4 flex items-center gap-2">
+                <div className="mt-4 flex items-center justify-center md:justify-start gap-2">
                   {m.socials.linkedin && (
                     <SocialIcon
                       href={m.socials.linkedin}
