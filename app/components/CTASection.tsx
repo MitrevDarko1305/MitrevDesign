@@ -67,15 +67,15 @@ export default function CTASection() {
             </div>
           </div>
 
-          {/* RIGHT COLUMN — SNAPSHOT FORM */}
+         
           <div className="lg:col-span-6">
             <div className="relative">
-              {/* outer soft frame */}
+            
               <div className="absolute -inset-6 -z-10 rounded-[2.5rem] bg-gradient-to-b from-white/10 to-white/0" />
 
-              {/* outer card */}
+             
               <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 backdrop-blur">
-                {/* inner card */}
+               
                 <div className="rounded-[1.5rem] border border-white/10 bg-[#0a0b1f]/70 p-5">
                   <div className="flex items-start justify-between gap-4">
                     <div>
@@ -90,33 +90,32 @@ export default function CTASection() {
                   </div>
 
                  <form
-  className="mt-5 space-y-3"
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
->
-  {/* Netlify required hidden form name */}
-  <input type="hidden" name="form-name" value="contact" />
+                  className="mt-5 space-y-3"
+                  name="contact"
+                 method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
 
-  {/* Honeypot */}
-  <p hidden>
-    <label>
-      Don’t fill this out: <input name="bot-field" />
-    </label>
-  </p>
+ 
+                  <p hidden>
+                   <label>
+                      Don’t fill this out: <input name="bot-field" />
+                    </label>
+                  </p>
 
-  <div className="grid gap-3 sm:grid-cols-2">
-    <div>
-      <label className="text-[11px] text-white/45">Name</label>
-      <input
-        type="text"
-        name="name"
-        required
-        placeholder="Your name"
-        className="mt-1 w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white placeholder:text-white/25 outline-none focus:border-white/20"
-      />
-    </div>
+                  <div className="grid gap-3 sm:grid-cols-2">
+                   <div>
+                      <label className="text-[11px] text-white/45">Name</label>
+                     <input
+                       type="text"
+                       name="name"
+                       required
+                       placeholder="Your name"
+                       className="mt-1 w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white placeholder:text-white/25 outline-none focus:border-white/20"
+                      />
+                   </div>
 
     <div>
       <label className="text-[11px] text-white/45">Email</label>
