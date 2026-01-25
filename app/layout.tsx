@@ -21,4 +21,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   );
 }
 
+<form name="contact" data-netlify="true" hidden>
+  <input type="hidden" name="form-name" value="contact" />
+</form>
+
 

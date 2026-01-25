@@ -17,8 +17,7 @@ export default function Header() {
         bg-[#070815]/60
         backdrop-blur-xl
         border-b border-white/10 z-50
-      "
-    >
+      ">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
         {/* Logo should go home */}
         <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight text-white">

@@ -51,7 +51,7 @@ function Hero() {
           </p>
 
           <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
-            Modern websites with a{" "}
+            Modern websites with {" "}
             <span className="bg-gradient-to-r from-fuchsia-400 to-indigo-300 bg-clip-text text-transparent">
               premium
             </span>{" "}

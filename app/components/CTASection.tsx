@@ -89,90 +89,100 @@ export default function CTASection() {
                     </span>
                   </div>
 
-                  <form onSubmit={onSubmit} className="mt-5 space-y-3">
-                <div className="grid gap-3 sm:grid-cols-2">
-                  <div>
-                <label className="text-[11px] text-white/45">Name</label>
-                <input
-                  name="name"                // 👈 REQUIRED
-                  required
-                  placeholder="Your name"
-                  className="mt-1 w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white placeholder:text-white/25 outline-none focus:border-white/20"
-                />
-              </div>
+                 <form
+  className="mt-5 space-y-3"
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+>
+  {/* Netlify required hidden form name */}
+  <input type="hidden" name="form-name" value="contact" />
 
-               <div>
-                  <label className="text-[11px] text-white/45">Email</label>
-                 <input
-                   name="email"               // 👈 REQUIRED
-                   required
-                   type="email"
-                   placeholder="you@company.com"
-                   className="mt-1 w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white placeholder:text-white/25 outline-none focus:border-white/20"
-                  />
-                </div>
-              </div>
+  {/* Honeypot */}
+  <p hidden>
+    <label>
+      Don’t fill this out: <input name="bot-field" />
+    </label>
+  </p>
+
+  <div className="grid gap-3 sm:grid-cols-2">
+    <div>
+      <label className="text-[11px] text-white/45">Name</label>
+      <input
+        type="text"
+        name="name"
+        required
+        placeholder="Your name"
+        className="mt-1 w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white placeholder:text-white/25 outline-none focus:border-white/20"
+      />
+    </div>
+
+    <div>
+      <label className="text-[11px] text-white/45">Email</label>
+      <input
+        name="email"
+        required
+        type="email"
+        placeholder="you@company.com"
+        className="mt-1 w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white placeholder:text-white/25 outline-none focus:border-white/20"
+      />
+    </div>
+  </div>
+
+  <div className="grid gap-3 sm:grid-cols-2">
+    <select
+      name="projectType"
+      defaultValue="website"
+      className="mt-1 w-full appearance-none cursor-pointer rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white outline-none focus:border-white/20"
+    >
+      <option value="website">Website</option>
+      <option value="landing">Landing page</option>
+    </select>
+
+    <select
+      name="timeline"
+      defaultValue="2-4w"
+      className="mt-1 w-full appearance-none cursor-pointer rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white outline-none focus:border-white/20"
+    >
+      <option value="asap">ASAP</option>
+      <option value="2-4w">2–4 weeks</option>
+      <option value="1-2m">1–2 months</option>
+      <option value="flexible">Flexible</option>
+    </select>
+  </div>
+
+  <div>
+    <label className="text-[11px] text-white/45">Short note (optional)</label>
+    <input
+      name="note"
+      placeholder="What do you need help with?"
+      className="mt-1 w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white placeholder:text-white/25 outline-none focus:border-white/20"
+    />
+  </div>
+
+  <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+    <button
+      type="submit"
+      className="flex-1 rounded-2xl text-center border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white hover:bg-white/10 transition"
+    >
+      Send request
+    </button>
+
+    <a
+      href="https://calendly.com/mitrevdarko/30min"
+      target="_blank"
+      rel="noreferrer"
+      className="flex-1 rounded-2xl px-4 py-3 text-center text-sm font-semibold text-white bg-gradient-to-br from-fuchsia-500 to-indigo-500 shadow-sm transition-all duration-300 ease-out hover:from-fuchsia-600 hover:to-indigo-600 hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)] hover:-translate-y-[1px] active:translate-y-0"
+    >
+      Book a call
+    </a>
+  </div>
+
+  <p className="text-center text-xs text-white/40">Just a conversation</p>
+</form>
 
 
-                    <div className="grid gap-3 sm:grid-cols-2">
-                     <select
-                      name="projectType"          // 👈 REQUIRED
-                      defaultValue="website"
-                      className="mt-1 w-full appearance-none cursor-pointer rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white outline-none focus:border-white/20"
-                    >
-                      <option value="website">Website</option>
-                      <option value="landing">Landing page</option>
-                    </select>
-
-
-                      <select
-                      name="timeline"             // 👈 REQUIRED
-                      defaultValue="2-4w"
-                      className="mt-1 w-full appearance-none cursor-pointer rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white outline-none focus:border-white/20"
-                    >
-                     <option value="asap">ASAP</option>
-                      <option value="2-4w">2–4 weeks</option>
-                      <option value="1-2m">1–2 months</option>
-                      <option value="flexible">Flexible</option>
-                    </select>
-                    </div>
-
-                    <div>
-                      <label className="text-[11px] text-white/45">
-                        Short note (optional)
-                      </label>
-                      <input
-                        name="note"
-                        placeholder="What do you need help with?"
-                        className="mt-1 w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white placeholder:text-white/25 outline-none focus:border-white/20"
-                      />
-                    </div>
-
-                    <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-                      <button
-                        type="submit"
-                        className="flex-1 rounded-2xl text-center border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white hover:bg-white/10 transition"
-                      >
-                        Send request
-                      </button>
-
-                      <a
-                        href="https://calendly.com/mitrevdarko/30min" target="blank"
-                        className="flex-1 rounded-2xl  px-4 py-3 text-center text-sm font-semibold text-white
-                         transition bg-gradient-to-br from-fuchsia-500 to-indigo-500 text-white shadow-sm transition-all duration-300 ease-out
-    hover:from-fuchsia-600 hover:to-indigo-600
-    hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]
-    hover:-translate-y-[1px]
-    active:translate-y-0"
-                      >
-                        Book a call
-                      </a>
-                    </div>
-
-                    <p className="text-center text-xs text-white/40">
-                      Just a conversation
-                    </p>
-                  </form>
                 </div>
               </div>
             </div>
