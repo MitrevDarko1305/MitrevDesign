@@ -68,7 +68,7 @@ export default function TeamSection() {
     "https://www.youtube.com/embed/ey_-989yq6Y?autoplay=1&mute=1&rel=0";
 
   return (
-    <section id="team" className="mx-auto max-w-3xl px-6 py-20 text-center md:text-left">
+    <section id="team" className="mx-auto max-w-3xl px-6 py-16 md:py-20 text-center md:text-left">
       <div className="mb-10 max-w-xxl">
         <p className="text-xs font-medium text-zinc-300">Team</p>
         <h2 className="mt-2 text-3xl font-semibold tracking-tight md:text-4xl">

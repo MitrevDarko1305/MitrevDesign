@@ -1,3 +1,4 @@
+"use client"
 
 import React from "react";
 import FAQSection from "./components/FAQSection";
@@ -6,6 +7,8 @@ import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
 import Head from "next/head";
 import Header from "./components/Header";
+import { useHrefTo } from "./Use-href-hook";
+import Link from "next/link";
 
 
 
@@ -13,6 +16,7 @@ import Header from "./components/Header";
 
 
 export default function Page() {
+const hrefTo = useHrefTo();
   return (
     <main className="relative min-h-screen   bg-[#070815] text-zinc-100">
        <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -29,7 +33,7 @@ export default function Page() {
       <FAQSection/>
       <TeamSection/>
       <CTASection/>
-      <Footer/>
+      <Footer/> 
     </main>
   );
 }
@@ -70,7 +74,6 @@ function Hero() {
             >
               Get a free estimate
             </a>
-           
           <a
             href="/#projects"
             className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-center text-sm font-medium text-zinc-100 hover:bg-white/10"
@@ -179,7 +182,7 @@ function Services() {
   return (
     <section
       id="services"
-      className="mx-auto max-w-6xl px-4 py-16 text-center md:text-left"
+      className="mx-auto max-w-6xl px-4 py-8 md:py-16 text-center md:text-left"
     >
       <div className="mb-10 max-w-2xl">
         <p className="text-xs font-medium text-zinc-300">Services</p>
@@ -258,7 +261,7 @@ function ProjectCard({ title, description, tag, image, href }: ProjectCardProps)
 
 function ProjectsSection() {
   return (
-    <section className="mt-24 max-w-6xl mx-auto px-5  " id="projects-1">
+    <section className="mt-16 md:mt-16 max-w-6xl mx-auto px-5  " id="projects-1">
       <div className="mb-10 text-center md:text-left">
         <h2 className="text-3xl font-medium tracking-tight">Selected Projects</h2>
         <p className="mt-2 max-w-xl mx-auto text-white/60 text-center md:text-left md:mx-0">
@@ -309,7 +312,7 @@ function ProjectsSection() {
 
 function Approach() {
   return (
-    <section id="approach" className="mx-auto max-w-6xl px-6 py-36 text-center md:text-left relative overflow-hidden" >
+    <section id="approach" className="mx-auto max-w-6xl px-6 py-24 md:py-36 text-center md:text-left relative overflow-hidden" >
       <div className="pointer-events-none absolute inset-0 -z-10"/>
        <div className="absolute right-[20%] top-[20%] h-[420px] w-[420px]  rounded-full
       bg-gradient-to-br from-fuchsia-500/30 to-indigo-500/30 blur-3xl" />

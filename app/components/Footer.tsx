@@ -20,7 +20,7 @@ export default function Footer( { workHref = "/work" }: FooterProps) {
         </p>
       </div>
 
-      <div className="mx-auto max-w-6xl px-6 py-16">
+      <div className="mx-auto max-w-6xl px-6 pt-16 pb-12">
         {/* small premium overlay card */}
         <div className="max-w-3xl">
           <div className="relative">

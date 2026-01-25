@@ -59,7 +59,7 @@ export default function WorkPage() {
   return (
     <>
       <Header />
-    <main className="mx-auto max-w-[1120px] px-6 py-20" id="projects"> 
+    <main className="mx-auto bg-[#070815] max-w-[1120px] px-6 py-20" id="projects"> 
       <div className="mb-10">
         <Link href="/" className="text-sm text-white/60 hover:text-white">
           ← Back

@@ -17,7 +17,7 @@ export default function CTASection() {
   }
 
   return (
-    <section id="book-a-call" className="relative bg-slate-950 py-32 overflow-hidden">
+    <section id="book-a-call" className="relative bg-slate-950 py-12 md:py-36 overflow-hidden">
       {/* ambient section glow */}
       <div
     className="
