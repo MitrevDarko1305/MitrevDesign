@@ -1,6 +1,7 @@
 import sgMail from "@sendgrid/mail";
 
 export async function POST(req) {
+   console.log("API HIT");
   try {
     const body = await req.json();
 
