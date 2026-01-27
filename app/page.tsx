@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import Head from "next/head";
 import Header from "./components/Header";
 import { useHrefTo } from "./Use-href-hook";
+import WhatsAppFloatingButton from "./components/FloatingButtonWhatsApp";
+
 import Link from "next/link";
 import { Import } from "lucide-react";
 import ContactForm from "./components/ContactForm";
@@ -28,7 +30,7 @@ const hrefTo = useHrefTo();
       <div className="pointer-events-none absolute top-40 right-[-180px] h-[520px] w-[520px] rounded-full bg-indigo-500/20 blur-[120px]" />
       <div className="pointer-events-none absolute bottom-[-180px] left-[-180px] h-[520px] w-[520px] rounded-full bg-violet-500/20 blur-[120px]" />
     </div>
-      <Header />
+     <Header/>
       <Hero />
       <Services />
       <ProjectsSection/>
@@ -37,6 +39,9 @@ const hrefTo = useHrefTo();
       <TeamSection/>
       <CTASection/>
       <Footer/> 
+      <WhatsAppFloatingButton
+       phone="4915753137292"
+      message="Hello, I would like to contact your agency."/>
     </main>
   );
 }

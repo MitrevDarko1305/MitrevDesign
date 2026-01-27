@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header
       className="
-        fixed w-full
+        fixed inset-x-0 top-0
         bg-[#070815]/60
         backdrop-blur-xl
         border-b border-white/10 z-50

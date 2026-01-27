@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
+
 import { inter, grotesk } from "./fonts";
 
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 
 export const metadata: Metadata = {
@@ -22,7 +28,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       data-scroll-behavior="smooth"
       className={`${inter.variable} ${grotesk.variable}`}
     >
-      <body className="antialiased">{children}</body>
+     
+      <body className="antialiased">{children}
+         
+      </body>
     </html>
   );
 }
