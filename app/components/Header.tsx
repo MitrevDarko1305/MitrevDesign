@@ -1,6 +1,126 @@
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
 
- "use client";
+function useScrollDirection() {
+  const [dir, setDir] = React.useState<"up" | "down">("up");
+  const needsTopPaddingFix = React.useRef(false);
 
+  React.useEffect(() => {
+    const onResize = () => {
+      // Enable the fix for mid-size + mobile, disable for very large screens
+      needsTopPaddingFix.current = window.innerWidth < 1400;
+
+      // If we disable fix, reset to normal
+      if (!needsTopPaddingFix.current) setDir("up");
+    };
+
+    onResize();
+
+    let lastY = window.scrollY;
+    let ticking = false;
+
+    const update = () => {
+      if (!needsTopPaddingFix.current) {
+        ticking = false;
+        return;
+      }
+
+      const y = window.scrollY;
+      const delta = y - lastY;
+
+      if (Math.abs(delta) > 6) {
+        setDir(delta > 0 ? "down" : "up");
+        lastY = y;
+      }
+
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(update);
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
+
+  return dir;
+}
+
+export default function Header() {
+  const pathname = usePathname();
+  const onHome = pathname === "/";
+  const hrefTo = (id: string) => (onHome ? `#${id}` : `/#${id}`);
+
+  const dir = useScrollDirection();
+
+  return (
+    <header
+      className={[
+        "fixed inset-x-0 top-0 z-50",
+        "bg-[#070815]/60 backdrop-blur-xl border-b border-white/10",
+        "transition-[padding] duration-200 ease-out",
+        dir === "down" ? "pt-4" : "pt-0",
+      ].join(" ")}
+    >
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
+        <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight text-white">
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-fuchsia-500 to-indigo-500 text-white shadow-sm">
+            M
+          </span>
+          <span>MitrevDesign</span>
+        </Link>
+
+        <nav className="hidden items-center gap-6 text-sm text-zinc-300 md:flex">
+          <Link className="hover:text-violet-500 transition-colors duration-300" href={hrefTo("services")}>
+            Services
+          </Link>
+          <Link className="hover:text-violet-500 transition-colors duration-300" href={hrefTo("projects-1")}>
+            Projects
+          </Link>
+          <Link className="hover:text-violet-500 transition-colors duration-300" href={hrefTo("approach")}>
+            About
+          </Link>
+          <Link className="hover:text-violet-500 transition-colors duration-300" href={hrefTo("team")}>
+            Team
+          </Link>
+          <Link className="hover:text-violet-500 transition-colors duration-300" href={hrefTo("faq")}>
+            FAQ
+          </Link>
+          <Link className="hover:text-violet-500 transition-colors duration-300" href={hrefTo("book-a-call")}>
+            Contact
+          </Link>
+        </nav>
+
+        <Link
+          href={hrefTo("book-a-call")}
+          className="rounded-xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:opacity-95
+          transition-all duration-300 ease-out
+          hover:from-fuchsia-600 hover:to-indigo-600
+          hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]
+          hover:-translate-y-[1px]
+          active:translate-y-0"
+        >
+          Get a quote
+        </Link>
+      </div>
+    </header>
+  );
+}
+
+
+
+{/*}
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -19,7 +139,7 @@ export default function Header() {
         border-b border-white/10 z-50
       ">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
-        {/* Logo should go home */}
+       
         <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight text-white">
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-fuchsia-500 to-indigo-500 text-white shadow-sm">
             M
@@ -68,3 +188,7 @@ export default function Header() {
     </header>
   );
 }
+*/}
+
+
+

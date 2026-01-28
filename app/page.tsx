@@ -23,7 +23,7 @@ export default function Page() {
 const hrefTo = useHrefTo();
 
   return (
-    <main className="relative min-h-screen   bg-[#070815] text-zinc-100">
+    <main className="relative min-h-[100svh] md:min-h-screen bg-[#070815] text-zinc-100">
        <div className="pointer-events-none absolute inset-0 overflow-hidden">
       {/* ambient gradient blobs */}
       <div className="pointer-events-none absolute -top-32 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-fuchsia-500/20 blur-[120px]" />
@@ -41,7 +41,7 @@ const hrefTo = useHrefTo();
       <Footer/> 
       <WhatsAppFloatingButton
        phone="4915753137292"
-      message="Hello, I would like to contact your agency."/>
+      message="Hello, I would like to get info about website services"/>
     </main>
   );
 }
