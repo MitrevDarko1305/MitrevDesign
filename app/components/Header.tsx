@@ -70,7 +70,7 @@ export default function Header() {
         "fixed inset-x-0 top-0 z-50",
         "bg-[#070815]/60 backdrop-blur-xl border-b border-white/10",
         "transition-[padding] duration-200 ease-out",
-         onHome && dir === "down" ? "pt-2" : "pt-0",
+         onHome && dir === "down" ? "pt-3" : "pt-0",
       ].join(" ")}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
