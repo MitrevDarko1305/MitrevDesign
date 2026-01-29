@@ -13,6 +13,12 @@ import WhatsAppFloatingButton from "./components/FloatingButtonWhatsApp";
 import Link from "next/link";
 import { Import } from "lucide-react";
 import ContactForm from "./components/ContactForm";
+import BlogArticle from "./components/BlogArticleComponent1";
+import ColumnPosts from "./components/MitrevDesignBlog";
+import TailWindTestimonial from "./components/MitrevDesignTestimonials"
+
+
+
 
 
 
@@ -38,10 +44,13 @@ const hrefTo = useHrefTo();
       <FAQSection/>
       <TeamSection/>
       <CTASection/>
+      <TailWindTestimonial/>
+      <ColumnPosts/>
       <Footer/> 
       <WhatsAppFloatingButton
        phone="4915753137292"
       message="Hello, I would like to get info about website services"/>
+    
     </main>
   );
 }
