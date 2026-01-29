@@ -2,7 +2,7 @@
 
 export default function BlogArticleClarity() {
   return (
-    <article className="space-y-12 text-[17px] leading-relaxed text-white/80 container pt-44 pb-12 mx-auto">
+    <article className="space-y-12 text-[17px] bg-[#070815] leading-relaxed text-white/80 container pt-44 pb-12 mx-auto">
       {/* Section 1 */}
 
       <div className="mx-auto max-w-2xl px-6 space-y-16 leading-relaxed text-white/80 text-[17px]">
