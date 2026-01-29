@@ -8,7 +8,7 @@ export default function BlogArticleClarity() {
       <div className="mx-auto max-w-2xl px-6 space-y-16 leading-relaxed text-white/80 text-[17px]">
       <section className="space-y-4">
          <header className="text-center">
-          <h1 className="text-3xl font-bold text-white mb-10">Clarity is the Foundation  of<br />High  Performing Design</h1>
+          <h1 className="text-3xl font-bold text-white mb-10">Clarity is the Foundation <br />  of High  Performing Design</h1>
         </header>
 
 
