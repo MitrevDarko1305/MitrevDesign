@@ -15,7 +15,7 @@ export default function RotatingCube(
 }
 ) {
   return (
-    <div className="w-full  md:h-full">
+    <div className="w-full h-full">
       <Canvas camera={{ position: [2, 2, 2], fov: 50 }}>
         <ambientLight intensity={0.4} />
         <directionalLight intensity={0.8} position={[5, 5, 5]} />
