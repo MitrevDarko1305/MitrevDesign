@@ -1,0 +1,51 @@
+
+// components/blog/BlogArticle.tsx
+
+export default function SetupMaintenanceTextDescription() {
+  return (
+    <article className=" text-[17px] bg-[#0b0615] leading-tight lg:text-start text-center text-foreground px-0  pt-8 pb-24 md:pb-20 md:pt-4 px-0 ">
+    <div className="max-w-7xl md:px-10 px-4 mx-auto">
+      <div className=" max-w-3xl mx-auto lg:mx-0  space-y-16 leading-relaxed text-foreground text-[17px]">
+      {/* Section 1 */}
+      <section className="space-y-4 ">
+        <header className="text-center lg:text-left">
+          <h1 className="text-3xl font-semibold text-foreground mb-6">Website Setup & Maintenance</h1>
+        </header>
+        <div className="space-y-1">
+          <h2 className="text-md font-bold text-foreground lg:text-left text-center">
+          Built, Maintained and continiosly supported
+          </h2>
+      <div className=" text-md space-y-1">
+        <p className="leading-normal text-[15px]  text-foreground/50">
+        We design, build, and actively maintain your website so it stays fast, secure, and up to date over time. From initial setup and CMS configuration to performance, updates, and ongoing improvements, everything is managed for you — so you can focus on your business while we handle the website.
+        </p>
+
+        <p className="pt-6 md:pt-6 font-bold">
+          After you subscribe, we start with a consultation to define:
+        </p>
+
+        <ul className="space-y-1 pl-5 text-foreground/50 text-[15px] leading-tight list-none lg:list-disc">
+          <li className="">What are you trying to achieve with the website</li>
+          <li className="">How it should look feel and function</li>
+          <li className="">What setup will scale best long-term</li>
+        </ul>
+
+       <p className="text-[15px] text-foreground/50 pt-6"> Each Setup & Maintenance project is adapted per business. Structure, design, and features are tailored to your content, goals, and workflow — and we continuously maintain the system as your needs evolve.</p>
+
+        <p className="text-[15px] text-foreground/50">
+          Once live, we stay involved — handling updates, fixes, and improvements to ensure the website keeps performing and scaling without requiring internal management.
+        </p>
+        <p className="mt-6 text-sm  text-foreground/80 border border-foreground/30 rounded-full py-1 px-3 inline-block">
+         Setup from €999 •  Monthly maintenance billed separately
+        </p>
+        
+        </div>
+        </div>
+      </section>
+
+      
+      </div>
+      </div>
+    </article>
+  );
+}
