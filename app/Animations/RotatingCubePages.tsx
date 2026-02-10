@@ -12,7 +12,7 @@ type RotatingCubeHeroProps = {
 };
 
 export default function RotatingCubeHero({
-  className = "w-full h-[320px] md:h-[420px]",
+  className = "w-full h-full",
   position = [0, 0, 0],
   accentColor = "#8b5cf6",
 }: RotatingCubeHeroProps) {
