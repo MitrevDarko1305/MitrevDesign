@@ -5,12 +5,17 @@ import FAQSection from "./components/FAQSection";
 import TeamSection from "./components/TeamSection";
 import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
+import Head from "next/head";
 import Header from "./components/Header";
 import { useHrefTo } from "./Use-href-hook";
 import WhatsAppFloatingButton from "./components/FloatingButtonWhatsApp";
+
+import Link from "next/link";
+import { Import } from "lucide-react";
+import ContactForm from "./components/ContactForm";
+import BlogArticle from "./components/BlogArticleComponent1";
 import ColumnPosts from "./components/MitrevDesignBlog";
 import TailWindTestimonial from "./components/MitrevDesignTestimonials"
-import WorkWithUs from "./components/SubscriptionSection/SubscriptionElement";
 
 
 
@@ -33,7 +38,6 @@ const hrefTo = useHrefTo();
     </div>
      <Header/>
       <Hero />
-      <WorkWithUs/>
       <Services />
       <ProjectsSection/>
       <Approach/>
