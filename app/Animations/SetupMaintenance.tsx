@@ -21,7 +21,6 @@ export default function RotatingCubeExpanded({
         <directionalLight intensity={0.9} position={[5, 5, 5]} />
         <Scene  position={position}/>
         <Environment preset="forest" />
-       
       </Canvas>
     </div>
   );

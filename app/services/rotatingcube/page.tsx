@@ -61,7 +61,7 @@ export default function WebsiteSystemPage() {
             <div className="relative">
               <div className="absolute -inset-6 rounded-3xl blur-2xl" />
               <div className="relative rounded-3xl   p-4">
-                <RotatingCubeHero className="w-full h-[420px] md:h-[420px]" />
+                <RotatingCubeHero className="w-full h-[320px] md:h-[420px]" />
               </div>
             </div>
           </div>

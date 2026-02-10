@@ -23,8 +23,6 @@ export default function RotatingCube(
 
         <Scene position={position} />
         <Environment preset="sunset" />
-
-        <OrbitControls enableZoom={false} enablePan={false} />
       </Canvas>
     </div>
   );

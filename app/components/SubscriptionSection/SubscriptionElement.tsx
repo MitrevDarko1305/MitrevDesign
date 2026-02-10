@@ -16,7 +16,7 @@ export default function WorkWithUs() {
     <div className="grid grid-cols-1  lg:pl-16 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto  gap-y-10 pt-8 pb-20   [@media(min-width:995px)_and_(max-width:1250px)]:pl-0">
       {/* Web System */}
       <div className="relative min-h-[320px] px-0 md:px-4 overflow-hidden">
-        <div className="absolute flex items-center justify-center inset-0 pointer-events-none">
+        <div className="absolute  inset-0 pointer-events-none">
           <ResponsiveRotatingCube/>
         </div>
 
