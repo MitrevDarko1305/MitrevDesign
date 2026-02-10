@@ -20,11 +20,11 @@ export default function WebsiteSystemPage() {
             <div >
               <p className="text-sm text-zinc-400">Service</p>
 
-              <h1 className="mt-3  text-4xl font-bold tracking-tight md:text-5xl">
+              <h1 className="mt-3 text-white  text-4xl font-bold tracking-tight md:text-5xl">
                 Website system
               </h1>
 
-              <p className="mt-4 max-w-xl text-zinc-300 mx-auto">
+              <p className="mt-4 max-w-xl text-zinc-400 mx-auto">
                 CMS-powered foundation — fast, scalable, and ready to customize
                 as your business grows.
               </p>
