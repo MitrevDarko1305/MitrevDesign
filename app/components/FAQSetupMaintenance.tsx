@@ -27,7 +27,7 @@ const faqs = [
    {
     question: "Is hosting included?",
     answer:
-      "Hosting is not inlcuded, we help you choose, set up and connect reliable hosting option so you can stay in full control.",
+      " Yes hosting is inlcuded, we help you choose, set up and connect reliable hosting option so you can stay in full control.",
   },
 ];
 
