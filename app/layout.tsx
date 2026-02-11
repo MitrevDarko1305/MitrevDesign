@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${inter.variable} ${grotesk.variable}`}
     >
      
-      <body className="antialiased">{children}
+      <body className="antialiased overflow-x-hidden">{children}
          
       </body>
     </html>
@@ -39,5 +39,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 <form name="contact" data-netlify="true" hidden>
   <input type="hidden" name="form-name" value="contact" />
 </form>
+
 
 

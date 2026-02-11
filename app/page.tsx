@@ -11,6 +11,8 @@ import WhatsAppFloatingButton from "./components/FloatingButtonWhatsApp";
 import ColumnPosts from "./components/MitrevDesignBlog";
 import TailWindTestimonial from "./components/MitrevDesignTestimonials"
 import WorkWithUs from "./components/SubscriptionSection/SubscriptionElement";
+import Newsletter from "./components/Newsletter";
+import LandingPageSection from "./components/LandingPageSection";
 
 
 
@@ -34,6 +36,7 @@ const hrefTo = useHrefTo();
      <Header/>
       <Hero />
       <WorkWithUs/>
+      <LandingPageSection/>
       <Services />
       <ProjectsSection/>
       <Approach/>
@@ -46,7 +49,7 @@ const hrefTo = useHrefTo();
       <WhatsAppFloatingButton
        phone="4915753137292"
       message="Hello, I would like to get info about website services"/>
-    
+     
     </main>
   );
 }
