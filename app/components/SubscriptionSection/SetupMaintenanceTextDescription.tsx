@@ -9,19 +9,19 @@ export default function SetupMaintenanceTextDescription() {
       {/* Section 1 */}
       <section className="space-y-4 ">
         <header className="text-center lg:text-left">
-          <h1 className="text-3xl font-semibold text-white mb-6">Website Setup & Maintenance</h1>
+          <h1 className="text-3xl font-semibold text-white mb-6">Managed Website System</h1>
         </header>
         <div className="space-y-1">
           <h2 className="text-md font-bold text-white  lg:text-left text-center">
-          Built, Maintained and continiosly supported
+          A fully built, hosted, and maintained website — designed for long-term performance and growth.
           </h2>
       <div className=" text-md space-y-1">
         <p className="leading-normal text-[15px]  text-zinc-400">
-        We design, build, and actively maintain your website so it stays fast, secure, and up to date over time. From initial setup and CMS configuration to performance, updates, and ongoing improvements, everything is managed for you — so you can focus on your business while we handle the website.
+       Instead of a large upfront investment, you join a structured monthly plan where everything is handled for you: design, development, hosting, updates, and ongoing improvements.
         </p>
 
         <p className="pt-6 md:pt-6 text-[15.5px] font-bold text-white ">
-          After you subscribe, we start with a consultation to define:
+          Every partnership begins with a short consultation to define:
         </p>
 
         <ul className="space-y-1 pl-5 text-zinc-400 text-[15px] leading-tight list-none lg:list-disc">
@@ -36,7 +36,7 @@ export default function SetupMaintenanceTextDescription() {
           Once live, we stay involved — handling updates, fixes, and improvements to ensure the website keeps performing and scaling without requiring internal management.
         </p>
         <p className="mt-6 text-sm  text-zinc-200 border border-zinc-700 rounded-full py-1 px-3 inline-block">
-         Setup from €999 •  Monthly maintenance billed separately
+         Setup from €299 •  12-month minimum commitment
         </p>
         
         </div>
