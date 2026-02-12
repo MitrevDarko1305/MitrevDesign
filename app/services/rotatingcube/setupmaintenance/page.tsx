@@ -34,7 +34,7 @@ export default function SetupMaintenancePage() {
 
               <div className="mt-8 flex flex-wrap lg:justify-start justify-center gap-3">
                 <Link
-                  href="https://buy.stripe.com/eVq00lalddZzfWi3p61ck0b" target="_blank"
+                  href="https://buy.stripe.com/5kQfZj2SLf3DdOa4ta1ck0f" target="_blank"
                   className="rounded-full bg-violet-600 px-6 py-3 text-sm font-medium text-white hover:opacity-90"
                 >
                 Start  setup
