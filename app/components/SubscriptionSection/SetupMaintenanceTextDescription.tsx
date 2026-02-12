@@ -37,7 +37,7 @@ export default function SetupMaintenanceTextDescription() {
         </p>
         <div className="flex gap-2">
         <p className="mt-6 text-sm  text-zinc-200 border border-zinc-700 rounded-full py-1 px-3 inline-block">
-         Setup from €499 
+         Setup from €599 
         </p>
         <p className="mt-6 text-sm  text-zinc-200 border border-zinc-700 rounded-full py-1 px-3 inline-block">
           •  12-month minimum commitment
