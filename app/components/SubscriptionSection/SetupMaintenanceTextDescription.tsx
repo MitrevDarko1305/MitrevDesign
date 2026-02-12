@@ -35,8 +35,16 @@ export default function SetupMaintenanceTextDescription() {
         <p className="text-[15px] text-zinc-400">
           Once live, we stay involved — handling updates, fixes, and improvements to ensure the website keeps performing and scaling without requiring internal management.
         </p>
+        <div className="flex gap-2">
         <p className="mt-6 text-sm  text-zinc-200 border border-zinc-700 rounded-full py-1 px-3 inline-block">
-         Setup from €299 •  12-month minimum commitment
+         Setup from €499 
+        </p>
+        <p className="mt-6 text-sm  text-zinc-200 border border-zinc-700 rounded-full py-1 px-3 inline-block">
+          •  12-month minimum commitment
+        </p>
+        </div>
+         <p className="mt-2 text-sm  text-zinc-200 border border-zinc-700 rounded-full py-1 px-3 inline-block">
+          Monthly subscription starts at 49€/month after setup
         </p>
         
         </div>
