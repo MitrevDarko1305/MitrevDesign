@@ -16,12 +16,6 @@ import LandingPageSection from "./components/LandingPageSection";
 
 
 
-
-
-
-
-
-
 export default function Page() {
 const hrefTo = useHrefTo();
 

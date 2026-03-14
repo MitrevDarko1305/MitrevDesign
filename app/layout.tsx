@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
 import { inter, grotesk } from "./fonts";
+import Script from "next/script";
 
 
 export const viewport = {
@@ -30,7 +30,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
      
       <body className="antialiased overflow-x-hidden">{children}
-         
+         <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WY3S578VDD"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WY3S578VDD');
+          `}
+        </Script>
       </body>
     </html>
   );
