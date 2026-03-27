@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { trackEvent } from "@/lib/analytics";
 
 type Post = {
   typeLabel: string; // Article / Video / Case Study
@@ -98,7 +99,8 @@ function PostCard({ post }: { post: Post }) {
             </a>
           </p>
 
-          <Link href={post.href ?? "#"} target="_blank" className="mt-2 block">
+          <Link href={post.href ?? "#"} target="_blank" className="mt-2 block"
+          onClick={() => trackEvent('blog_post_click', { event_label: post.title })}>
             <p className="text-xl font-semibold text-gray-900">{post.title}</p>
             <p className="mt-3 text-sm text-gray-500">{post.excerpt}</p>
          </Link>

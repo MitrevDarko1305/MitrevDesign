@@ -1,6 +1,7 @@
 "use client";
-
 import ContactForm from "./ContactForm";
+import { trackEvent } from "@/lib/analytics";
+
 
 export default function CTASection() {
   return (

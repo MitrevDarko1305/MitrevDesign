@@ -1,6 +1,6 @@
 "use client"
-
 import Link from "next/link"
+import { trackEvent } from "@/lib/analytics"
 
 export default function LandingPageMockup() {
   return (
@@ -21,6 +21,7 @@ export default function LandingPageMockup() {
           <div className="mt-10 justify-center md:justify-start flex flex-col gap-4 sm:flex-row">
             <Link
               href="https://buy.stripe.com/14A6oJ8d59Jj7pMf7O1ck0d" target="_blank"
+              onClick={() => trackEvent('landing_page_cta_click', { event_label: 'start_your_landing_page' })} /* tracking events google analytics for the button  */
               className="rounded-2xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-5 py-3 text-center text-sm font-medium text-white shadow-sm hover:opacity-95
               transition-all duration-300 ease-out
               hover:from-fuchsia-600 hover:to-indigo-600
@@ -33,6 +34,7 @@ export default function LandingPageMockup() {
 
             <Link
               href="https://omnifood.mitrevdarko.dev" target="_blank"
+              onClick={() => trackEvent('landing_page_cta_click', { event_label: 'view_demo' })} /* tracking events for the button in analytics  */
               className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-center text-sm font-medium text-zinc-100 hover:bg-white/10"
             >
               View Demo

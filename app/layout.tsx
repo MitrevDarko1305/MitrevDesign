@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { inter, grotesk } from "./fonts";
 import Script from "next/script";
+import ScrollTracker from "./components/SubscriptionSection/ScrollTracker";
 
 
 export const viewport = {
@@ -29,7 +30,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${inter.variable} ${grotesk.variable}`}
     >
      
-      <body className="antialiased overflow-x-hidden">{children}
+      <body className="antialiased overflow-x-hidden">
+        <ScrollTracker/> {/*tracking scroll for analytics*/}
+        {children}
          <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-WY3S578VDD"
           strategy="afterInteractive"

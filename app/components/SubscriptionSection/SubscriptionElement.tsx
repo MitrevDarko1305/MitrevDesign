@@ -6,6 +6,7 @@ import Maintenance from "@/app/Animations/MaintenanceObject";
 import ResponsiveRotatingCube from "@/app/Animations/ResponsiveRotatingCube";
 import ResponsiveRotatingCubeExpanded from "@/app/Animations/ResponsiveRotatingCubeExpanded";
 import ResponsiveMaintenanceObject from "@/app/Animations/ResponsiveMaintenanceObject";
+import { trackEvent } from "@/lib/analytics";
 
 
 
@@ -28,7 +29,8 @@ export default function WorkWithUs() {
               CMS powered website <br /> foundation  – ready to customize
             </p>
           </div>
-          <Link href="/services/rotatingcube" className="text-zinc-100/40 text-sm  hover:text-zinc-300/90">
+          <Link href="/services/rotatingcube" className="text-zinc-100/40 text-sm  hover:text-zinc-300/90"
+           onClick={() => trackEvent('how_we_work_together', { event_label: 'website_system' })}/* tracking events for the button, google analytics  */>
             Find out more →
           </Link>
         </div>
@@ -49,7 +51,7 @@ export default function WorkWithUs() {
           <Link
             href="/services/rotatingcube/setupmaintenance"
             className="text-zinc-100 text-sm hover:text-zinc-300/90"
-          >
+           onClick={() => trackEvent('how_we_work_together', { event_label: 'build_and_support'})}/* tracking events for the button, google analytics  */>
             Find out more →
           </Link>
         </div>
@@ -70,7 +72,7 @@ export default function WorkWithUs() {
           <Link
             href="/services/rotatingcube/maintenance"
             className="text-zinc-100/40 text-sm hover:text-zinc-300/90"
-          >
+           onClick={() => trackEvent('how_we_work_together', { event_label: 'maintenance' })}/* tracking events for the button, google analytics  */>
             Find out more →
           </Link>
         </div>

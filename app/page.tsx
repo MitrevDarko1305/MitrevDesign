@@ -13,6 +13,7 @@ import TailWindTestimonial from "./components/MitrevDesignTestimonials"
 import WorkWithUs from "./components/SubscriptionSection/SubscriptionElement";
 import Newsletter from "./components/Newsletter";
 import LandingPageSection from "./components/LandingPageSection";
+import { trackEvent } from "@/lib/analytics";
 
 
 
@@ -75,17 +76,19 @@ function Hero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href="#book-a-call"
+               onClick={() => trackEvent('hero_cta_click', { event_label: 'get_free_estimate' })} /* for tracking events on google analytics */
               className="rounded-2xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-5 py-3 text-center text-sm font-medium text-white shadow-sm hover:opacity-95
               transition-all duration-300 ease-out
-    hover:from-fuchsia-600 hover:to-indigo-600
-    hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]
-    hover:-translate-y-[1px]
-    active:translate-y-0"
+               hover:from-fuchsia-600 hover:to-indigo-600
+               hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]
+               hover:-translate-y-[1px]
+               active:translate-y-0"
             >
               Get a free estimate
             </a>
           <a
             href="#projects-1"
+             onClick={() => trackEvent('hero_cta_click', { event_label: 'view_work' })} /* tracking events on google analytics */
             className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-center text-sm font-medium text-zinc-100 hover:bg-white/10"
             >
             View work
@@ -130,10 +133,10 @@ function Hero() {
                   href="mailto:mitrevdaro@gmail.com" target="blank"
                   className="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-4 py-2 text-xs font-medium text-white hover:opacity-95
                   transition-all duration-300 ease-out
-    hover:from-fuchsia-600 hover:to-indigo-600
-    hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]
-    hover:-translate-y-[1px]
-    active:translate-y-0"
+                   hover:from-fuchsia-600 hover:to-indigo-600
+                   hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]
+                   hover:-translate-y-[1px]
+                   active:translate-y-0"
                 >
                   Message us
                 </a>

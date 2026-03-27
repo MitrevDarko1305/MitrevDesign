@@ -1,6 +1,7 @@
 "use client";
-
 import type { FormEvent } from "react";
+import { trackEvent } from "@/lib/analytics";
+
 
 export default function ContactForm() {
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -22,6 +23,7 @@ export default function ContactForm() {
 
     if (res.ok) {
       form.reset();
+      trackEvent('form_submission', { event_label: 'contact_form' }); // ✅ here
       alert("Sent!");
     } else {
       const data: { error?: string } = await res.json().catch(() => ({}));
@@ -107,6 +109,7 @@ export default function ContactForm() {
           href="https://calendly.com/mitrevdarko/30min"
           target="_blank"
           rel="noreferrer"
+          onClick={() => trackEvent('book_a_call_click', { event_label: 'calendly' })}
           className="flex-1 rounded-2xl px-4 py-3 text-center text-sm font-semibold text-white bg-gradient-to-br from-fuchsia-500 to-indigo-500 shadow-sm transition-all duration-300 ease-out hover:from-fuchsia-600 hover:to-indigo-600 hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)] hover:-translate-y-[1px] active:translate-y-0"
         >
           Book a call
