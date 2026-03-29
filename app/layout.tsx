@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/Mitrev-Design-Graph.png",
+        url: "/Projects-Images/Mitrev-Design-Graph.png",
         width: 1200,
         height: 630,
         alt: "Mitrev Design agency website preview",
