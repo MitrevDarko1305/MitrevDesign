@@ -13,12 +13,27 @@ export const viewport = {
 
 
 export const metadata: Metadata = {
-  title: "Mitrev Design",
-  description: "Modern web agency for startups and businesses.",
-
-   icons: {
+  title: "Mitrev Design - Modern Web Development Agency",
+  description: "We build modern websites and digital systems for startups and businesses. Fast, scalable and secure web development services.",
+  authors: [{ name: "Darko Mitrev" }],
+  robots: "index, follow",
+  openGraph: {
+    title: "Mitrev Design - Modern Web Development",
+    description: "We build modern websites and digital systems for startups and businesses. Fast, scalable and secure web development services.",
+    url: "https://www.mitrevdarko.dev",
+    siteName: "Mitrev Design",
+    type: "website",
+    images: [
+      {
+        url: "/Mitrev-Design-Graph.png",
+        width: 1200,
+        height: 630,
+        alt: "Mitrev Design agency website preview",
+      }
+    ],
+  },
+  icons: {
     icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
   },
 };
 
