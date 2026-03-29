@@ -14,6 +14,8 @@ import WorkWithUs from "./components/SubscriptionSection/SubscriptionElement";
 import Newsletter from "./components/Newsletter";
 import LandingPageSection from "./components/LandingPageSection";
 import { trackEvent } from "@/lib/analytics";
+import Lenis from "lenis";
+import SmoothScroll from "./components/SmoothScroll";
 
 
 
@@ -28,7 +30,8 @@ const hrefTo = useHrefTo();
       <div className="pointer-events-none absolute top-40 right-[-180px] h-[520px] w-[520px] rounded-full bg-indigo-500/20 blur-[120px]" />
       <div className="pointer-events-none absolute bottom-[-180px] left-[-180px] h-[520px] w-[520px] rounded-full bg-violet-500/20 blur-[120px]" />
     </div>
-     <Header/>
+      <SmoothScroll/>
+      <Header/>
       <Hero />
       <WorkWithUs/>
       <LandingPageSection/>
