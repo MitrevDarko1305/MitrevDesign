@@ -40,8 +40,8 @@ const hrefTo = useHrefTo();
       <Approach/>
       <FAQSection/>
       <TeamSection/>
-      <CTASection/>
       <TailWindTestimonial/>
+      <CTASection/>
       <ColumnPosts/>
       <Footer/> 
       <WhatsAppFloatingButton
@@ -65,15 +65,15 @@ function Hero() {
           </p>
 
           <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
-            Modern websites with {" "}
+            Custom websites for {" "}
             <span className="bg-gradient-to-r from-fuchsia-400 to-indigo-300 bg-clip-text text-transparent">
-              premium
+              small
+            businesses
             </span>{" "}
-            feel
           </h1>
 
           <p className="mt-4 max-w-xl text-zinc-300/90 md:text-lg">
-            Custom-built websites for small businesses — designed to attract customers and build trust.
+            So your next client can say yes before they even call
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
