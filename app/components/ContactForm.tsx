@@ -117,6 +117,7 @@ export default function ContactForm() {
       </div>
 
       <p className="text-center text-xs text-white/40">Just a conversation</p>
+       <p className="text-center text-xs text-white/40">We will never share your details 🔐</p>
     </form>
   );
 }

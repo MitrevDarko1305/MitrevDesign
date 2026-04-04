@@ -27,7 +27,7 @@ export default function WorkWithUs() {
           <div>
             <h3 className="text-xl font-medium">Website system </h3>
             <p className="mt-2 text-sm text-zinc-300/90  max-w-[28ch]">
-              CMS powered website <br /> foundation  – ready to customize
+              Update your site  <br /> yourself  – no developer needed.
             </p>
           </div>
           <Link href="/services/rotatingcube" className="text-zinc-100/40 text-sm  hover:text-zinc-300/90"
@@ -46,7 +46,7 @@ export default function WorkWithUs() {
           <div>
             <h3 className="text-xl font-medium">Built & Support</h3>
             <p className="mt-2 text-sm opacity-70 max-w-[28ch]">
-              We built your website system and keep it running flawlessly.
+              We handle it all. You run your business
             </p>
           </div>
           <Link
@@ -67,7 +67,7 @@ export default function WorkWithUs() {
           <div>
             <h3 className="text-xl font-medium">Maintenance</h3>
             <p className="mt-2 text-sm opacity-70 max-w-[28ch]">
-              Ongoing updates, fixes, and improvements.
+              Your site never breaks. We keep it that way
             </p>
           </div>
           <Link
