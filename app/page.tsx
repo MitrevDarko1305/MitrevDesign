@@ -290,21 +290,21 @@ function ProjectsSection() {
           title="Personal-Trainer Portfolio"
           description="Custom-coded  website focused on performance"
           tag="Custom Code"
-          image="/Projects-Images/Mike-Project.png"
+          image="/Projects-Images/Mike-Project.webp"
           href="https://mike-athletics.mitrevdarko.dev"
         />
         <ProjectCard
           title="Security  Template"
           description="Webflow-powered site with clean interactions."
           tag="Webflow"
-          image="/Projects-Images/Securyguard-Project.png"
+          image="/Projects-Images/Securyguard-Project.jpg"
           href="https://securyguard.webflow.io"
         />
         <ProjectCard
           title="Premium Auto-Motive Website"
           description="Great for car dealerships"
           tag="Custom Code"
-          image="/Projects-Images/Quantum.png"
+          image="/Projects-Images/Quantum.jpg"
           href="https://quantum.mitrevdarko.dev/"
         />
       </div>

@@ -11,21 +11,21 @@ const PROJECTS = [
     title: "Omnifood",
     description: "Order your food with simple click",
     tag: "Concept Project",
-    image: "/Projects-Images/Omnifood-Project-2.png",
+    image: "/Projects-Images/Omnifood-Project-2.webp",
     href: "https://omnifood.mitrevdarko.dev",
   },
   {
     title: "Fitness Landing Page",
     description: "Interactive personal trainer portfolio",
     tag: "Client Project",
-    image: "/Projects-Images/MikeXForce-Project.png",
+    image: "/Projects-Images/MikeXForce-Project.webp",
     href: "https://mikexforce.mitrevdarko.dev",
   },
   {
     title: "Music Band Website",
     description: "Client website for a live band",
     tag: "Client Project",
-    image: "/Projects-Images/Classico-Band-Project.png",
+    image: "/Projects-Images/Classico-Band-Project.webp",
     href: "https://classico-band.mitrevdarko.dev",
   },
 
@@ -33,7 +33,7 @@ const PROJECTS = [
     title: "Texas Steakhouse",
     description: "Bold - smoky steakhouse concept",
     tag: "Concept Project",
-    image: "/Projects-Images/Texas-Project.png",
+    image: "/Projects-Images/Texas-Project.webp",
     href: "https://texas-steakhouse.mitrevdarko.dev",
   },
 
@@ -41,7 +41,7 @@ const PROJECTS = [
     title: "Siayvo",
     description: "Website concept for a glamour beauty studio",
     tag: "Concept Project",
-    image: "/Projects-Images/Siayvo-Project-2.png",
+    image: "/Projects-Images/Siayvo-Project-2.webp",
     href: "https://siayvo.mitrevdarko.dev",
   },
 
@@ -49,7 +49,7 @@ const PROJECTS = [
     title: "Aegis Security",
     description: "High-end website concept for security firm.",
     tag: "Concept Project",
-    image: "/Projects-Images/Aegis-Project.png",
+    image: "/Projects-Images/Aegis-Project.webp",
     href: "https://aegis-sicherheit.mitrevdarko.dev/",
   },
   // add more here...
