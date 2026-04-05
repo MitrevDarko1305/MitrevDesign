@@ -9,7 +9,7 @@ export default function LandingPageMockup() {
       <div className=" mx-auto min-w-0 overflow-hidden max-w-6xl text-center md:text-left px-8 py-4 sm:py-12 lg:grid lg:grid-cols-2 lg:gap-16 lg:py-28">
         {/* Text */}
         <div>
-          <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-4xl">
+          <h1 className="text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-4xl">
             Focused landing page
             <br className="hidden sm:block" />
           </h1>
@@ -22,7 +22,7 @@ export default function LandingPageMockup() {
             <Link
               href="https://buy.stripe.com/14A6oJ8d59Jj7pMf7O1ck0d" target="_blank"
               onClick={() => trackEvent('landing_page_cta_click', { event_label: 'start_your_landing_page' })} /* tracking events google analytics for the button  */
-              className="rounded-2xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-5 py-3 text-center text-sm font-medium text-white shadow-sm hover:opacity-95
+              className="rounded-2xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-5 py-3 text-center text-sm font-black text-white shadow-sm hover:opacity-95
               transition-all duration-300 ease-out
               hover:from-fuchsia-600 hover:to-indigo-600
               hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]
@@ -59,7 +59,7 @@ export default function LandingPageMockup() {
   ">
         <div className="rounded-3xl border border-white/10  p-6 md:p-8 shadow-2xl bg-[#14141f]
   ">
-          <h2 className="text-2xl text-center md:text-left font-semibold tracking-tight text-white">
+          <h2 className="text-2xl text-center md:text-left font-black tracking-tight text-white">
             What's included 
           </h2>
 

@@ -4,13 +4,13 @@ import { use } from "react";
 
 export default function BlogArticle() {
   return (
-    <article className="space-y-12 text-[17px] bg-[#070815] leading-relaxed text-white/80 container pt-44 pb-12 mx-auto">
+    <article className="space-y-12 text-[17px] bg-[#070815] leading-relaxed text-white/80 container pt-28 md:pt-28 pb-12 mx-auto">
 
       <div className="mx-auto max-w-2xl px-6 space-y-16 leading-relaxed text-white/80 text-[17px]">
       {/* Section 1 */}
-      <section className="space-y-4 ">
+      <section className="space-y-2">
         <header className="text-center">
-          <h1 className="text-3xl font-bold text-white mb-10">Design is Not Decoration</h1>
+          <h1 className="text-3xl text-center md:text-left font-black text-white mb-10">Design is Not Decoration</h1>
         </header>
         <div className="space-y-2">
           <h2 className="text-2xl font-semibold text-white">
@@ -41,8 +41,8 @@ export default function BlogArticle() {
       </section>
 
       {/* Section 2 */}
-      <section className="space-y-4">
-        <h2 className="text-2xl font-semibold text-white">
+      <section className="space-y-2">
+        <h2 className="text-2xl font-black text-white">
           Why “Pretty” Websites Fail
         </h2>
 
@@ -70,8 +70,8 @@ export default function BlogArticle() {
       </section>
 
       {/* Section 3 */}
-      <section className="space-y-4">
-        <h2 className="text-2xl font-semibold text-white">
+      <section className="space-y-2">
+        <h2 className="text-2xl font-black text-white">
           What High-Performing Websites Actually Do
         </h2>
 
@@ -95,8 +95,8 @@ export default function BlogArticle() {
       </section>
 
       {/* Section 4 */}
-      <section className="space-y-4">
-        <h2 className="text-2xl font-semibold text-white">
+      <section className="space-y-2">
+        <h2 className="text-2xl font-black text-white">
           When It’s Time to Redesign
         </h2>
 

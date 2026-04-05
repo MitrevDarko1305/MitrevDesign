@@ -75,10 +75,10 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
         <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight text-white">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-fuchsia-500 to-indigo-500 text-white shadow-sm">
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-fuchsia-500 font-black to-indigo-500 text-white shadow-sm">
             M
           </span>
-          <span>MitrevDesign</span>
+          <span className="font-black">MitrevDesign</span>
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm text-zinc-300 md:flex">
@@ -104,7 +104,7 @@ export default function Header() {
 
         <Link
           href={hrefTo("book-a-call")}
-          className="rounded-xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:opacity-95
+          className="rounded-xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-4 py-2 text-sm font-black text-white shadow-sm hover:opacity-95
           transition-all duration-300 ease-out
           hover:from-fuchsia-600 hover:to-indigo-600
           hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]

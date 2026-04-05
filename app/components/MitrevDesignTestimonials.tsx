@@ -3,7 +3,7 @@
 export default function TailWindTestimonial() {
   return (
     <section className="relative isolate overflow-hidden bg-zink px-6  py-16 sm:pt-20 sm:pb-20 lg:px-8">
-      <h2 className="container text-center font-semibold text-white text-4xl leading-tight pb-1 md:pb-6">What our <span className="bg-gradient-to-r from-fuchsia-300/80 to-indigo-300/80 bg-clip-text text-transparent">clients</span>  say</h2>
+      <h2 className="container text-center font-black text-white text-4xl leading-tight pb-1 md:pb-6">What our <span className="bg-gradient-to-r from-fuchsia-300/80 to-indigo-300/80 bg-clip-text text-transparent">clients</span>  say</h2>
       <div className="grid mx-auto max-w-6xl gap-x-12 gap-y-20 lg:grid-cols-2  items-stretch">
       <div className="lg:max-w-4xl items-stretch">
         <figure className="mt-10 h-full flex flex-col bg-white/5 border border-white/10 p-8 hover:bg-white/8 hover:border-white/20 transition all duration-300">

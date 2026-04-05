@@ -43,7 +43,7 @@ export default function Footer( { workHref = "/work" }: FooterProps) {
                 href={workHref}
                 target={isExternal ? "_blank" : undefined}
                 rel={isExternal ? "noopener noreferrer" : undefined}
-                className="rounded-2xl px-4 py-3 text-center text-sm font-semibold text-white bg-gradient-to-br from-fuchsia-500 to-indigo-500 shadow-sm
+                className="rounded-2xl px-4 py-3 text-center text-sm font-black text-white bg-gradient-to-br from-fuchsia-500 to-indigo-500 shadow-sm
                   transition-all duration-300 ease-out
                   hover:from-fuchsia-600 hover:to-indigo-600
                   hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]

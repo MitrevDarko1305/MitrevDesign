@@ -13,8 +13,8 @@ import { trackEvent } from "@/lib/analytics";
 export default function WorkWithUs() {
   return (
     <section className="pt-12 md:pt-18 ">
-      <h1 className="text-sm md:text-sm text-center md:text-left md:mb-8 mb-4 font-bold  tracking-tight max-w-6xl mx-auto  md:pl-4 pl-4">Most small business websites look like they were built on a free template in an afternoon.<br />That costs you clients before you ever speak to them</h1>
-        <p className="text-2xl md:text-4xl text-center md:text-left font-bold mb-0 tracking-tight max-w-6xl mx-auto md:pl-4 pl-10">How we work together</p>
+      <h1 className="text-sm md:text-sm text-center md:text-left md:mb-8 mb-4 font-bold text-white/45  tracking-tight max-w-6xl mx-auto  md:pl-4 pl-4">Most small business websites look like they were built on a free template in an afternoon.<br />That costs you clients before you ever speak to them</h1>
+        <p className="text-2xl md:text-4xl text-center md:text-left font-black mb-0 tracking-tight max-w-6xl mx-auto md:pl-4 pl-10">How we work together</p>
     <div className="grid grid-cols-1  lg:pl-16 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto  gap-y-10 pt-8 pb-20   [@media(min-width:995px)_and_(max-width:1250px)]:pl-0">
       {/* Web System */}
       <div className="relative min-h-[320px] px-0 md:px-4 overflow-hidden">
@@ -25,8 +25,8 @@ export default function WorkWithUs() {
          
         <div className="relative z-10 h-full flex flex-col justify-between items-center text-center md:items-start md:text-left py-0">
           <div>
-            <h3 className="text-xl font-medium">Website system </h3>
-            <p className="mt-2 text-sm text-zinc-300/90  max-w-[28ch]">
+            <h3 className="text-xl font-black">Website system </h3>
+            <p className="mt-2 text-sm text-white/45  max-w-[28ch]">
               Update your site  <br /> yourself  – no developer needed.
             </p>
           </div>
@@ -44,8 +44,8 @@ export default function WorkWithUs() {
         </div>
         <div className="relative z-10 h-full flex flex-col justify-between text-center items-center md:items-start md:text-left py-0">
           <div>
-            <h3 className="text-xl font-medium">Built & Support</h3>
-            <p className="mt-2 text-sm opacity-70 max-w-[28ch]">
+            <h3 className="text-xl font-black">Built & Support</h3>
+            <p className="mt-2 text-sm text-white/45 max-w-[28ch]">
               We handle it all. You run your business
             </p>
           </div>
@@ -65,8 +65,8 @@ export default function WorkWithUs() {
         </div>
         <div className="relative  z-10 h-full flex flex-col text-center md:text-left items-center md:items-start justify-between py-0">
           <div>
-            <h3 className="text-xl font-medium">Maintenance</h3>
-            <p className="mt-2 text-sm opacity-70 max-w-[28ch]">
+            <h3 className="text-xl font-black">Maintenance</h3>
+            <p className="mt-2 text-sm text-white/45 max-w-[28ch]">
               Your site never breaks. We keep it that way
             </p>
           </div>

@@ -71,7 +71,7 @@ export default function TeamSection() {
     <section id="team" className="mx-auto max-w-3xl px-6 py-16 md:py-20 text-center md:text-left">
       <div className="mb-10 max-w-xxl">
         <p className="text-xs font-medium text-zinc-300">Team</p>
-        <h2 className="mt-2 text-3xl font-semibold tracking-tight md:text-4xl">
+        <h2 className="mt-2 text-3xl font-black tracking-tight md:text-4xl">
           Small team. Full focus 
         </h2>
         <p className="mt-3 text-sm text-zinc-300/90 md:text-base">
@@ -95,7 +95,7 @@ export default function TeamSection() {
             </div>
 
             <div className="p-5">
-              <p className="text-lg font-medium">{m.name}</p>
+              <p className="text-lg font-black">{m.name}</p>
               <p className="mt-1 text-sm text-zinc-300">{m.role}</p>
 
               {m.socials && (

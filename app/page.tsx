@@ -64,9 +64,9 @@ function Hero() {
             Available for new projects
           </p>
 
-          <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
+          <h1 className="text-4xl font-black tracking-tight md:text-5xl">
             Custom websites for {" "}
-            <span className="bg-gradient-to-r from-fuchsia-400 to-indigo-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-fuchsia-400 to-indigo-300 bg-clip-text font-black text-transparent">
               small
             businesses
             </span>{" "}
@@ -80,7 +80,7 @@ function Hero() {
             <a
               href="#book-a-call"
                onClick={() => trackEvent('hero_cta_click', { event_label: 'get_free_estimate' })} /* for tracking events on google analytics */
-              className="rounded-2xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-5 py-3 text-center text-sm font-medium text-white shadow-sm hover:opacity-95
+              className="rounded-2xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-5 py-3 text-center text-sm font-black text-white shadow-sm hover:opacity-95
               transition-all duration-300 ease-out
                hover:from-fuchsia-600 hover:to-indigo-600
                hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]
@@ -134,7 +134,7 @@ function Hero() {
                 </p>
                 <a
                   href="mailto:mitrevdaro@gmail.com" target="blank"
-                  className="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-4 py-2 text-xs font-medium text-white hover:opacity-95
+                  className="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-4 py-2 text-xs font-black text-white hover:opacity-95
                   transition-all duration-300 ease-out
                    hover:from-fuchsia-600 hover:to-indigo-600
                    hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]
@@ -202,7 +202,7 @@ function Services() {
     >
       <div className="mb-10 max-w-2xl">
         <p className="text-xs font-medium text-zinc-300">Services</p>
-        <h2 className="mt-2 text-3xl font-semibold tracking-tight md:text-4xl">
+        <h2 className="mt-2 text-3xl font-black tracking-tight md:text-4xl">
           Modern web solutions
         </h2>
         <p className="mt-4 text-sm text-zinc-300/90 md:text-base">
@@ -215,7 +215,7 @@ function Services() {
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
         <div className="flex items-center justify-center md:justify-start gap-3">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code relative -top-[1px]"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
-          <h3 className="text-lg font-semibold">Website with custom code
+          <h3 className="text-lg font-black">Website with custom code
           </h3>
           </div>
           <p className="mt-2 text-sm text-zinc-300/90">
@@ -227,7 +227,7 @@ function Services() {
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
         <div className="flex items-center justify-center md:justify-start gap-3">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-layout-grid-icon lucide-layout-grid relative -top-[1px]"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
-          <h3 className="text-lg font-semibold">Webflow website</h3>
+          <h3 className="text-lg font-black">Webflow website</h3>
           </div>
           <p className="mt-2 text-sm text-zinc-300/90">
             Clean, modern Webflow sites that are easy to update and quick to launch.
@@ -266,7 +266,7 @@ function ProjectCard({ title, description, tag, image, href }: ProjectCardProps)
         <div className="mb-2 text-xs uppercase tracking-wide text-white/50">
           {tag}
         </div>
-        <h3 className="text-lg font-medium tracking-tight">{title}</h3>
+        <h3 className="text-lg font-black tracking-tight">{title}</h3>
         <p className="mt-1 text-sm text-white/60">{description}</p>
       </div>
     </a>
@@ -279,7 +279,7 @@ function ProjectsSection() {
   return (
     <section className="mt-16 md:mt-16 max-w-6xl mx-auto px-5  " id="projects-1">
       <div className="mb-10 text-center md:text-left">
-        <h2 className="text-3xl font-medium tracking-tight">Selected Projects</h2>
+        <h2 className="text-3xl font-black tracking-tight">Selected Projects</h2>
         <p className="mt-2 max-w-xl mx-auto text-white/60 text-center md:text-left md:mx-0">
            Focused selection of recent work.
         </p>
@@ -314,7 +314,7 @@ function ProjectsSection() {
         className="
          mt-10 inline-flex items-center justify-center 
         rounded-xl border border-white/10
-        bg-white/5 px-6 py-3 text-sm font-medium text-white
+        bg-white/5 px-6 py-3 text-sm font-black text-white
         transition-colors hover:bg-white/10
          "
       >
@@ -337,7 +337,7 @@ function Approach() {
         <div>
           <p className="text-xs font-medium text-zinc-300">Our approach</p>
 
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+          <h2 className="mt-3 text-3xl font-black tracking-tight md:text-4xl">
             Websites <span className="bg-gradient-to-r from-fuchsia-300/80 to-indigo-300/80 bg-clip-text text-transparent">  built </span> with purpose  and precision
           </h2>
 

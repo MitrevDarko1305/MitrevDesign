@@ -100,7 +100,7 @@ export default function ContactForm() {
       <div className="mt-4 flex flex-col gap-3 sm:flex-row">
         <button
           type="submit"
-          className="flex-1 rounded-2xl text-center border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white hover:bg-white/10 transition"
+          className="flex-1 rounded-2xl text-center border border-white/10 bg-white/5 px-4 py-3 text-sm font-black text-white hover:bg-white/10 transition"
         >
           Send request
         </button>
@@ -110,7 +110,7 @@ export default function ContactForm() {
           target="_blank"
           rel="noreferrer"
           onClick={() => trackEvent('book_a_call_click', { event_label: 'calendly' })}
-          className="flex-1 rounded-2xl px-4 py-3 text-center text-sm font-semibold text-white bg-gradient-to-br from-fuchsia-500 to-indigo-500 shadow-sm transition-all duration-300 ease-out hover:from-fuchsia-600 hover:to-indigo-600 hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)] hover:-translate-y-[1px] active:translate-y-0"
+          className="flex-1 rounded-2xl px-4 py-3 text-center text-sm font-black text-white bg-gradient-to-br from-fuchsia-500 to-indigo-500 shadow-sm transition-all duration-300 ease-out hover:from-fuchsia-600 hover:to-indigo-600 hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)] hover:-translate-y-[1px] active:translate-y-0"
         >
           Book a call
         </a>

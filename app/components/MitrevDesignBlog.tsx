@@ -159,7 +159,7 @@ export default function ColumnPosts({
 
       <div className="relative mx-auto max-w-6xl">
         <div className="text-center">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 ">
+          <h2 className="text-4xl font-black tracking-tight text-gray-900 ">
             {title}
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-gray-500 sm:mt-4">
