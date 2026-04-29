@@ -41,7 +41,7 @@ export default function SetupMaintenancePage() {
                 </Link>
 
                   <a
-                  href="https://smilo-care.mitrevdarko.dev" target="_blank"
+                  href="https://skycast.mitrevdarko.dev" target="_blank"
                   className="rounded-full border border-white/15 px-6 py-3 text-sm text-zinc-200 hover:border-white/25"
                 >
                   View a real example

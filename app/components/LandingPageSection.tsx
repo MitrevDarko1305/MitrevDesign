@@ -33,7 +33,7 @@ export default function LandingPageMockup() {
             </Link>
 
             <Link
-              href="https://omnifood.mitrevdarko.dev" target="_blank"
+              href="https://mike-athletics.mitrevdarko.dev" target="_blank"
               onClick={() => trackEvent('landing_page_cta_click', { event_label: 'view_demo' })} /* tracking events for the button in analytics  */
               className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-center text-sm font-medium text-zinc-100 hover:bg-white/10"
             >

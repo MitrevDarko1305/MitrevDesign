@@ -274,7 +274,6 @@ function ProjectCard({ title, description, tag, image, href }: ProjectCardProps)
 }
 
 
-
 function ProjectsSection() {
   return (
     <section className="mt-16 md:mt-16 max-w-6xl mx-auto px-5  " id="projects-1">
@@ -287,25 +286,25 @@ function ProjectsSection() {
 
       <div className="grid grid-cols-1 text-center md:text-left gap-5 md:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
-          title="Personal-Trainer Portfolio"
-          description="Custom-coded  website focused on performance"
-          tag="Custom Code"
-          image="/Projects-Images/Mike-Project.webp"
-          href="https://mike-athletics.mitrevdarko.dev"
+          title="Cinemax - Movie App"
+          description="Explore, search and get info for your favourite shows"
+          tag="Express, Node.js"
+          image="/Projects-Images/Cinemax-Screenshot.png"
+          href="https://cinemax.mitrevdarko.dev"
         />
         <ProjectCard
-          title="Security  Template"
-          description="Webflow-powered site with clean interactions."
-          tag="Webflow"
-          image="/Projects-Images/Securyguard-Project.jpg"
-          href="https://securyguard.webflow.io"
+          title="Skycast App"
+          description="Biolingual support interactive maps, forecasts and much more..."
+          tag="Node.js"
+          image="/Projects-Images/skycast.png"
+          href="https://skycast.mitrevdarko.dev"
         />
         <ProjectCard
-          title="Premium Auto-Motive Website"
-          description="Great for car dealerships"
+          title="Premium Agency Website"
+          description="Fully functional custom code website design"
           tag="Custom Code"
-          image="/Projects-Images/Quantum.jpg"
-          href="https://quantum.mitrevdarko.dev/"
+          image="/Projects-Images/Nuvlo-Screenshot.png"
+          href="https://nuvlo.mitrevdarko.dev/"
         />
       </div>
       <div className="justify-center flex mt-10">

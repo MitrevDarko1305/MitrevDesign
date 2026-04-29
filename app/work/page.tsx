@@ -18,8 +18,8 @@ const PROJECTS = [
     title: "Fitness Landing Page",
     description: "Interactive personal trainer portfolio",
     tag: "Client Project",
-    image: "/Projects-Images/MikeXForce-Project.webp",
-    href: "https://mikexforce.mitrevdarko.dev",
+    image: "/Projects-Images/Mike-Project.webp",
+    href: "https://mike-athletics.mitrevdarko.dev",
   },
   {
     title: "Music Band Website",
@@ -46,11 +46,11 @@ const PROJECTS = [
   },
 
    {
-    title: "Aegis Security",
-    description: "High-end website concept for security firm.",
+    title: "Photography Landing Page",
+    description: "Landing website to display great moments captured on camera",
     tag: "Concept Project",
-    image: "/Projects-Images/Aegis-Project.webp",
-    href: "https://aegis-sicherheit.mitrevdarko.dev/",
+    image: "/Projects-Images/Photography-screenshot.png",
+    href: "https://photography.mitrevdarko.dev/",
   },
   // add more here...
 ];
