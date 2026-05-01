@@ -1,6 +1,6 @@
 export const projects = [
   {
-    projectVideo: "/highlightedimages//Nuvlo-Video.mp4",
+    projectVideo: "/highlightedimages//Nuvlo-New-Video-Imac.mp4",
     projectImage: "/highlightedimages/Nuvlo-Imac.png",
     projectTitle: "Nuvlo - Modern Digital Agency",
     projectYear: "2026",
