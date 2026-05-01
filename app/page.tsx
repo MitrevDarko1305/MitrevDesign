@@ -16,6 +16,9 @@ import LandingPageSection from "./components/LandingPageSection";
 import { trackEvent } from "@/lib/analytics";
 import Lenis from "lenis";
 import SmoothScroll from "./components/SmoothScroll";
+import HighlightProjects from "./components/HighligtsProjects";
+import {projects} from "@/data/highlightedprojects";
+
 
 
 
@@ -33,6 +36,7 @@ const hrefTo = useHrefTo();
       <SmoothScroll/>
       <Header/>
       <Hero />
+      <HighlightProjects projects={projects}/>
       <WorkWithUs/>
       <LandingPageSection/>
       <Services />
