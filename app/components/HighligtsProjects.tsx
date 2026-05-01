@@ -10,6 +10,7 @@ interface Project {
   projectYear: string;
   projectDescription: string;
   projectTags: string[];
+  projectUrl?: string
 }
 
 interface ProjectsSectionProps {
@@ -41,7 +42,7 @@ export default function HighlightProjects({ projects = [] }: ProjectsSectionProp
   };
 
     return (
-  <section id="projects" className="md:py-20 bg-white dark:bg-black overflow-hidden">
+  <section id="projects" className="md:py-20 bg-black overflow-hidden">
     
     {/* Header */}
     <div className="w-full pl-12 mx-auto px-6 md:mb-4 mb-8 flex items-end justify-between">
@@ -73,6 +74,7 @@ export default function HighlightProjects({ projects = [] }: ProjectsSectionProp
         <div key={index} className="snap-start shrink-0 w-[320px] md:w-[500px] lg:w-[500] mt-4">
           
           {/* Media */}
+          <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
           <div className="w-full overflow-hidden pl-6 md:pl-0">
             {project.projectVideo ? (
               <video src={project.projectVideo} autoPlay loop muted playsInline className="w-full h-full object-cover block"/>
@@ -80,6 +82,7 @@ export default function HighlightProjects({ projects = [] }: ProjectsSectionProp
               <img src={project.projectImage} alt={project.projectTitle} className="w-full h-full object-cover block"/>
             )}
           </div>
+          </a>
 
           {/* Info */}
           <div className="mt-8">

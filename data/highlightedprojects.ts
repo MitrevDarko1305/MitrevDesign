@@ -6,6 +6,7 @@ export const projects = [
     projectYear: "2026",
     projectDescription: "Full stack agency website, built with Next.js, EJS, and Tailwind.",
     projectTags: ["Next.js", "Tailwind", "TypeScript"],
+    projectUrl: "https://nuvlo.mitrevdarko.dev",
   },
 
   {
@@ -14,6 +15,7 @@ export const projects = [
     projectYear: "2026",
     projectDescription: "Check the weather in your region, check forecasts, maps and much more",
     projectTags: ["Node.js", "Tailwind", "Express", "EJS"],
+    projectUrl: "https://skycast.mitrevdarko.dev",
   },
 
   {
@@ -23,6 +25,7 @@ export const projects = [
     projectYear: "2026",
     projectDescription: "Discover movies by genre, actor, popularity and ratings — all in one place.",
     projectTags: ["Node.js", "Tailwind", "Express", "EJS"],
+    projectUrl: "https://cinemax.mitrevdarko.dev",
   },
 
    {
@@ -31,6 +34,7 @@ export const projects = [
     projectYear: "2025",
     projectDescription: "A full dental clinic website with 5 pages including booking form",
     projectTags: ["Next.js", "Tailwind", "React"],
+    projectUrl: "https://smilo-care.mitrevdarko.dev",
   },
 
   {
@@ -40,6 +44,7 @@ export const projects = [
     projectYear: "2025",
     projectDescription: "A full demo website presentation, before it goes live",
     projectTags: ["Next.js", "Tailwind", "React"],
+    projectUrl: "https://demo-version.mitrevdarko.dev",
   },
 
    {
@@ -48,5 +53,6 @@ export const projects = [
     projectYear: "2025",
     projectDescription: "A modern beauty salon website with booking,services and a clean elegant design",
     projectTags: ["Bootstrap", "Html"],
+    projectUrl: "https://siayvo.mitrevdarko.dev",
   },
 ];
