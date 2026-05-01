@@ -47,8 +47,8 @@ export default function HighlightProjects({ projects = [] }: ProjectsSectionProp
     {/* Header */}
     <div className="w-full pl-12 mx-auto px-6 md:mb-4 mb-8 flex items-end justify-between">
       <div>
-        <h2 className="text-3xl font-bold tracking-wide text-black dark:text-white">Project Highlights</h2>
-        <p className="text-black dark:text-white/70 mt-2 text-[14px]">Scroll to explore our work →</p>
+        <h2 className="text-3xl font-bold tracking-wide text-white">Project Highlights</h2>
+        <p className="text-white/50 mt-2 text-[14px]">Scroll to explore our work →</p>
       </div>
       <div className="flex gap-2 hidden md:flex">
        <button onClick={() => scroll(-1)} disabled={!canScrollLeft}
@@ -87,7 +87,7 @@ export default function HighlightProjects({ projects = [] }: ProjectsSectionProp
           {/* Info */}
           <div className="mt-8">
             <div className="flex items-center align-center mx-auto pl-12 justify-start gap-8 mb-1">
-              <h3 className="text-black dark:text-white font-bold text-lg">{project.projectTitle}</h3>
+              <h3 className="text-white  font-bold text-lg">{project.projectTitle}</h3>
               <span className="text-purple-400 ml-9 text-sm">{project.projectYear}</span>
             </div>
             <p className="text-white/50 text-[12px] mb-2 pl-12">{project.projectDescription}</p>
