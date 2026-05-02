@@ -1,24 +1,23 @@
 "use client"
-
 import React from "react";
-import FAQSection from "./components/FAQSection";
-import TeamSection from "./components/TeamSection";
-import CTASection from "./components/CTASection";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import { useHrefTo } from "./Use-href-hook";
-import WhatsAppFloatingButton from "./components/FloatingButtonWhatsApp";
-import ColumnPosts from "./components/MitrevDesignBlog";
-import TailWindTestimonial from "./components/MitrevDesignTestimonials"
-import WorkWithUs from "./components/SubscriptionSection/SubscriptionElement";
-import Newsletter from "./components/Newsletter";
-import LandingPageSection from "./components/LandingPageSection";
+import FAQSection from "../components/FAQSection";
+import TeamSection from "../components/TeamSection";
+import CTASection from "../components/CTASection";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import { useHrefTo } from "../Use-href-hook";
+import WhatsAppFloatingButton from "../components/FloatingButtonWhatsApp";
+import ColumnPosts from "../components/MitrevDesignBlog";
+import TailWindTestimonial from "../components/MitrevDesignTestimonials";
+import WorkWithUs from "../components/SubscriptionSection/SubscriptionElement";
+import Newsletter from "../components/Newsletter";
+import LandingPageSection from "../components/LandingPageSection";
 import { trackEvent } from "@/lib/analytics";
 import Lenis from "lenis";
-import SmoothScroll from "./components/SmoothScroll";
-import HighlightProjects from "./components/HighligtsProjects";
+import SmoothScroll from "../components/SmoothScroll";
+import HighlightProjects from "../components/HighligtsProjects";
 import {projects} from "@/data/highlightedprojects";
-
+import { useTranslations } from "next-intl";
 
 
 
@@ -59,25 +58,25 @@ const hrefTo = useHrefTo();
 
 
 function Hero() {
+  const t = useTranslations('hero');
   return (
     <section className="relative">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-20 md:grid-cols-2 md:pt-36 md:pb-16 pt-[6rem]">
         <div className="flex flex-col items-center text-center md:text-left md:items-start md:justify-center h-full">
           <p className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-300">
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
-            Available for new projects
+            {t('badge')}
           </p>
 
-          <h1 className="text-4xl font-black tracking-tight md:text-5xl">
-            Custom websites for {" "}
-            <span className="bg-gradient-to-r from-fuchsia-400 to-indigo-300 bg-clip-text font-black text-transparent">
-              small
-            businesses
-            </span>{" "}
-          </h1>
+         <h1 className="text-4xl font-black tracking-tight md:text-5xl">
+           {t('headline')}{" "} <br />
+           <span className="bg-gradient-to-r from-fuchsia-400 to-indigo-300 bg-clip-text font-black text-transparent">
+           {t('headline_colored')}
+           </span>{" "}
+         </h1>
 
           <p className="mt-4 max-w-xl text-zinc-300/90 md:text-lg">
-            So your next client can say yes before they even call
+            {t('subheadline')}
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -91,14 +90,14 @@ function Hero() {
                hover:-translate-y-[1px]
                active:translate-y-0"
             >
-              Get a free estimate
+              {t('cta_primary')}
             </a>
           <a
             href="#projects-1"
              onClick={() => trackEvent('hero_cta_click', { event_label: 'view_work' })} /* tracking events on google analytics */
             className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-center text-sm font-medium text-zinc-100 hover:bg-white/10"
             >
-            View work
+            {t('cta_secondary')}
             </a>
           </div>
 
@@ -117,24 +116,24 @@ function Hero() {
             <div className="rounded-[1.5rem] border border-white/10 bg-[#0a0b1f]/70 p-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium">Project snapshot</p>
-                  <p className="mt-1 text-xs text-zinc-300">What clients get</p>
+                  <p className="text-sm font-medium">{t('snapshot_title')}</p>
+                  <p className="mt-1 text-xs text-zinc-300">{t('snapshot_subtitle')}</p>
                 </div>
                 <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-300">
-                  7–14 days
+                   {t('snapshot_days')}
                 </span>
               </div>
 
-              <div className="mt-5 grid gap-3">
-                <CardLine label="Custom design" value=" Purpose-built" />
-                <CardLine label="Fast & reliable" value="Smooth & dependable" />
-                <CardLine label="Easy to grow" value="Designed to scale " />
+               <div className="mt-5 grid gap-3">
+                <CardLine label={t('snapshot_item1')} value={t('snapshot_item1_desc')} />
+                <CardLine label={t('snapshot_item2')} value={t('snapshot_item2_desc')} />
+                <CardLine label={t('snapshot_item3')} value={t('snapshot_item3_desc')} />
               </div>
 
               <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-4">
-                <p className="text-xs font-medium">Quick start</p>
+                <p className="text-xs font-medium">{t('quick_start')}</p>
                 <p className="mt-1 text-xs text-zinc-300">
-                  Send your idea — we’ll reply with a plan and a price range.
+                  {t('quick_start_desc')}
                 </p>
                 <a
                   href="mailto:mitrevdaro@gmail.com" target="blank"
@@ -145,7 +144,7 @@ function Hero() {
                    hover:-translate-y-[1px]
                    active:translate-y-0"
                 >
-                  Message us
+                  {t('message_us')}
                 </a>
               </div>
             </div>

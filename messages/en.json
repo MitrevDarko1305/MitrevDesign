@@ -1,21 +1,32 @@
 {
     "hero" : {
       "badge":  "Avaliable for new projects",
-      "headline": "Your website should be your best salesperson",
-      "subheadline": "We build custom sites that turn visitors into paying customers - delivered in 7-14 days",
+      "headline": "Websites that",
+      "headline_colored": "bring you clients",
+      "subheadline": "We build custom sites that turn visitors into paying customers",
       "cta_primary": "Get a free estimate",
       "cta_secondary": "View work",
-      "snapshot title": "Project snapshot",
-      "snapshot subtitle": "What clients get",
-      "snapshot days": "7-14 days",
-      "snapshot item1": "Custom design",
+      "snapshot_title": "Project snapshot",
+      "snapshot_subtitle": "What clients get",
+      "snapshot_days": "7-14 days",
+      "snapshot_item1": "Custom design",
        "snapshot_item1_desc": "Purpose-built",
-      "snapshot item2": "Fast & reliable",
-      "snapshot item2_desc": "Smooth & dependable",
-      "snapshot item3": "Easy to grow",
-      "snapshot item3_desc": "Designed to scale",
-      "quick start": "Quick start",
-      "quick start_desc": "Send your idea - we will reply with a plan and a price range",
+      "snapshot_item2": "Fast & reliable",
+      "snapshot_item2_desc": "Smooth & dependable",
+      "snapshot_item3": "Easy to grow",
+      "snapshot_item3_desc": "Designed to scale",
+      "quick_start": "Quick start",
+      "quick_start_desc": "Send your idea - we will reply with a plan and a price range",
       "message_us": "Message us"
-    }
+    },
+
+    "nav": {
+      "services": "Services",
+      "projects": "Projects",
+      "about": "About",
+      "team": "Team",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "cta": "Get a quote"
+}
 }

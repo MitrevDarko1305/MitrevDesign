@@ -1,5 +1,122 @@
 "use client";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import React from "react";
+import { useTranslations } from "next-intl";
+
+function useScrollDirection() {
+  const [dir, setDir] = React.useState<"up" | "down">("up");
+  const needsTopPaddingFix = React.useRef(false);
+  React.useEffect(() => {
+    const onResize = () => {
+      needsTopPaddingFix.current = window.innerWidth < 1400;
+      if (!needsTopPaddingFix.current) setDir("up");
+    };
+    onResize();
+    let lastY = window.scrollY;
+    let ticking = false;
+    const update = () => {
+      if (!needsTopPaddingFix.current) { ticking = false; return; }
+      const y = window.scrollY;
+      const delta = y - lastY;
+      if (Math.abs(delta) > 6) {
+        setDir(delta > 0 ? "down" : "up");
+        lastY = y;
+      }
+      ticking = false;
+    };
+    const onScroll = () => {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
+  return dir;
+}
+
+export default function Header() {
+  const t = useTranslations('nav');
+  const pathname = usePathname();
+  const router = useRouter();
+
+  // Detect current locale from pathname
+  const currentLocale = pathname.startsWith("/de") ? "de" : "en";
+
+  const toggleLanguage = () => {
+    if (currentLocale === "en") {
+      // Replace /en or / with /de
+      const newPath = pathname.replace(/^\/en/, "") || "/";
+      router.push(`/de${newPath === "/" ? "" : newPath}`);
+    } else {
+      // Replace /de with /en
+      const newPath = pathname.replace(/^\/de/, "") || "/";
+      router.push(`/en${newPath === "/" ? "" : newPath}`);
+    }
+  };
+
+  const onHome = pathname === "/" || pathname === "/en" || pathname === "/de";
+  const hrefTo = (id: string) => (onHome ? `#${id}` : `/#${id}`);
+  const dir = useScrollDirection();
+
+  return (
+    <header
+      className={[
+        "fixed inset-x-0 top-0 z-50",
+        "bg-[#070815]/60 backdrop-blur-xl border-b border-white/10",
+        "transition-[padding] duration-200 ease-out",
+        onHome && dir === "down" ? "pt-3" : "pt-0",
+      ].join(" ")}
+    >
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5">
+        <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight text-white">
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-fuchsia-500 font-black to-indigo-500 text-white shadow-sm">
+            M
+          </span>
+          <span className="font-black">MitrevDesign</span>
+        </Link>
+
+        <nav className="hidden items-center gap-6 text-sm text-zinc-300 md:flex">
+          <Link className="hover:text-violet-500 transition-colors duration-300" href={hrefTo("services")}>{t('services')}</Link>
+          <Link className="hover:text-violet-500 transition-colors duration-300" href={hrefTo("projects-1")}>{t('projects')}</Link>
+          <Link className="hover:text-violet-500 transition-colors duration-300" href={hrefTo("approach")}>{t('about')}</Link>
+          <Link className="hover:text-violet-500 transition-colors duration-300" href={hrefTo("team")}>{t('team')}</Link>
+          <Link className="hover:text-violet-500 transition-colors duration-300" href={hrefTo("faq")}>{t('faq')}</Link>
+          <Link className="hover:text-violet-500 transition-colors duration-300" href={hrefTo("book-a-call")}>{t('contact')}</Link>
+        </nav>
+
+        <div className="flex items-center gap-3">
+          {/* Language Toggle */}
+          <button
+            onClick={toggleLanguage}
+            className="flex items-center gap-1.5 rounded-lg cursor-pointer border border-white/10 px-3 py-1.5 text-xs font-semibold text-zinc-300 hover:text-white hover:border-white/30 transition-all duration-200"
+          >
+            {currentLocale === "en" ? "🇩🇪 DE" : "🇺🇸 EN"}
+          </button>
+
+          <Link
+            href={hrefTo("book-a-call")}
+            className="rounded-xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-4 py-2 text-sm font-black text-white shadow-sm hover:opacity-95
+              transition-all duration-300 ease-out
+              hover:from-fuchsia-600 hover:to-indigo-600
+              hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)]
+              hover:-translate-y-[1px]
+              active:translate-y-0"
+          >
+            {t('cta')}
+          </Link>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+/*
+"use client";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
@@ -117,3 +234,6 @@ export default function Header() {
     </header>
   );
 }
+
+*/
+
