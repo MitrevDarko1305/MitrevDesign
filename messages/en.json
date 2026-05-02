@@ -1,0 +1,21 @@
+{
+    "hero" : {
+      "badge":  "Avaliable for new projects",
+      "headline": "Your website should be your best salesperson",
+      "subheadline": "We build custom sites that turn visitors into paying customers - delivered in 7-14 days",
+      "cta_primary": "Get a free estimate",
+      "cta_secondary": "View work",
+      "snapshot title": "Project snapshot",
+      "snapshot subtitle": "What clients get",
+      "snapshot days": "7-14 days",
+      "snapshot item1": "Custom design",
+       "snapshot_item1_desc": "Purpose-built",
+      "snapshot item2": "Fast & reliable",
+      "snapshot item2_desc": "Smooth & dependable",
+      "snapshot item3": "Easy to grow",
+      "snapshot item3_desc": "Designed to scale",
+      "quick start": "Quick start",
+      "quick start_desc": "Send your idea - we will reply with a plan and a price range",
+      "message_us": "Message us"
+    }
+}

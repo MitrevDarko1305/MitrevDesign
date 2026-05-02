@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "badge": "Verfügbar für neue Projekte",
+    "headline": "Ihre Website sollte Ihr bester Verkäufer sein",
+    "subheadline": "Wir bauen maßgeschneiderte Websites, die Besucher in zahlende Kunden verwandeln — in 7–14 Tagen",
+    "cta_primary": "Kostenloses Angebot",
+    "cta_secondary": "Projekte ansehen",
+    "snapshot_title": "Projekt-Übersicht",
+    "snapshot_subtitle": "Was Kunden bekommen",
+    "snapshot_days": "7–14 Tage",
+    "snapshot_item1": "Individuelles Design",
+    "snapshot_item1_desc": "Maßgeschneidert",
+    "snapshot_item2": "Schnell & zuverlässig",
+    "snapshot_item2_desc": "Reibungslos & verlässlich",
+    "snapshot_item3": "Einfach skalierbar",
+    "snapshot_item3_desc": "Für Wachstum konzipiert",
+    "quick_start": "Schnellstart",
+    "quick_start_desc": "Schicken Sie uns Ihre Idee — wir antworten mit einem Plan und einer Preisspanne.",
+    "message_us": "Nachricht senden"
+  }
+}
