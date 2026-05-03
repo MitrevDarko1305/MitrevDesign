@@ -4,6 +4,7 @@ import { useState } from "react";
 import type { ReactNode } from "react";
 import { Linkedin, Instagram, Github } from "lucide-react";
 import VideoModal from "../components/VideoModal";
+import { useTranslations } from "next-intl";
 
 type TeamMember = {
   name: string;
@@ -62,6 +63,7 @@ function SocialIcon({
 
 export default function TeamSection() {
   const [openVideo, setOpenVideo] = useState(false);
+  const t = useTranslations('Team')
 
   // IMPORTANT: use EMBED URL (not watch?v=)
   const overviewEmbedUrl =
@@ -70,13 +72,12 @@ export default function TeamSection() {
   return (
     <section id="team" className="mx-auto max-w-3xl px-6 py-16 md:py-20 text-center md:text-left">
       <div className="mb-10 max-w-xxl">
-        <p className="text-xs font-medium text-zinc-300">Team</p>
+        <p className="text-xs font-medium text-zinc-300">{t('team_span')}</p>
         <h2 className="mt-2 text-3xl font-black tracking-tight md:text-4xl">
-          Small team. Full focus 
+          {t('team_title')}
         </h2>
         <p className="mt-3 text-sm text-zinc-300/90 md:text-base">
-          You’ll work directly with the people designing and building your
-          website — no layers, no handoffs
+          {t('team_desc')}
         </p>
       </div>
 
@@ -133,14 +134,14 @@ export default function TeamSection() {
 
       {/* Optional video link (discrete) */}
       <div className="mt-10 rounded-2xl border border-white/10 bg-white/5 p-5 flex items-center justify-between  ">
-        <p className="text-sm text-zinc-300">Prefer a quick introduction?</p>
+        <p className="text-sm text-zinc-300">{t('team_video_text')}</p>
 
         <button
           type="button"
           onClick={() => setOpenVideo(true)}
           className="mt-0 inline-flex text-sm font-medium text-violet-400 cursor-pointer hover:text-violet-300 transition-colors"
         >
-          Watch a 60-second overview →
+          {t('team_button')}
         </button>
       </div>
 

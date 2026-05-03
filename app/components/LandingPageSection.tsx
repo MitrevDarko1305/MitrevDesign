@@ -1,8 +1,10 @@
 "use client"
 import Link from "next/link"
 import { trackEvent } from "@/lib/analytics"
+import { useTranslations } from "next-intl"
 
 export default function LandingPageMockup() {
+  const t = useTranslations('LandingPage')
   return (
     <section className="relative overflow-hidden bg-neutral-950">
       {/* Hero */}
@@ -10,12 +12,12 @@ export default function LandingPageMockup() {
         {/* Text */}
         <div>
           <h1 className="text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-4xl">
-            Focused landing page
+            {t('landingtitle')}
             <br className="hidden sm:block" />
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-zinc-400">
-            A fast, conversion-focused landing page to launch, test, and capture leads — without committing to a full website system.
+           {t('landingdescription1')}
           </p>
 
           <div className="mt-10 justify-center md:justify-start flex flex-col gap-4 sm:flex-row">
@@ -29,7 +31,7 @@ export default function LandingPageMockup() {
               hover:-translate-y-[1px]
               active:translate-y-0"
             >
-              Start your landing page
+              {t('landingbutton1')}
             </Link>
 
             <Link
@@ -37,11 +39,11 @@ export default function LandingPageMockup() {
               onClick={() => trackEvent('landing_page_cta_click', { event_label: 'view_demo' })} /* tracking events for the button in analytics  */
               className="rounded-2xl border border-white/10 bg-white/5 px-5 py-3 text-center text-sm font-medium text-zinc-100 hover:bg-white/10"
             >
-              View Demo
+              {t('landingbutton2')}
             </Link>
           </div>
-          <p className="mt-4 text-zinc-400 text-sm">After checkout, you’ll receive a confirmation email and we’ll schedule a short consultation to get started.</p>
-           <p className="mt-4  text-[13px] text-zinc-200 border border-zinc-700 rounded-full py-1 px-3 inline-block">Complete landing page project – 599€</p>
+          <p className="mt-4 text-zinc-400 text-sm">{t('landingdescription2')}</p>
+           <p className="mt-4  text-[13px] text-zinc-200 border border-zinc-700 rounded-full py-1 px-3 inline-block">{t('landingprice')}</p>
         </div>
 
         {/* Mockup */}
@@ -60,21 +62,21 @@ export default function LandingPageMockup() {
         <div className="rounded-3xl border border-white/10  p-6 md:p-8 shadow-2xl bg-[#14141f]
   ">
           <h2 className="text-2xl text-center md:text-left font-black tracking-tight text-white">
-            What's included 
+            {t('floatingcardtitle')} 
           </h2>
 
          
           <p className="mt-4 max-w-2xl text-white/70">
-             – A streamlined landing page, built with efficiency and structured to grow when needed.
+             {t('floating_desc1')}
           </p>
           <p className="mt-1 max-w-2xl text-white/70">
-          – Clear layout designed to guide visitors without unnecessary complexity.
+          {t('floating_desc2')}
           </p>
           <p className="mt-1 max-w-2xl text-white/70">
-          – Clean, maintainable code delivered without wasted time or overhead.
+          {t('floating_desc3')}
           </p>
           <p className="mt-1 max-w-2xl text-white/70">
-          – Optimized for speed, responsiveness, and reliability.
+          {t('floating_desc4')}
           </p>
         </div>
       </div>

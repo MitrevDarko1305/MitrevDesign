@@ -1,7 +1,7 @@
 "use client";
-
 import { useRef, useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface Project {
   projectVideo?: string,
@@ -21,6 +21,8 @@ export default function HighlightProjects({ projects = [] }: ProjectsSectionProp
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const t = useTranslations('HighlightProjects');
+  const projectKeys = ['nuvlo', 'skycast', 'cinemax', 'smilo', 'clienthub', 'siayvo'];
 
   const checkScroll = () => {
     const el = scrollRef.current;
@@ -47,8 +49,8 @@ export default function HighlightProjects({ projects = [] }: ProjectsSectionProp
     {/* Header */}
     <div className="w-full pl-12 mx-auto px-6 md:mb-4 mb-4 flex items-end justify-between">
       <div>
-        <h2 className="text-3xl font-bold tracking-wide text-white">Project Highlights</h2>
-        <p className="text-white/50 mt-2 text-[14px]">Scroll to explore our work →</p>
+        <h2 className="text-3xl font-bold tracking-wide text-white">{t('projectheader')}</h2>
+        <p className="text-white/50 mt-2 text-[14px]">{t('projectsubheader')} →</p>
       </div>
       <div className="flex gap-2 hidden md:flex">
        <button onClick={() => scroll(-1)} disabled={!canScrollLeft}
@@ -87,10 +89,10 @@ export default function HighlightProjects({ projects = [] }: ProjectsSectionProp
           {/* Info */}
           <div className="mt-8">
             <div className="flex items-center align-center mx-auto pl-12 justify-start gap-8 mb-1">
-              <h3 className="text-white  font-bold text-lg">{project.projectTitle}</h3>
+              <h3 className="text-white  font-bold text-lg">{t(`${projectKeys[index]}_title`)}</h3>
               <span className="text-purple-400 ml-9 text-sm">{project.projectYear}</span>
             </div>
-            <p className="text-white/50 text-[12px] mb-2 pl-12">{project.projectDescription}</p>
+            <p className="text-white/50 text-[12px] mb-2 pl-12">{t(`${projectKeys[index]}_desc`)}</p>
             <div className="flex gap-2 flex-wrap pl-12">
               {project.projectTags.map((tag, i) => (
                 <span key={i} className="px-3 py-1 bg-black dark:bg-transparent dark:text-purple-400 text-[#f5f5f5] rounded-full text-xs border border-[#4F8EF7]/30">

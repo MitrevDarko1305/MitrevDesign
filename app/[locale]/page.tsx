@@ -18,7 +18,7 @@ import SmoothScroll from "../components/SmoothScroll";
 import HighlightProjects from "../components/HighligtsProjects";
 import {projects} from "@/data/highlightedprojects";
 import { useTranslations } from "next-intl";
-
+import { useLocale } from 'next-intl';
 
 
 export default function Page() {
@@ -198,19 +198,19 @@ function TextArea({ label, placeholder }: { label: string; placeholder: string }
 
 
 function Services() {
+  const t = useTranslations('Services')
   return (
     <section
       id="services"
       className="mx-auto max-w-6xl px-4 py-8 md:py-16 text-center md:text-left"
     >
       <div className="mb-10 max-w-2xl">
-        <p className="text-xs font-medium text-zinc-300">Services</p>
+        <p className="text-xs font-medium text-zinc-300">{t('service_span')}</p>
         <h2 className="mt-2 text-3xl font-black tracking-tight md:text-4xl">
-          Modern web solutions
+          {t('service_title')}
         </h2>
         <p className="mt-4 text-sm text-zinc-300/90 md:text-base">
-          We build custom websites for small businesses using the right approach —
-          clean custom code or Webflow — based on your goals and timeline.
+         {t('service_subtitle')}
         </p>
       </div>
 
@@ -218,22 +218,21 @@ function Services() {
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
         <div className="flex items-center justify-center md:justify-start gap-3">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code relative -top-[1px]"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
-          <h3 className="text-lg font-black">Website with custom code
+          <h3 className="text-lg font-black">{t("custom_title")}
           </h3>
           </div>
           <p className="mt-2 text-sm text-zinc-300/90">
-            Fully custom-built websites focused on performance, flexibility,
-            and long-term reliability.
+            {t("custom_subtitle")}
           </p>
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
         <div className="flex items-center justify-center md:justify-start gap-3">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-layout-grid-icon lucide-layout-grid relative -top-[1px]"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
-          <h3 className="text-lg font-black">Webflow website</h3>
+          <h3 className="text-lg font-black">{t('webflow_title')}</h3>
           </div>
           <p className="mt-2 text-sm text-zinc-300/90">
-            Clean, modern Webflow sites that are easy to update and quick to launch.
+            {t('webflow_subtitle')}
           </p>
         </div>
       </div>
@@ -278,33 +277,35 @@ function ProjectCard({ title, description, tag, image, href }: ProjectCardProps)
 
 
 function ProjectsSection() {
+  const locale = useLocale();
+  const t = useTranslations("SelectedProjects")
   return (
     <section className="mt-16 md:mt-16 max-w-6xl mx-auto px-5  " id="projects-1">
       <div className="mb-10 text-center md:text-left">
-        <h2 className="text-3xl font-black tracking-tight">Selected Projects</h2>
+        <h2 className="text-3xl font-black tracking-tight">{t('selected_title')}</h2>
         <p className="mt-2 max-w-xl mx-auto text-white/60 text-center md:text-left md:mx-0">
-           Focused selection of recent work.
+           {t('selected_subtitle')}
         </p>
       </div>
 
       <div className="grid grid-cols-1 text-center md:text-left gap-5 md:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
-          title="Cinemax - Movie App"
-          description="Explore, search and get info for your favourite shows"
+          title={t('selected_project_title1')}
+          description={t('selected_project_desc1')}
           tag="Express, Node.js"
           image="/Projects-Images/Cinemax-Screenshot.png"
           href="https://cinemax.mitrevdarko.dev"
         />
         <ProjectCard
-          title="Skycast App"
-          description="Biolingual support interactive maps, forecasts and much more..."
+          title={t('selected_project_title2')}
+          description={t('selected_project_desc2')}
           tag="Node.js"
           image="/Projects-Images/skycast.png"
           href="https://skycast.mitrevdarko.dev"
         />
         <ProjectCard
-          title="Premium Agency Website"
-          description="Fully functional custom code website design"
+          title={t('selected_project_title3')}
+          description={t('selected_project_desc3')}
           tag="Custom Code"
           image="/Projects-Images/Nuvlo-Screenshot.png"
           href="https://nuvlo.mitrevdarko.dev/"
@@ -312,7 +313,7 @@ function ProjectsSection() {
       </div>
       <div className="justify-center flex mt-10">
       <a
-        href="/work"
+        href={`/${locale}/work`}
         className="
          mt-10 inline-flex items-center justify-center 
         rounded-xl border border-white/10
@@ -320,7 +321,7 @@ function ProjectsSection() {
         transition-colors hover:bg-white/10
          "
       >
-  See all work
+  {t('selected_button')}
 </a>
 </div>
     </section>
@@ -329,6 +330,7 @@ function ProjectsSection() {
 
 
 function Approach() {
+  const t = useTranslations('Approach')
   return (
     <section id="approach" className="mx-auto max-w-6xl px-6 py-24 md:py-36 text-center md:text-left relative overflow-hidden" >
       <div className="pointer-events-none absolute inset-0 -z-10"/>
@@ -337,28 +339,28 @@ function Approach() {
       <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
         {/* Left */}
         <div>
-          <p className="text-xs font-medium text-zinc-300">Our approach</p>
+          <p className="text-xs font-medium text-zinc-300">{t('approach_span')}</p>
 
           <h2 className="mt-3 text-3xl font-black tracking-tight md:text-4xl">
-            Websites <span className="bg-gradient-to-r from-fuchsia-300/80 to-indigo-300/80 bg-clip-text text-transparent">  built </span> with purpose  and precision
+            {t('approach_title1')} <span className="bg-gradient-to-r from-fuchsia-300/80 to-indigo-300/80 bg-clip-text text-transparent">  {t('approach_title_span')} </span> {t('approach_title2')}
           </h2>
 
           <p className="mt-4 max-w-xl text-sm text-zinc-300/90 md:text-base">
-            We design and build high-performance websites that load fast, scale effortlessly, and stay clear from strategy to launch.
+            {t('approach_desc')}
           </p>
 
           <div className="mt-10 space-y-6 text-left">
             <ApproachItem
-              title="Performance first"
-              text="Fast load times, clean structure, and reliable foundations."
+              title={t('approach_item_title1')}
+              text={t('approach_item_text1')}
             />
             <ApproachItem
-              title="Built for conversion"
-              text="Clear messaging, strong hierarchy, and trust-focused design."
+              title={t('approach_item_title2')}
+              text={t('approach_item_text2')}
             />
             <ApproachItem
-              title="Easy to manage"
-              text="Webflow or custom code  builds that are simple to update."
+              title={t('approach_item_title3')}
+              text={t('approach_item_text3')}
             />
           </div>
         </div>
@@ -371,26 +373,26 @@ function Approach() {
             <div className="rounded-[1.5rem] border border-white/10 bg-[#0a0b1f]/70 p-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-medium">Project snapshot</p>
-                  <p className="mt-1 text-xs text-zinc-300">What you can expect</p>
+                  <p className="text-sm font-medium">{t('snapshot_title')}</p>
+                  <p className="mt-1 text-xs text-zinc-300">{t('snapshot_subtitle')}</p>
                 </div>
 
                 <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-zinc-300">
-                  7–14 days
+                  {t('snapshot_days')}
                 </span>
               </div>
 
               <div className="mt-5 grid gap-3">
-                <CardLine label="Strategy + structure" value="Clear plan" />
-                <CardLine label="Design system" value="Consistent UI" />
-                <CardLine label="Performance" value="Fast & clean" />
-                <CardLine label="Launch support" value="Smooth handoff" />
+                <CardLine label={t('card_label1')} value={t('card_value1')} />
+                <CardLine label={t('card_label2')} value={t('card_value2')} />
+                <CardLine label={t('card_label3')} value={t('card_value3')} />
+                <CardLine label={t('card_label4')} value={t('card_value4')} />
               </div>
 
               <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-4">
-                <p className="text-xs font-medium">Outcome</p>
+                <p className="text-xs font-medium">{t('card_title1')}</p>
                 <p className="mt-1 text-xs text-zinc-300">
-                  A premium site that builds trust and makes it easy for clients to take action.
+                  {t('card_title2')}
                 </p>
               </div>
             </div>

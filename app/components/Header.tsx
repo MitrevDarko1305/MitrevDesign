@@ -47,6 +47,8 @@ export default function Header() {
   const currentLocale = pathname.startsWith("/de") ? "de" : "en";
 
   const toggleLanguage = () => {
+    const scrollY = window.scrollY; // save current scroll position
+
     if (currentLocale === "en") {
       // Replace /en or / with /de
       const newPath = pathname.replace(/^\/en/, "") || "/";
@@ -56,6 +58,11 @@ export default function Header() {
       const newPath = pathname.replace(/^\/de/, "") || "/";
       router.push(`/en${newPath === "/" ? "" : newPath}`);
     }
+
+       // restore scroll position after navigation
+     setTimeout(() => {
+      window.scrollTo(0, scrollY);
+     }, 100);
   };
 
   const onHome = pathname === "/" || pathname === "/en" || pathname === "/de";

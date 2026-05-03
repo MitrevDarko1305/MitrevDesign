@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { trackEvent } from "@/lib/analytics";
+import { useTranslations } from "next-intl";
 
 type Post = {
   typeLabel: string; // Article / Video / Case Study
@@ -146,11 +147,15 @@ export type ColumnPostsProps = {
 };
 
 export default function ColumnPosts({
-  title = "Design that works",
-  subtitle = "Practical insights on clarity, UX, and high performing websites",
+  title,
+  subtitle,
   posts = DEFAULT_POSTS,
   className = "",
 }: ColumnPostsProps) {
+  const t = useTranslations('Blog');
+
+  const resolvedTitle = title ?? t('blog_header') ?? "Design that works"
+  const resolvedSubtitle = subtitle ?? t('blog_subheader') ?? "Practical insights on clarity, UX and high-performing websites"
   return (
     <section className={`relative bg-amber-100 px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28 ${className}`}>
       <div className="absolute inset-0" aria-hidden="true">
@@ -160,10 +165,10 @@ export default function ColumnPosts({
       <div className="relative mx-auto max-w-6xl">
         <div className="text-center">
           <h2 className="text-4xl font-black tracking-tight text-gray-900 ">
-            {title}
+            {resolvedTitle}
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-gray-500 sm:mt-4">
-            {subtitle}
+            {resolvedSubtitle}
           </p>
         </div>
 

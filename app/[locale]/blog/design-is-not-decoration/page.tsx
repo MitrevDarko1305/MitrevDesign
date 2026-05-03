@@ -1,7 +1,7 @@
 "use client";
 
-import Header from "../../components/Header";
-import BlogArticle from "../../components/BlogArticleComponent1";
+import Header from "@/app/components/Header";
+import BlogArticle from "@/app/components/BlogArticleComponent1";
 import CTASection from "@/app/components/CTASection";
 import Footer from "@/app/components/Footer";
 

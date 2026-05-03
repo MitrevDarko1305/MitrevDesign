@@ -1,9 +1,11 @@
 "use client";
+import { useTranslations } from "next-intl";
 import ContactForm from "./ContactForm";
 import { trackEvent } from "@/lib/analytics";
 
 
 export default function CTASection() {
+  const t = useTranslations('CTA')
   return (
     <section id="book-a-call" className="relative bg-slate-950 py-12 md:py-36 overflow-hidden">
       {/* ambient section glow */}
@@ -16,32 +18,32 @@ export default function CTASection() {
           <div className="lg:col-span-6">
             {/* ... left content unchanged ... */}
              <p className="text-xs font-medium text-zinc-300 text-center md:text-left">
-              Let&apos;s work together
+              {t('cta_span')}
             </p>
 
             <h2 className="mt-4 text-4xl font-black leading-[1.05] md:leading-tight text-white text-center md:text-left">
-              Websites{" "}
+              {t('cta_title1')}{" "}
               <span className="bg-gradient-to-r from-fuchsia-300/80 to-indigo-300/80 bg-clip-text text-transparent">
-                built
+                {t('cta_title_span')}
               </span>{" "}
-              to <span>convert</span>
+              <span>{t('cta_title2')}</span>
             </h2>
 
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/60 text-center md:text-left">
-              A short call to clarify scope, timing, and next steps.
+             {t('cta_desc')}
             </p>
              <div className="mt-10 space-y-6">
               <ApproachItem
-                title="Performance first"
-                text="Fast load times, clean structure, and reliable foundations."
+                title={t('cta_approach_title1')}
+                text={t('cta_approach_text1')}
               />
               <ApproachItem
-                title="Built for conversion"
-                text="Clear messaging, strong hierarchy, and trust-focused design."
+                title={t('cta_approach_title2')}
+                text={t('cta_approach_text2')}
               />
               <ApproachItem
-                title="Easy to manage"
-                text="Webflow or custom code builds that are simple to update."
+                title={t('cta_approach_title3')}
+                text={t('cta_approach_text3')}
               />
             </div>
           </div>
@@ -56,12 +58,12 @@ export default function CTASection() {
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <p className="text-sm font-medium text-white">
-                        Request a call
+                        {t('cta_right_span1')}
                       </p>
                     </div>
 
                     <span className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/70">
-                      30 min
+                      {t('cta_right_span2')}
                     </span>
                   </div>
 

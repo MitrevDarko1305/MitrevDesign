@@ -1,6 +1,7 @@
 "use client";
 import type { FormEvent } from "react";
 import { trackEvent } from "@/lib/analytics";
+import { useTranslations } from "next-intl";
 
 
 export default function ContactForm() {
@@ -30,7 +31,8 @@ export default function ContactForm() {
       alert(data.error || "Something went wrong.");
     }
   }
-
+   
+  const t = useTranslations('CTA')
   return (
     <form className="mt-5 space-y-3" onSubmit={onSubmit}>
       {/* Honeypot */}
@@ -81,18 +83,18 @@ export default function ContactForm() {
           defaultValue="2-4w"
           className="mt-1 w-full appearance-none cursor-pointer rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white outline-none focus:border-white/20"
         >
-          <option value="asap">ASAP</option>
-          <option value="2-4w">2–4 weeks</option>
-          <option value="1-2m">1–2 months</option>
-          <option value="flexible">Flexible</option>
+          <option value="asap">{t('form_value1')}</option>
+          <option value="2-4w">{t('form_value2')}</option>
+          <option value="1-2m">{t('form_value3')}</option>
+          <option value="flexible">{t('form_value4')}</option>
         </select>
       </div>
 
       <div>
-        <label className="text-[11px] text-white/45">Short note (optional)</label>
+        <label className="text-[11px] text-white/45">{t('form_note')} (optional)</label>
         <input
           name="note"
-          placeholder="What do you need help with?"
+          placeholder={t('form_placeholder')}
           className="mt-1 w-full rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-2.5 text-sm text-white placeholder:text-white/25 outline-none focus:border-white/20"
         />
       </div>
@@ -102,7 +104,7 @@ export default function ContactForm() {
           type="submit"
           className="flex-1 rounded-2xl text-center border border-white/10 bg-white/5 px-4 py-3 text-sm font-black text-white hover:bg-white/10 transition"
         >
-          Send request
+          {t('form_button1')}
         </button>
 
         <a
@@ -112,12 +114,12 @@ export default function ContactForm() {
           onClick={() => trackEvent('book_a_call_click', { event_label: 'calendly' })}
           className="flex-1 rounded-2xl px-4 py-3 text-center text-sm font-black text-white bg-gradient-to-br from-fuchsia-500 to-indigo-500 shadow-sm transition-all duration-300 ease-out hover:from-fuchsia-600 hover:to-indigo-600 hover:shadow-[0_10px_30px_rgba(168,85,247,0.20)] hover:-translate-y-[1px] active:translate-y-0"
         >
-          Book a call
+          {t('form_button2')}
         </a>
       </div>
 
-      <p className="text-center text-xs text-white/40">Just a conversation</p>
-       <p className="text-center text-xs text-white/40">We will never share your details 🔐</p>
+      <p className="text-center text-xs text-white/40">{t('form_desc1')}</p>
+       <p className="text-center text-xs text-white/40">{t('form_desc2')}</p>
     </form>
   );
 }

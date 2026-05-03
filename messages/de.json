@@ -28,5 +28,201 @@
   "faq": "FAQ",
   "contact": "Kontakt",
   "cta": "Angebot anfragen"
+},
+
+"HighlightProjects": 
+{
+"projectheader": "Projekt Highlights",
+"projectsubheader":"Scroll um unsere Projekte zu erkunden",
+"nuvlo_title": "Nuvlo - Moderne Digitalagentur",
+"nuvlo_desc": "Full-Stack Agentur-Website, gebaut mit Next.js, EJS und Tailwind.",
+"skycast_title": "Skycast - Wetter App",
+"skycast_desc": "Wetter in deiner Region, Vorhersagen, Karten und vieles mehr",
+"cinemax_title": "Cinemax - Film App",
+"cinemax_desc": "Filme nach Genre, Schauspieler, Beliebtheit und Bewertung entdecken.",
+"smilo_title": "Smilo-Care - Zahnklinik",
+"smilo_desc": "Vollständige Zahnklinik-Website mit 5 Seiten und Buchungsformular",
+"clienthub_title": "Client Hub - Präsentationen",
+"clienthub_desc": "Eine Demo-Website-Präsentation vor dem Live-Gang",
+"siayvo_title": "Siayvo - Schönheitssalon",
+"siayvo_desc": "Moderner Schönheitssalon mit Buchung, Leistungen und elegantem Design"
+},
+
+"WorkwithUs": {
+  "span_quote1": "Die meisten kleinen Unternehmen sehen aus, als wäre ihre Website an einem Nachmittag mit einem kostenlosen Template gebaut worden.",
+  "span_quote2": "Das kostet Sie Kunden, bevor Sie auch nur ein Wort gesprochen haben",
+  "work_title": "So arbeiten wir zusammen",
+  "service_title1": "Website-System",
+  "service_title1_desc": "Aktualisieren Sie Ihre Website",
+  "service_title1_desc2": " selbst – kein Entwickler nötig",
+  "service_button": "Mehr erfahren →",
+  "service_title2": "Aufbau & Support",
+  "service_title2_desc": "Wir kümmern uns um alles. Sie führen Ihr Unternehmen",
+  "service_title3": "Wartung",
+  "service_title3_desc": "Ihre Website bricht nie zusammen – wir sorgen dafür"
+},
+
+"LandingPage": {
+  "landingtitle": "Fokussierte Landing Page",
+  "landingdescription1": "Eine schnelle, conversion-optimierte Landing Page zum Starten, Testen und Leads sammeln — ohne sich auf ein komplettes Website-System festzulegen.",
+  "landingbutton1": "Landing Page starten",
+  "landingbutton2": "Demo ansehen",
+  "landingdescription2": "Nach dem Kauf erhalten Sie eine Bestätigungs-E-Mail und wir vereinbaren ein kurzes Erstgespräch.",
+  "landingprice": "Komplettes Landing Page Projekt - 599€",
+  "floatingcardtitle": "Was enthalten ist",
+  "floating_desc1": "- Eine schlanke Landing Page, effizient gebaut und strukturiert für zukünftiges Wachstum.",
+  "floating_desc2": "- Klares Layout, das Besucher gezielt führt — ohne unnötige Komplexität.",
+  "floating_desc3": "- Sauberer, wartbarer Code — ohne Zeitverschwendung oder Overhead.",
+  "floating_desc4": "Optimiert für Geschwindigkeit, Responsivität und Zuverlässigkeit."
+},
+
+"Services": {
+  "service_span": "Leistungen",
+  "service_title": "Moderne Web-Lösungen",
+  "service_subtitle": "Wir bauen maßgeschneiderte Websites für kleine Unternehmen — mit dem richtigen Ansatz: sauberer eigener Code oder Webflow — je nach Ihren Zielen und Ihrem Zeitplan.",
+  "custom_title": "Website mit eigenem Code",
+  "custom_subtitle": "Vollständig individuell entwickelte Websites mit Fokus auf Performance, Flexibilität und langfristige Zuverlässigkeit.",
+  "webflow_title": "Webflow Website",
+  "webflow_subtitle": "Moderne, saubere Webflow-Seiten, die einfach zu aktualisieren und schnell live zu bringen sind."
+},
+
+"SelectedProjects": {
+  "selected_title": "Ausgewählte Projekte",
+  "selected_subtitle": "Eine fokussierte Auswahl aktueller Arbeiten",
+  "selected_button": "Alle Projekte ansehen",
+
+    "selected_project_title1": "Cinemax - Film App",
+      "selected_project_desc1": "Filme entdecken, suchen und Infos zu deinen Lieblingsserien finden",
+
+      "selected_project_title2": "Skycast App",
+      "selected_project_desc2": "Zweisprachig, interaktive Karten, Wettervorhersagen und vieles mehr",
+
+      "selected_project_title3": "Nuvlo - Premium Agentur Website",
+      "selected_project_desc3": "Von Grund auf handgecoded — keine Templates, nur sauberer moderner Code"
+},
+
+"Approach": {
+  "approach_span": "Unser Ansatz",
+  "approach_title1": "Websites",
+  "approach_title_span": "gebaut",
+  "approach_title2": "mit Zweck und Präzision",
+  "approach_desc": "Wir gestalten und entwickeln leistungsstarke Websites, die schnell laden, mühelos skalieren und von der Strategie bis zum Launch klar strukturiert bleiben.",
+  
+  "approach_item_title1": "Performance zuerst",
+  "approach_item_text1": "Schnelle Ladezeiten, saubere Struktur und zuverlässige Grundlagen.",
+
+  "approach_item_title2": "Für Conversions gebaut",
+  "approach_item_text2": "Klare Botschaften, starke Hierarchie und vertrauensorientiertes Design.",
+
+  "approach_item_title3": "Einfach zu verwalten",
+  "approach_item_text3": "Webflow oder eigener Code — Builds, die einfach zu aktualisieren sind.",
+
+  "snapshot_title": "Projekt-Übersicht",
+  "snapshot_subtitle": "Was Kunden bekommen",
+  "snapshot_days": "7–14 Tage",
+
+  "card_label1": "Strategie + Struktur",
+  "card_value1": "Klarer Plan",
+  "card_label2": "Design-System",
+  "card_value2": "Konsistentes UI",
+  "card_label3": "Performance",
+  "card_value3": "Schnell & sauber",
+  "card_label4": "Launch-Support",
+  "card_value4": "Reibungslose Übergabe",
+
+  "card_title1": "Ergebnis",
+  "card_title2": "Eine premium Website, die Vertrauen aufbaut und es Kunden leicht macht, zu handeln."
+},
+
+"FAQ": {
+  "faq_span": "FAQ",
+  "faq_title": "Häufig gestellte Fragen",
+  "faq_desc": "Klare Antworten bevor wir zusammenarbeiten",
+  "faq_span2": "Noch Fragen?",
+  "faq_button": "Schnell eine E-Mail senden →",
+
+  "faq_1": "Wie lange dauert ein typisches Projekt?",
+  "faq_1_answer": "Die meisten Projekte dauern zwischen 7–14 Tagen, je nach Umfang, Bereitstellung der Inhalte und Feedback-Geschwindigkeit.",
+  "faq_2": "Bauen Sie mit eigenem Code oder Webflow?",
+  "faq_2_answer": "Wir wählen den richtigen Ansatz je nach Projekt — eigener Code für Flexibilität und Performance, Webflow für Schnelligkeit und einfache Verwaltung.",
+  "faq_3": "Kann ich die Website nach dem Launch selbst aktualisieren?",
+  "faq_3_answer": "Ja, wir bauen Websites so, dass sie einfach zu verwalten sind — entweder über das Webflow CMS oder sauberen, dokumentierten Code.",
+  "faq_4": "Bieten Sie laufenden Support an?",
+  "faq_4_answer": "Wir bieten optionalen Support nach dem Launch an — für Updates, Verbesserungen und langfristiges Wachstum.",
+  "faq_5": "Wie funktioniert die Zahlung?",
+  "faq_5_answer": "Wir verlangen 50% im Voraus und 50% bei Lieferung. Wir akzeptieren Banküberweisung, PayPal und Karte über Stripe.",
+  "faq_6": "Gehört mir die Website nach der Fertigstellung?",
+  "faq_6_answer": "Ja — 100%. Sie erhalten das vollständige Eigentum an Code, Domain und Hosting. Keine Vertragsbindung.",
+  "faq_7": "Wie viele Überarbeitungen sind inbegriffen?",
+  "faq_7_answer": "Jedes Projekt beinhaltet bis zu 3 Überarbeitungsrunden. Wir arbeiten eng mit Ihnen zusammen, sodass Änderungen meist minimal sind."
+},
+
+"Team": {
+  "team_span": "team",
+  "team_title": "Kleines Team. Voller Fokus.",
+  "team_desc": "Sie arbeiten direkt mit den Menschen, die Ihre Website gestalten und entwickeln. Keine Zwischenstufen, keine Übergaben.",
+  "team_video_text": "Lieber eine kurze Vorstellung?",
+  "team_button": "60-Sekunden-Überblick ansehen →"
+},
+
+"Testimonial": {
+  "testimonial_title1": "Was unsere",
+  "testimonial_span_title": "kunden",
+  "testimonial_title2": "sagen",
+  "span1": "Der Kundenservice war während des gesamten Projekts hervorragend.",
+  "span2": "Sie haben genau auf meine Wünsche geachtet und eine moderne, professionelle Website gestaltet, die perfekt zu meinem Unternehmen passt. Für die Qualität der Arbeit ist das Preis-Leistungs-Verhältnis wirklich beeindruckend.",
+  "testimonial_client1": "Mark Eugene",
+  "client_proffesion1": "Personal Trainer",
+  "span3": "Im Namen der gesamten",
+  "span4": "Band können wir sagen, dass die Zusammenarbeit mit MitrevDesign eine großartige Erfahrung war. Professionelles Team, klare Kommunikation und eine hochwertige Website, pünktlich geliefert. Sehr empfehlenswert.",
+  "testimonial_client2": "Classico Band MK",
+  "client_proffesion2": "Musik band",
+  "span5": "Sehr professionell und fantastische Designs,",
+  "span6": "präzise und sauber. Tolle Kommunikation und schnelle Lieferung. Würde definitiv wieder zusammenarbeiten.",
+  "testimonial_client3": "Mykhailo Tretyak",
+  "client_proffesion3": "Social-Media-Analyst"
+},
+
+ "CTA": {
+  "cta_span": "Lassen Sie uns zusammenarbeiten",
+  "cta_title1": "Websites",
+  "cta_title_span": "die",
+  "cta_title2": "konvertieren",
+
+  "cta_desc": "Ein kurzes Gespräch zur Klärung von Umfang, Zeitplan und nächsten Schritten.",
+  "cta_approach_title1": "Performance zuerst",
+  "cta_approach_text1": "Schnelle Ladezeiten, saubere Struktur und zuverlässige Grundlagen.",
+  "cta_approach_title2": "Für Conversions gebaut",
+  "cta_approach_text2": "Klare Botschaften, starke Hierarchie und vertrauensorientiertes Design.",
+  "cta_approach_title3": "Einfach zu verwalten",
+  "cta_approach_text3": "Webflow oder eigener Code — Builds, die einfach zu aktualisieren sind.",
+
+  "cta_right_span1": "Gespräch anfragen",
+  "cta_right_span2": "30 min",
+
+  "form_value1": "So schnell wie möglich",
+  "form_value2": "2-4 Wochen",
+  "form_value3": "1-2 Monate",
+  "form_value4": "Flexibel",
+  "form_note": "Kurze Nachricht",
+  "form_placeholder": "Wobei können wir Ihnen helfen?",
+  "form_button1": "Anfrage senden",
+  "form_button2": "Gespräch buchen",
+  "form_desc1": "Nur ein Gespräch",
+  "form_desc2": "Wir teilen Ihre Daten niemals weiter 🔐"
+},
+
+"Blog": {
+  "blog_header": "Design das funktioniert",
+  "blog_subheader": "Praktische Einblicke zu Klarheit, UX und leistungsstarken Websites"
+},
+
+"Footer": {
+  "footer_title1": "BEREIT",
+  "footer_title2": "ZU WACHSEN?",
+  "footer_span1": "Websites die vertrauen gewinnen",
+  "footer_span2": "Verfügbar für neue Projekte",
+  "footer_link": "Unsere Arbeit ansehen",
+  "footer_built": "Erstellt mit Next.js"
 }
 }

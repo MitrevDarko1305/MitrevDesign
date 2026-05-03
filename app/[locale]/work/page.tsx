@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-import Header from "../components/Header";
-import CTASection from "../components/CTASection";
-import Footer from "../components/Footer";
+import Header from "@/app/components/Header";
+import CTASection from "@/app/components/CTASection";
+import Footer from "@/app/components/Footer";
 
 
 
