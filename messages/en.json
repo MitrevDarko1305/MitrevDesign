@@ -1,4 +1,12 @@
 {
+    "Banner": {
+    "badge": "Launch offer",
+    "text": "Get 20% off your first project —",
+    "highlight": "ends May 31st",
+    "cta": "Claim now"
+   },
+  
+  
     "hero" : {
       "badge":  "Avaliable for new projects",
       "headline": "Websites that",
@@ -103,6 +111,36 @@
 
       "selected_project_title3": "Nuvlo - Premium Agency Website",
       "selected_project_desc3": "Hand-coded from the ground up — no templates, no shortcuts, just clean modern code"
+    },
+
+    "WorkPage": {
+      "back_button": "← back",
+      "work_title": "Selected Projects",
+      "work_desc": "A broader selection of projects, templates and concepts",
+      
+      "title": "Omnifood",
+      "desc": "Order your food with simple click",
+      "tag": "Concept Project",
+
+      "fitness_title": "Fitness Landing Page",
+      "fitness_desc": "Interactive personal trainer portfolio",
+      "fitness_tag": "Client Project",
+
+      "music_title": "Music Band Website",
+      "music_desc": "Client website for a live band",
+      "music_tag": "Client Project",
+
+      "texas_title": "Texas Steakhouse",
+      "texas_desc": "Bold - smoky steakhouse concept",
+      "texas_tag": "Concept Project",
+
+      "siayvo_title": "Siayvo",
+      "siayvo_desc": "Website concept for a glamour beauty studio",
+      "siayvo_tag": "Concept Project",
+
+       "photography_title": "Photography Landing Page",
+       "photography_desc": "Landing website to display great moments captured on camera",
+       "photography_tag": "Concept Project"
     },
 
     "Approach": {
@@ -240,7 +278,7 @@
 
     "Footer": {
       "footer_title1": "READY",
-      "footer_title2": "TO SCALE?",
+      "footer_title2": "TO GROW?",
       "footer_span1": "Designing websites that earn trust",
       "footer_span2": "Avaliable for new projects",
       "footer_link": "View our work",

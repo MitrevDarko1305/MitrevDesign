@@ -1,5 +1,5 @@
 
-import RotatingCubeHero from "@/app/Animations/RotatingCubePages";
+import  RotatingCubeHero  from "@/app/Animations/RotatingCubePages";
 import FAQWebSystem from "@/app/components/FAQWebSystem";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";

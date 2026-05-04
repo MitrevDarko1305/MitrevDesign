@@ -72,7 +72,7 @@ export default function Header() {
   return (
     <header
       className={[
-        "fixed inset-x-0 top-0 z-50 ",
+        "fixed inset-x-0 top-0 z-50",
         "bg-[#070815]/60 backdrop-blur-xl border-b border-white/10",
         "transition-[padding] duration-200 ease-out",
         onHome && dir === "down" ? "pt-0" : "pt-0",

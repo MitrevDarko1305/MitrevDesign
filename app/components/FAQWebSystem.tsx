@@ -25,6 +25,18 @@ const faqs = [
     answer:
       "Ongoing support and maitntenance can be added later if needed.You are never locked in, but support is avaliable when required",
   },
+
+   {
+    question: "How long until my website is live?",
+    answer:
+      "Most website system projects go live within 7-14 days from the start date, depending on how quickly you provide content and feedback",
+  },
+
+   {
+    question: "Do i need any technical knowledge to manage my site?",
+    answer:
+      "No. The CMS is built to be simple — if you can write an email, you can update your website. No coding required.",
+  },
   
 ];
 
@@ -32,7 +44,7 @@ export default function FAQWebSystem() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="mx-auto max-w-4xl px-4 pt-2 pb-10 md:py-20">
+    <section id="faq" className="mx-auto max-w-4xl px-4 pt-2 pb-10 md:pt-20 md:pb-8">
       <div className="mb-10 text-center">
         <p className="text-xs font-medium text-zinc-400">FAQ</p>
         <h2 className="mt-2 text-3xl font-semibold text-white tracking-tight md:text-4xl">
@@ -43,7 +55,7 @@ export default function FAQWebSystem() {
         </p>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-2">
         {faqs.map((faq, index) => {
           const isOpen = openIndex === index;
 
@@ -51,12 +63,12 @@ export default function FAQWebSystem() {
             <button
               key={index}
               onClick={() => setOpenIndex(isOpen ? null : index)}
-              className="w-full text-left cursor-pointer rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10"
+              className="w-full text-left cursor-pointer rounded-sm border border-white/10 bg-white/5 p-5 transition hover:bg-white/10"
             >
               <div className="flex items-center justify-between">
-                <span className="font-medium text-zinc-400">{faq.question}</span>
+                <span className="font-black text-white">{faq.question}</span>
                 <ChevronDown
-                  className={`h-5 w-5 text-zinc-400 transition-transform ${
+                  className={`h-5 w-5 text-white transition-transform ${
                     isOpen ? "rotate-180" : ""
                   }`}
                 />

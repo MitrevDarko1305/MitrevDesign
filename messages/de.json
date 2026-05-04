@@ -1,4 +1,11 @@
 {
+  "Banner": {
+  "badge": "Einführungsangebot",
+  "text": "20% Rabatt auf Ihr erstes Projekt —",
+  "highlight": "endet am 31. Mai",
+  "cta": "Jetzt sichern"
+},
+  
   "hero": {
     "badge": "Verfügbar für neue Projekte",
     "headline": "Websites die",
@@ -99,6 +106,36 @@
 
       "selected_project_title3": "Nuvlo - Premium Agentur Website",
       "selected_project_desc3": "Von Grund auf handgecoded — keine Templates, nur sauberer moderner Code"
+},
+
+"WorkPage": {
+  "back_button": "← Zurück",
+  "work_title": "Ausgewählte Projekte",
+  "work_desc": "Eine breitere Auswahl an Projekten, Templates und Konzepten",
+
+  "title": "Omnifood",
+  "desc": "Essen mit einem einfachen Klick bestellen",
+  "tag": "Konzept-projekt",
+
+  "fitness_title": "Fitness Landing Page",
+  "fitness_desc": "Interaktives Portfolio für einen Personal Trainer",
+  "fitness_tag": "Kunden-projekt",
+
+  "music_title": "Musik-Band Website",
+  "music_desc": "Kundenwebsite für eine Live-Band",
+  "music_tag": "Kunden-projekt",
+
+  "texas_title": "Texas Steakhouse",
+  "texas_desc": "Ausdrucksstarkes, rauchiges Steakhouse-Konzept",
+  "texas_tag": "Konzept-projekt",
+
+  "siayvo_title": "Siayvo",
+  "siayvo_desc": "Website-Konzept für ein glamouröses Beauty-Studio",
+  "siayvo_tag": "Konzept-projekt",
+
+  "photography_title": "Fotografie Landing Page",
+  "photography_desc": "Landing Page zur Präsentation großartiger Momente",
+  "photography_tag": "Konzept-projekt"
 },
 
 "Approach": {
