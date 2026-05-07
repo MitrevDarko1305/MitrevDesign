@@ -1,87 +1,47 @@
+"use client"
 import Link from "next/link";
-
 import Header from "@/app/components/Header";
 import CTASection from "@/app/components/CTASection";
 import Footer from "@/app/components/Footer";
+import { useTranslations } from "next-intl";
 
-
-
-const PROJECTS = [
-  {
-    title: "Omnifood",
-    description: "Order your food with simple click",
-    tag: "Concept Project",
-    image: "/Projects-Images/Omnifood-Project-2.webp",
-    href: "https://omnifood.mitrevdarko.dev",
-  },
-  {
-    title: "Fitness Landing Page",
-    description: "Interactive personal trainer portfolio",
-    tag: "Client Project",
-    image: "/Projects-Images/Mike-Project.webp",
-    href: "https://mike-athletics.mitrevdarko.dev",
-  },
-  {
-    title: "Music Band Website",
-    description: "Client website for a live band",
-    tag: "Client Project",
-    image: "/Projects-Images/Classico-Band-Project.webp",
-    href: "https://classico-band.mitrevdarko.dev",
-  },
-
-   {
-    title: "Texas Steakhouse",
-    description: "Bold - smoky steakhouse concept",
-    tag: "Concept Project",
-    image: "/Projects-Images/Texas-Project.webp",
-    href: "https://texas-steakhouse.mitrevdarko.dev",
-  },
-
-   {
-    title: "Siayvo",
-    description: "Website concept for a glamour beauty studio",
-    tag: "Concept Project",
-    image: "/Projects-Images/Siayvo-Project-2.webp",
-    href: "https://siayvo.mitrevdarko.dev",
-  },
-
-   {
-    title: "Photography Landing Page",
-    description: "Landing website to display great moments captured on camera",
-    tag: "Concept Project",
-    image: "/Projects-Images/Photography-screenshot.png",
-    href: "https://photography.mitrevdarko.dev/",
-  },
-  // add more here...
-];
 
 export default function WorkPage() {
+  const t = useTranslations('WorkPage')
+  const PROJECTS = [
+  { title: t('title'), description: t('desc'), tag: t('tag'), image: "/Projects-Images/Omnifood-Project-2.webp", href: "https://omnifood.mitrevdarko.dev" },
+  { title: t('fitness_title'), description: t('fitness_desc'), tag: t('fitness_tag'), image: "/Projects-Images/Mike-Project.webp", href: "https://mike-athletics.mitrevdarko.dev" },
+  { title: t('music_title'), description: t('music_desc'), tag: t('music_tag'), image: "/Projects-Images/Classico-Band-Project.webp", href: "https://classico-band.mitrevdarko.dev" },
+  { title: t('texas_title'), description: t('texas_desc'), tag: t('texas_tag'), image: "/Projects-Images/Texas-Project.webp", href: "https://texas-steakhouse.mitrevdarko.dev" },
+  { title: t('siayvo_title'), description: t('siayvo_desc'), tag: t('siayvo_tag'), image: "/Projects-Images/Siayvo-Project-2.webp", href: "https://siayvo.mitrevdarko.dev" },
+  { title: t('photography_title'), description: t('photography_desc'), tag: t('photography_tag'), image: "/Projects-Images/Photography-screenshot.png", href: "https://photography.mitrevdarko.dev/" },
+ ];
   return (
     <>
       <Header />
-    <main className="mx-auto bg-[#070815] max-w-[1120px] px-6 py-20" id="projects"> 
+    <main className="mx-auto bg-[#070815] lg:max-w-[1320px] md:max-w-[1120] px-6 py-20" id="projects"> 
       <div className="mb-10">
         <Link href="/" className="text-sm text-white/60 hover:text-white">
-          ← Back
+         {t('back_button')}
         </Link>
 
         <h1 className="mt-4 text-3xl font-medium  tracking-tight text-white">
-          Selected Projects
+          {t('work_title')}
         </h1>
         <p className="mt-2 max-w-xl text-white/60">
-          A broader selection of projects, templates, and concepts.
+          {t('work_desc')}
         </p>
       </div>
 
       {/* Denser grid than homepage */}
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2">
         {PROJECTS.map((p) => (
           <a
             key={p.title}
             href={p.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex h-full w-full flex-col overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all duration-300 hover:border-white/20"
+            className="group flex h-full w-full flex-col overflow-hidden rounded-sm border border-white/10 bg-white/5 transition-all duration-300 hover:border-white/20"
           >
             <div className="aspect-[4/3] overflow-hidden">
               <img

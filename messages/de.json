@@ -1,4 +1,11 @@
 {
+  "Banner": {
+  "badge": "Einführungsangebot",
+  "text": "40% Rabatt auf Ihr erstes Projekt —",
+  "highlight": "endet am 31. Mai",
+  "cta": "Jetzt sichern"
+},
+  
   "hero": {
     "badge": "Verfügbar für neue Projekte",
     "headline": "Websites die",
@@ -99,6 +106,161 @@
 
       "selected_project_title3": "Nuvlo - Premium Agentur Website",
       "selected_project_desc3": "Von Grund auf handgecoded — keine Templates, nur sauberer moderner Code"
+},
+
+"WorkPage": {
+  "back_button": "← Zurück",
+  "work_title": "Ausgewählte Projekte",
+  "work_desc": "Eine breitere Auswahl an Projekten, Templates und Konzepten",
+
+  "title": "Omnifood",
+  "desc": "Essen mit einem einfachen Klick bestellen",
+  "tag": "Konzept-projekt",
+
+  "fitness_title": "Fitness Landing Page",
+  "fitness_desc": "Interaktives Portfolio für einen Personal Trainer",
+  "fitness_tag": "Kunden-projekt",
+
+  "music_title": "Musik-Band Website",
+  "music_desc": "Kundenwebsite für eine Live-Band",
+  "music_tag": "Kunden-projekt",
+
+  "texas_title": "Texas Steakhouse",
+  "texas_desc": "Ausdrucksstarkes, rauchiges Steakhouse-Konzept",
+  "texas_tag": "Konzept-projekt",
+
+  "siayvo_title": "Siayvo",
+  "siayvo_desc": "Website-Konzept für ein glamouröses Beauty-Studio",
+  "siayvo_tag": "Konzept-projekt",
+
+  "photography_title": "Fotografie Landing Page",
+  "photography_desc": "Landing Page zur Präsentation großartiger Momente",
+  "photography_tag": "Konzept-projekt"
+},
+
+"Web_System_Hero": {
+  "web_system_span1": "Leistung",
+  "web_hero_title": "Website-System",
+  "web_hero_desc": "CMS-gestützte Grundlage — schnell, skalierbar und bereit zur Anpassung, während Ihr Unternehmen wächst.",
+
+  "web_system_button1": "CMS-System kaufen",
+  "web_system_button2": "Echtes Beispiel ansehen",
+
+  "web_system_span2": "Typische Zeitdauer: 2–4 Wochen",
+  "web_system_span3": "Lieferung: Einmaliger Aufbau & Übergabe"
+},
+
+"Web_System_Page": {
+  "web_header": "Website-System",
+  "web_header2": "Eine solide Grundlage — geliefert und übergeben",
+  "web_desc": "Wir gestalten und entwickeln ein flexibles Website-System, das Ihnen vom ersten Tag an die volle Kontrolle gibt. Von Struktur und CMS-Setup bis zu Performance und Skalierbarkeit — alles wird als vollständige Übergabe geliefert, damit Ihr Team Inhalte verwalten, Funktionen weiterentwickeln und sicher wachsen kann.",
+  "web_desc1": "Nach dem Kauf des Systems führen wir ein Beratungsgespräch, um Folgendes zu definieren:",
+  "list_item1": "Was Sie mit Ihrem Website-Setup erreichen möchten",
+  "list_item2": "Wie es aussehen, sich anfühlen und funktionieren soll",
+  "list_item3": "Was langfristig am besten skaliert",
+  "web_desc3": "Jedes Website-System wird projektspezifisch angepasst. Struktur, Design und Funktionen sind auf Ihre Inhalte, Ziele und Arbeitsabläufe zugeschnitten. Das System liefert die Grundlage — kein festes Template.",
+  "web_desc4": "Nach der Abstimmung gestalten und entwickeln wir das System — und übergeben es dann, bereit zur Nutzung und Weiterentwicklung.",
+  "websystem_price": "Website-System ab €1.499 • Einmalige Übergabe"
+},
+
+"Web_System_FAQ": {
+  "web_system_question1": "Was passiert, wenn ich das Website-System-Setup kaufe?",
+  "web_system_answer_1": "Nach dem Kauf vereinbaren wir ein Beratungsgespräch, um Ihre Ziele, Struktur und den besten langfristigen Ansatz zu definieren. Nach der Abstimmung gestalten und entwickeln wir das vollständige Website-System und bereiten es für die Übergabe vor.",
+  "web_system_question2": "Ist das ein einmaliger Aufbau oder ein Abonnement?",
+  "web_system_answer_2": "Dies ist ein einmaliger Aufbau mit vollständiger Übergabe. Es ist kein laufendes Abonnement erforderlich, es sei denn, Sie entscheiden sich später für eine optionale Wartung.",
+  "web_system_question3": "Kann ich die Website selbst verwalten und aktualisieren?",
+  "web_system_answer_3": "Ja. Das System wird mit CMS-Inhaltsblöcken gebaut, damit Sie Ihre Website einfach aktualisieren und erweitern können. Wir stellen Ihnen auch Dokumentationsdateien zur Verfügung, die Ihnen bei der Verwaltung helfen.",
+  "web_system_question4": "Was ist, wenn ich nach der Übergabe Hilfe benötige?",
+  "web_system_answer_4": "Laufender Support und Wartung können bei Bedarf später hinzugefügt werden. Sie sind nie gebunden, aber Support ist verfügbar, wenn er benötigt wird.",
+  "web_system_question5": "Wie lange dauert es, bis meine Website live ist?",
+  "web_system_answer_5": "Die meisten Website-System-Projekte gehen innerhalb von 7–14 Tagen nach dem Startdatum live, je nachdem, wie schnell Sie Inhalte und Feedback liefern.",
+  "web_system_question6": "Benötige ich technische Kenntnisse, um meine Website zu verwalten?",
+  "web_system_answer_6": "Nein. Das CMS ist einfach aufgebaut — wenn Sie eine E-Mail schreiben können, können Sie Ihre Website aktualisieren. Keine Programmierkenntnisse erforderlich.",
+
+  "web_still_questions": "Noch Fragen?",
+  "web_email": "Schicken Sie uns einfach eine email",
+
+  "web_system_frequent_questions": "Häufig gestellte Fragen?",
+  "web_system_clear_answers": "Klare Antworten, bevor wir zusammenarbeiten"
+},
+
+"Built_Supported_Hero": {
+  "web_supported_span1": "Leistungen",
+  "web_supported_hero_title": "Aufbau & Support",
+  "web_supported_hero_desc": "Wir bauen Ihre Website und bleiben an Ihrer Seite — Wartung und Verbesserungen inklusive.",
+  "web_supported_button1": "Setup starten",
+  "web_supported_button2": "Echtes Beispiel ansehen",
+  "web_supported_span2": "Typische Zeitdauer: 2–4 Wochen",
+  "web_supported_span3": "Lieferung: Ersteinrichtung – laufender Support",
+  "web_supported_span4": "Jederzeit kündbar • Rückerstattung wenn nicht passend"
+  },
+
+  "Built_Supported_Page": {
+  "web_supported_title1": "Verwaltetes Website-System",
+  "web_supported_title2": "Eine vollständig aufgebaute, gehostete und gewartete Website — konzipiert für langfristige Performance und Wachstum.",
+  "web_supported_desc1": "Anstatt einer großen Vorabinvestition treten Sie einem strukturierten Monatsplan bei, bei dem alles für Sie erledigt wird: Design, Entwicklung, Hosting, Updates und laufende Verbesserungen.",
+  "web_supported_desc2": "Jede Partnerschaft beginnt mit einem kurzen Beratungsgespräch, um Folgendes zu definieren:",
+  
+  "web_supported_list_item1": "Was Sie mit der Website erreichen möchten",
+  "web_supported_list_item2": "Wie sie aussehen, sich anfühlen und funktionieren soll",
+  "web_supported_list_item3": "Welches Setup langfristig am besten skaliert",
+  
+  "web_supported_desc3": "Jedes Setup & Wartungsprojekt wird individuell auf das Unternehmen abgestimmt. Struktur, Design und Funktionen sind auf Ihre Inhalte, Ziele und Arbeitsabläufe zugeschnitten — und wir warten das System kontinuierlich, während sich Ihre Anforderungen weiterentwickeln.",
+  "web_supported_desc4": "Nach dem Launch bleiben wir involviert — wir kümmern uns um Updates, Korrekturen und Verbesserungen, damit die Website weiterhin performt und wächst, ohne internes Management zu erfordern.",
+  
+  "web_supported_price": "Setup ab €599",
+  "web_supported_commitment": "Mindestlaufzeit 12 Monate",
+  "web_supported_subscription": "Monatliches Abonnement ab 49€/Monat nach dem Setup"
+},
+
+"Maintenance_Hero": {
+  "maintenance_hero_span": "Leistungen",
+  "maintenance_hero_title": "Website-Wartung",
+  "maintenance_hero_desc1": "CMS-basierte Grundlage, entwickelt für zuverlässige Wartung, reibungslose Updates und einen sorgenfreien, langfristigen Betrieb.",
+
+  "maintenance_button1": "Wartung starten",
+  "maintenance_button2": "Ein echtes Beispiel ansehen",
+
+  "maintenance_hero_span2": "sofort starten",
+  "maintenance_hero_span3": "laufender monatlicher Support"
+},
+
+"Maintenance_Page": {
+  "maintenance_title1": "Website & Wartung",
+  "maintenance_title2": "Laufende Website-Wartungsservices",
+  
+  "maintenance_desc1": "Ihre Website wird kontinuierlich gewartet, um langfristige Leistung, Sicherheit und Stabilität zu gewährleisten. Wir kümmern uns um CMS-Updates, Monitoring, Optimierungen und Verbesserungen – laufend und ohne Unterbrechungen oder unerwartete Überraschungen.",
+  "maintenance_desc2": "Nach Ihrer Anmeldung beginnen wir mit einer Beratung, um Folgendes zu verstehen:",
+ 
+  "maintenance_list_item1": "Den aktuellen Zustand Ihrer Website, Ihre Ziele und laufenden Anforderungen",
+  "maintenance_list_item2": "Wie die Website gewartet werden soll, wie sie funktionieren und sich weiterentwickeln soll.",
+ 
+  "maintenance_desc3": "Jedes Setup- & Wartungsprojekt wird individuell auf das jeweilige Unternehmen abgestimmt. Struktur, Design und Funktionen werden auf Ihre Inhalte, Ziele und Arbeitsabläufe zugeschnitten – und wir pflegen das System kontinuierlich, wenn sich Ihre Anforderungen ändern.",
+  "maintenance_desc4": "Jedes Wartungsprojekt wird auf Ihr Unternehmen zugeschnitten. Updates, Strukturanpassungen und Funktionsverbesserungen werden auf Ihre Inhalte, Arbeitsabläufe und Prioritäten abgestimmt – und das System wird kontinuierlich gewartet, wenn sich diese Anforderungen ändern.",
+  "maintenance_price": "Monatliche Wartung und Support ab 199 € • jederzeit kündbar"
+},
+
+"Maintenance_Page_FAQ": {
+  "maintenance_question1": "Was passiert, nachdem ich das Wartungsabonnement gestartet habe?",
+  "maintenance_answer1": "Nach Ihrer Anmeldung überprüfen wir Ihre Website und stimmen uns zu laufenden Zielen, Prioritäten und Wartungsanforderungen ab.",
+  "maintenance_question2": "Wie schnell reagieren Sie auf Probleme?",
+  "maintenance_answer2": "Wir sind bestrebt, alle Anfragen zu unseren Projekten innerhalb von 24 Stunden an Werktagen zu beantworten.",
+  "maintenance_question3": "Kann ich neue Funktionen oder Designänderungen anfordern?",
+  "maintenance_answer3": "Ja, kleinere Updates und Verbesserungen sind inklusive. Größere Funktionen oder Neugestaltungen werden als separate Projekte behandelt.",
+  "maintenance_question4": "Wie kommunizieren wir während der Wartungszeit?",
+  "maintenance_answer4": "Wir halten es einfach – wir sind jederzeit per E-Mail oder WhatsApp erreichbar, ohne Komplikationen oder lange Wartezeiten.",
+  "maintenance_question5": "Gibt es eine langfristige Bindung?",
+  "maintenance_answer5": "Nein. Die Wartung wird monatlich abgerechnet und kann jederzeit gekündigt werden. Es gibt keine langfristigen Verträge oder versteckten Verpflichtungen.",
+  "maintenance_question6": "Was ist in der monatlichen Wartung enthalten?",
+  "maintenance_answer6": "Die Wartung umfasst Updates, Fehlerbehebungen und Verbesserungen, um sicherzustellen, dass Ihre Website schnell, sicher und aktuell bleibt. Alles wird in Ihrem Auftrag erledigt – ohne internen technischen Verwaltungsaufwand.",
+  "maintenance_question7": "Ist Hosting inklusive?",
+  "maintenance_answer7": "Hosting ist nicht enthalten. Wir helfen Ihnen jedoch dabei, eine zuverlässige Hosting-Option auszuwählen, einzurichten und zu verbinden – damit Sie die volle Kontrolle behalten.",
+
+  "maintenance_faq_title1": "Häufig gestellte Fragen",
+  "maintenance_faq_title2": "Klare Antworten, bevor wir zusammenarbeiten",
+
+  "maintenance_still_questions": "Noch Fragen?",
+  "maintenance_send_email": "Schicken Sie uns einfach eine E-Mail"
 },
 
 "Approach": {

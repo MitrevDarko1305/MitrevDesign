@@ -1,16 +1,16 @@
-
-
+"use client"
 import FAQMaintenance from "@/app/components/FAQMaintenance";
-
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import MaintenanceObjectBig from "@/app/components/MaintenanceObjectBig";
 import MaintenanceTextDescription from "@/app/components/MaintenanceTextDescription";
+import { useTranslations } from "next-intl";
 
 
 import Link from "next/link";
 
 export default function MaintenanceSystemPage() {
+  const t = useTranslations('Maintenance_Hero')
   return (
     <main>
         <Header/>
@@ -21,14 +21,14 @@ export default function MaintenanceSystemPage() {
           <div className="grid items-center align-center grid-cols-1 gap-10 lg:grid-cols-2">
             {/* LEFT: copy */}
             <div >
-              <p className="text-sm text-zinc-400">Service</p>
+              <p className="text-sm text-zinc-400">{t('maintenance_hero_span')}</p>
 
               <h1 className="mt-3  text-4xl text-white font-bold tracking-tight md:text-5xl">
-                Website Maintenance
+                {t('maintenance_hero_title')}
               </h1>
 
               <p className="mt-4 max-w-xl text-zinc-400 mx-auto">
-               CMS-powered foundation built for reliable maintenance, smooth updates, and worry-free long-term operation.
+               {t('maintenance_hero_desc1')}
               </p>
 
               <div className="mt-8 flex flex-wrap lg:justify-start justify-center gap-3">
@@ -36,14 +36,14 @@ export default function MaintenanceSystemPage() {
                   href="https://buy.stripe.com/14A14p64X2gRdOa3p61ck0c" target="_blank"
                   className="rounded-full bg-violet-600 px-6 py-3 text-sm font-medium text-white hover:opacity-90"
                 >
-                  Start maintenance
+                  {t('maintenance_button1')}
                 </Link>
 
                   <a
                   href="https://nuvlo.mitrevdarko.dev" target="_blank"
                   className="rounded-full border border-white/15 px-6 py-3 text-sm text-zinc-200 hover:border-white/25"
                 >
-                  View a real example
+                  {t('maintenance_button2')}
                 </a>
 
                
@@ -51,10 +51,10 @@ export default function MaintenanceSystemPage() {
 
               <div className="mt-6 flex  flex-wrap lg:justify-start justify-center  gap-2 text-xs text-zinc-400">
                 <span className="rounded-full border border-white/10 px-3 py-1">
-                  Start immediately
+                  {t('maintenance_hero_span2')}
                 </span>
                 <span className="rounded-full border border-white/10 px-3 py-1">
-                   Ongoing monthly support
+                   {t('maintenance_hero_span3')}
                 </span>
               </div>
             </div>
@@ -72,13 +72,6 @@ export default function MaintenanceSystemPage() {
       <MaintenanceTextDescription/>
       <FAQMaintenance/>
       <Footer/>
-
-      {/* Next sections */}
-      <section id="included" className="pb-24">
-        <div className="mx-auto max-w-7xl px-4 md:px-10">
-          {/* what’s included grid etc */}
-        </div>
-      </section>
     </main>
   );
 }

@@ -36,7 +36,7 @@ export default function FAQSection() {
               className="w-full text-left cursor-pointer md:rounded-sm rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10"
             >
               <div className="flex items-center justify-between">
-                <span className="font-medium">{faq.question}</span>
+                <span className="font-black text-white ">{faq.question}</span>
                 <ChevronDown
                   className={`h-5 w-5 text-zinc-400 transition-transform ${
                     isOpen ? "rotate-180" : ""
@@ -54,7 +54,7 @@ export default function FAQSection() {
             <div className="overflow-hidden">
                  <p
                 className={[
-                 "mt-3 text-sm text-zinc-300 leading-relaxed",
+                 "mt-3 text-sm text-zinc-400 leading-relaxed",
                 "transition-opacity duration-500 ease-out",
                 isOpen ? "opacity-100" : "opacity-0",
                  ].join(" ")}
