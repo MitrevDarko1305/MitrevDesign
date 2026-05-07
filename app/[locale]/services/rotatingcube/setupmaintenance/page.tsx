@@ -1,15 +1,16 @@
-
-
+"use client"
 import RotatingCubeExpandedPages from "@/app/Animations/SetupMaintenancePages";
 import FAQSetupMaintenance from "@/app/components/FAQSetupMaintenance";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import RotatingCubePagesTextDescription from "@/app/components/SubscriptionSection/SetupMaintenanceTextDescription";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 
 
 export default function SetupMaintenancePage() {
+  const t =useTranslations('Built_Supported_Hero')
   return (
     <main>
         <Header/>
@@ -22,14 +23,14 @@ export default function SetupMaintenancePage() {
           <div className="grid items-center align-center grid-cols-1 gap-10 lg:grid-cols-2">
             {/* LEFT: copy */}
             <div >
-              <p className="text-sm text-zinc-400">Service</p>
+              <p className="text-sm text-zinc-400">{t('web_supported_span1')}</p>
 
               <h1 className="mt-3 text-4xl text-white font-bold tracking-tight md:text-5xl">
-                Built & Supported
+                {t('web_supported_hero_title')}
               </h1>
 
               <p className="mt-4 max-w-xl text-zinc-400 mx-auto">
-                We build your site and stay with you — maintenance and improvements included.
+                {t('web_supported_hero_desc')}
               </p>
 
               <div className="mt-8 flex flex-wrap lg:justify-start justify-center gap-3">
@@ -37,14 +38,14 @@ export default function SetupMaintenancePage() {
                   href="https://buy.stripe.com/5kQfZj2SLf3DdOa4ta1ck0f" target="_blank"
                   className="rounded-full bg-violet-600 px-6 py-3 text-sm font-medium text-white hover:opacity-90"
                 >
-                Start  setup
+               {t('web_supported_button1')}
                 </Link>
 
                   <a
                   href="https://skycast.mitrevdarko.dev" target="_blank"
                   className="rounded-full border border-white/15 px-6 py-3 text-sm text-zinc-200 hover:border-white/25"
                 >
-                  View a real example
+                 {t('web_supported_button2')}
                 </a>
 
                
@@ -52,15 +53,15 @@ export default function SetupMaintenancePage() {
 
               <div className="mt-6 flex  flex-wrap lg:justify-start justify-center  gap-2 text-xs text-zinc-400">
                 <span className="rounded-full border border-white/10 px-3 py-1">
-                  Typical timeline: 2–4 weeks
+                  {t('web_supported_span2')}
                 </span>
                 <span className="rounded-full border border-white/10 px-3 py-1">
-                  Delivery: Initial setup – ongoing support
+                 {t('web_supported_span3')}
                 </span>
               </div>
                 <div className="pt-4" >
                <span className="rounded-full text-[10px] text-zinc-400 border border-white/10 px-3 ">
-                Cancel anytime • Refund if not a good fit
+                {t('web_supported_span4')}
               </span>
               </div>
             </div>
@@ -78,8 +79,6 @@ export default function SetupMaintenancePage() {
       <RotatingCubePagesTextDescription/>
       <FAQSetupMaintenance/>
       <Footer/>
-
-     
     </main>
   );
 }

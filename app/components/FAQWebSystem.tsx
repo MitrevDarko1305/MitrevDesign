@@ -1,57 +1,28 @@
 "use client";
-
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-const faqs = [
-  
-  {
-    question: "What happens when i purchase the website system setup?",
-    answer:
-      "After purchasing, we schedule a consultation to define your goals, structure and best long-term approach.Once aligned, we design and built the full website system and prepare it for hand-off.",
-  },
-  {
-    question: "Is this a one-time built or a subscription?",
-    answer:
-      "This is a one-time build with a full hand-off.There is no ongoing subscription required, unless you choose optional maintenance later.",
-  },
-  {
-    question: "Can i manage and update the website myself?",
-    answer:
-      "Yes. The system is built with CMS content blocks, to easily update and expand your site, We also  going to provide documentation files to help you manage it.",
-  },
-  {
-    question: "What if i need help after hand-off?",
-    answer:
-      "Ongoing support and maitntenance can be added later if needed.You are never locked in, but support is avaliable when required",
-  },
-
-   {
-    question: "How long until my website is live?",
-    answer:
-      "Most website system projects go live within 7-14 days from the start date, depending on how quickly you provide content and feedback",
-  },
-
-   {
-    question: "Do i need any technical knowledge to manage my site?",
-    answer:
-      "No. The CMS is built to be simple — if you can write an email, you can update your website. No coding required.",
-  },
-  
-];
 
 export default function FAQWebSystem() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  const faqKeys = ['1', '2', '3', '4', '5', '6'];
+  const t = useTranslations('Web_System_FAQ')
+  const faqs = faqKeys.map((key) => ({
+  question: t(`web_system_question${key}`),
+  answer: t(`web_system_answer_${key}`)
+}));
+
   return (
-    <section id="faq" className="mx-auto max-w-4xl px-4 pt-2 pb-10 md:pt-20 md:pb-8">
+    <section id="faq" className="mx-auto max-w-4xl px-4 pt-2 pb-10 md:pt-16 md:pb-4">
       <div className="mb-10 text-center">
         <p className="text-xs font-medium text-zinc-400">FAQ</p>
         <h2 className="mt-2 text-3xl font-semibold text-white tracking-tight md:text-4xl">
-          Frequently Asked Questions
+          {t('web_system_frequent_questions')}
         </h2>
         <p className="mt-3 text-sm text-zinc-400">
-          Clear answers before we start working together.
+          {t('web_system_clear_answers')}
         </p>
       </div>
 
@@ -102,13 +73,13 @@ export default function FAQWebSystem() {
       {/* Discrete email CTA */}
       <div className="mt-10 text-center">
         <p className="text-sm text-zinc-400">
-          Still have questions?
+          {t('web_still_questions')}
         </p>
         <a
           href="mailto:mitrevdaro@gmail.com"
           className="mt-2 inline-block text-sm font-medium text-violet-400 hover:text-violet-300 transition"
         >
-          Send a quick email →
+          {t('web_email')} →
         </a>
       </div>
     </section>

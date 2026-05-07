@@ -4,29 +4,30 @@ import FAQWebSystem from "@/app/components/FAQWebSystem";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import WebSystemTextDescription from "@/app/components/SubscriptionSection/WebSystemTextDescription";
+import { useTranslations } from "next-intl";
 
 import Link from "next/link";
 
 export default function WebsiteSystemPage() {
+  const t = useTranslations('Web_System_Hero')
   return (
     <main>
         <Header/>
-      <section className="pt-38 lg:pt-20 pb-12 relative overflow-hidden text-center lg:text-left">
+      <section className="pt-38 lg:pt-20 pb-12 md:pb-0 relative overflow-hidden text-center lg:text-left">
          <div className="pointer-events-none absolute -top-32 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-fuchsia-500/20 blur-[120px]" />
       
         <div className="mx-auto max-w-7xl px-4 md:px-10 ">
           <div className="grid items-center align-center grid-cols-1 gap-10 lg:grid-cols-2">
             {/* LEFT: copy */}
             <div >
-              <p className="text-sm text-zinc-400">Service</p>
+              <p className="text-sm text-zinc-400">{t('web_system_span1')}</p>
 
               <h1 className="mt-3 text-white  text-4xl font-bold tracking-tight md:text-5xl">
-                Website system
+                {t('web_hero_title')}
               </h1>
 
               <p className="mt-4 max-w-xl text-zinc-400 mx-auto">
-                CMS-powered foundation — fast, scalable, and ready to customize
-                as your business grows.
+                {t('web_hero_desc')}
               </p>
 
               <div className="mt-8 flex flex-wrap lg:justify-start justify-center gap-3">
@@ -34,14 +35,14 @@ export default function WebsiteSystemPage() {
                   href="https://buy.stripe.com/5kQ3cx50TbRr11obVC1ck0a" target="_blank"
                   className="rounded-full bg-violet-600 px-6 py-3 text-sm font-medium text-white hover:opacity-90"
                 >
-                  Purchase CMS system
+                  {t('web_system_button1')}
                 </Link>
 
                   <a
                   href="https://cinemax.mitrevdarko.dev" target="_blank"
                   className="rounded-full border border-white/15 px-6 py-3 text-sm text-zinc-200 hover:border-white/25"
                 >
-                  View a real example
+                  {t('web_system_button2')}
                 </a>
 
                
@@ -49,10 +50,10 @@ export default function WebsiteSystemPage() {
 
               <div className="mt-6 flex  flex-wrap lg:justify-start justify-center  gap-2 text-xs text-zinc-400">
                 <span className="rounded-full border border-white/10 px-3 py-1">
-                  Typical timeline: 2–4 weeks
+                  {t('web_system_span2')}
                 </span>
                 <span className="rounded-full border border-white/10 px-3 py-1">
-                  Delivery: One time build & hand-off
+                  {t('web_system_span3')}
                 </span>
               </div>
             </div>
@@ -70,13 +71,6 @@ export default function WebsiteSystemPage() {
       <WebSystemTextDescription/>
       <FAQWebSystem/>
       <Footer/>
-
-      {/* Next sections */}
-      <section id="included" className="pb-24">
-        <div className="mx-auto max-w-7xl px-4 md:px-10">
-          {/* what’s included grid etc */}
-        </div>
-      </section>
     </main>
   );
 }

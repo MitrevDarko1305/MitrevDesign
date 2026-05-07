@@ -254,7 +254,7 @@ function ProjectCard({ title, description, tag, image, href }: ProjectCardProps)
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex h-full w-full flex-col relative overflow-hidden rounded-xl border border-white/10 bg-white/5 transition-all duration-300 hover:border-white/20"
+      className="group flex h-full w-full flex-col relative overflow-hidden rounded-sm border border-white/10 bg-white/5 transition-all duration-300 hover:border-white/20"
     >
       <div className="aspect-[4/3] overflow-hidden">
         <img

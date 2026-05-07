@@ -71,8 +71,8 @@ export default function WebsiteSystemPage() {
       <FAQWebSystem/>
       <Footer/>
 
-      {/* Next sections */}
-      <section id="included" className="pb-24">
+      {/* Next sections*/}
+      <section id="included" className="pb-16">
         <div className="mx-auto max-w-7xl px-4 md:px-10">
           {/* what’s included grid etc */}
         </div>

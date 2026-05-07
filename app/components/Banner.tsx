@@ -19,9 +19,7 @@ export default function AnnouncementBanner() {
         <span className="text-white font-semibold">{t("highlight")}</span>
       </p>
       <a
-        href="https://calendly.com/mitrevdarko/30min"
-        target="_blank"
-        rel="noopener noreferrer"
+         href="mailto:hello@mitrevdarko.dev?subject=Claim 40% Launch Offer"
        className="bg-gradient-to-r from-fuchsia-500 to-indigo-500 text-white text-xs font-black px-3 py-1.5 rounded-full hover:opacity-90 transition-opacity whitespace-nowrap"
       >
      {t("cta")}
@@ -30,7 +28,7 @@ export default function AnnouncementBanner() {
         onClick={() => setVisible(false)}
         className="absolute cursor-pointer top-6 md:top-8 right-6 lg:right-8 md:right-8 text-white/40 hover:text-white/70 transition-colors text-lg leading-none"
       >
-        <X size={14} />
+        <X size={16} />
       </button>
     </div>
   );
