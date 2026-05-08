@@ -73,13 +73,13 @@ export default function FAQSetupMaintenance() {
       {/* Discrete email CTA */}
       <div className="mt-10 text-center">
         <p className="text-sm text-zinc-400">
-          Still have questions?
+          {t('web_supported_questions')}
         </p>
         <a
           href="mailto:mitrevdaro@gmail.com"
           className="mt-2 inline-block text-sm font-medium text-violet-400 hover:text-violet-300 transition"
         >
-          Send a quick email →
+          {t('web_supported_email')} →
         </a>
       </div>
     </section>

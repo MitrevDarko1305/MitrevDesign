@@ -210,7 +210,10 @@
   
   "web_supported_price": "Setup ab €599",
   "web_supported_commitment": "Mindestlaufzeit 12 Monate",
-  "web_supported_subscription": "Monatliches Abonnement ab 49€/Monat nach dem Setup"
+  "web_supported_subscription": "Monatliches Abonnement ab 49€/Monat nach dem Setup",
+
+  "web_supported_questions": "Noch fragen?",
+  "web_supported_email": "Schicken Sie uns einfach eine E-Mail"
 },
 
 "Maintenance_Hero": {

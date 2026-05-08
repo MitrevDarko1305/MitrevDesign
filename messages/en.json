@@ -228,7 +228,10 @@
 
       "web_supported_price": "Setup from €599",
       "web_supported_commitment": " 12-month minimum commitment",
-      "web_supported_subscription": "Monthly subscription starts at 49€/month after setup"
+      "web_supported_subscription": "Monthly subscription starts at 49€/month after setup",
+
+      "web_supported_questions": "Still have questions?",
+      "web_supported_email": "Send a quick email"
     },
 
     "Maintenance_Hero": {
