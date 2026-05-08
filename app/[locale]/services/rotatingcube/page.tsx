@@ -1,5 +1,9 @@
-
-import  RotatingCubeHero  from "@/app/Animations/RotatingCubePages";
+"use client";
+import dynamic from 'next/dynamic';
+const RotatingCubeHero = dynamic(
+  () => import('@/app/Animations/RotatingCubePages'),
+  { ssr: false }
+);
 import FAQWebSystem from "@/app/components/FAQWebSystem";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
