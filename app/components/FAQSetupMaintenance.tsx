@@ -19,10 +19,10 @@ export default function FAQSetupMaintenance() {
       <div className="mb-10 text-center">
         <p className="text-xs font-medium text-zinc-400">FAQ</p>
         <h2 className="mt-2 text-3xl text-white font-semibold tracking-tight md:text-4xl">
-          {t('web_system_frequent_questions')}
+          {t('web_still_questions')}
         </h2>
         <p className="mt-3 text-sm text-zinc-400">
-          {t('web_system_clear_answers')}
+          {t('web_email')}
         </p>
       </div>
 
