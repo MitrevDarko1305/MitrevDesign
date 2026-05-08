@@ -1,4 +1,5 @@
-"use client"
+"use client";
+export const dynamic = 'force-dynamic';
 import RotatingCubeExpandedPages from "@/app/Animations/SetupMaintenancePages";
 import FAQSetupMaintenance from "@/app/components/FAQSetupMaintenance";
 import Footer from "@/app/components/Footer";

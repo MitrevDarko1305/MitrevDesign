@@ -1,16 +1,11 @@
-"use client";
-import dynamic from 'next/dynamic';
-const RotatingCubeHero = dynamic(
-  () => import('@/app/Animations/RotatingCubePages'),
-  { ssr: false }
-);
+import RotatingCubeWrapper from "@/app/components/Rotatingcubewrapper";
 import FAQWebSystem from "@/app/components/FAQWebSystem";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import WebSystemTextDescription from "@/app/components/SubscriptionSection/WebSystemTextDescription";
 import { useTranslations } from "next-intl";
-
 import Link from "next/link";
+export const dynamic = 'force-dynamic';
 
 export default function WebsiteSystemPage() {
   const t = useTranslations('Web_System_Hero')
@@ -65,8 +60,8 @@ export default function WebsiteSystemPage() {
             {/* RIGHT: 3D */}
             <div className="relative">
               <div className="absolute -inset-6 rounded-3xl blur-2xl" />
+              <RotatingCubeWrapper className="w-full h-[320px] md:h-[420px]" />
               <div className="relative rounded-3xl   p-4">
-                <RotatingCubeHero className="w-full h-[320px] md:h-[420px]" />
               </div>
             </div>
           </div>
