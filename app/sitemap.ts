@@ -51,9 +51,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://mitrevdarko.dev/en/blog/website-vs-instagram', 
       lastModified: new Date(),
       priority: 0.8 },
-      
+
     { url: 'https://mitrevdarko.dev/de/blog/website-vs-instagram', 
       lastModified: new Date(),
       priority: 0.8 },
+
+    { url: 'https://mitrevdarko.dev/en/blog/website-cost-2026',
+    lastModified: new Date(), 
+    priority: 0.8 },
+   
+    { url: 'https://mitrevdarko.dev/de/blog/website-cost-2026', 
+    lastModified: new Date(), 
+    priority: 0.8 },
+
+
+    { url: 'https://mitrevdarko.dev/en/blog-page', 
+    lastModified: new Date(), 
+    priority: 0.9 },
+
+    { url: 'https://mitrevdarko.dev/de/blog-page', 
+    lastModified: new Date(), 
+    priority: 0.9 },
   ]
 }

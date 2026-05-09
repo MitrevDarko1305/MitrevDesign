@@ -30,6 +30,19 @@ const ALL_POSTS: Post[] = [
   dateLabel: "May 09, 2026",
   dateTime: "2026-05-09",
   readTime: "8 min read",
+},
+
+{
+  typeLabel: "Article",
+  title: "How Much Should a Website Cost?",
+  excerpt: "One agency quotes 800€, another 12.000€, Here is the honest breakdown.",
+   href: "/blog/website-cost-2026",
+  coverImageUrl: "/Projects-Images/Blog-Images/Blog-Image-2.png",
+  authorName: "Darko Mitrev",
+  authorAvatarUrl: "/Projects-Images/Darko-team.webp",
+  dateLabel: "May 09, 2026",
+  dateTime: "2026-05-09",
+  readTime: "12 min read",
 }
 ];
 
