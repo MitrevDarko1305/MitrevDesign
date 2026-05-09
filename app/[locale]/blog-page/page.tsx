@@ -80,7 +80,7 @@ export default function BlogPage() {
       <section className="relative bg-amber-100  px-6 pt-32 pb-20 lg:px-8">
 
         <div className="mx-auto max-w-6xl text-center mb-16">
-          <h1 className="mt-3 text-5xl font-black tracking-tight text-gray-900">
+          <h1 className="mt-3 text-3xl font-black tracking-tight text-gray-900">
             Web & Design Insights
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-gray-500">
