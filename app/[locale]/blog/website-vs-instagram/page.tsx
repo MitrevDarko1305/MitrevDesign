@@ -1,6 +1,20 @@
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import CTASection from "@/app/components/CTASection";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Why Your Business Needs a Website in 2026",
+  description: "Instagram feels like enough — until it's not, Here is why your website is your most important business asset.",
+  openGraph: {
+    title: "Why Your Business Needs a Website in 2026",
+    description: "Instagram feels like enough — until it's not, Here is why your website is your most important business asset.",
+    url: "https://mitrevdarko.dev/blog/website-vs-instagram",
+    type: "article",
+    images: [{ url: "https://mitrevdarko.dev/Projects-Images/Blog-Image-1.png", width: 1200, height: 630 }],
+  },
+  authors: [{ name: "Darko Mitrev" }],
+};
 
 export default function BlogArticleInstagram() {
   return (
