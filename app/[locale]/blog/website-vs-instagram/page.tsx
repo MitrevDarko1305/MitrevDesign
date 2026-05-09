@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: "Instagram feels like enough — until it's not, Here is why your website is your most important business asset.",
     url: "https://mitrevdarko.dev/blog/website-vs-instagram",
     type: "article",
-    images: [{ url: "https://mitrevdarko.dev/Projects-Images/Blog-Image-1.png", width: 1200, height: 630 }],
+    images: [{ url: "https://mitrevdarko.dev/Projects-Images/Blog-Images/Blog-Image-1.png", width: 1200, height: 630 }],
   },
   authors: [{ name: "Darko Mitrev" }],
 };
