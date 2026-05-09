@@ -323,7 +323,7 @@
 },
 
 "Team": {
-  "team_span": "team",
+  "team_span": "Team",
   "team_title": "Kleines Team. Voller Fokus.",
   "team_desc": "Sie arbeiten direkt mit den Menschen, die Ihre Website gestalten und entwickeln. Keine Zwischenstufen, keine Übergaben.",
   "team_video_text": "Lieber eine kurze Vorstellung?",
@@ -332,7 +332,7 @@
 
 "Testimonial": {
   "testimonial_title1": "Was unsere",
-  "testimonial_span_title": "kunden",
+  "testimonial_span_title": "Kunden",
   "testimonial_title2": "sagen",
   "span1": "Der Kundenservice war während des gesamten Projekts hervorragend.",
   "span2": "Sie haben genau auf meine Wünsche geachtet und eine moderne, professionelle Website gestaltet, die perfekt zu meinem Unternehmen passt. Für die Qualität der Arbeit ist das Preis-Leistungs-Verhältnis wirklich beeindruckend.",

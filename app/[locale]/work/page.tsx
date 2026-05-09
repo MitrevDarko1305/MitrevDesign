@@ -19,16 +19,16 @@ export default function WorkPage() {
   return (
     <>
       <Header />
-    <main className="mx-auto bg-[#070815] lg:max-w-[1320px] md:max-w-[1120] px-6 py-20" id="projects"> 
-      <div className="mb-10">
-        <Link href="/" className="text-sm text-white/60 hover:text-white">
+    <main className="mx-auto bg-[#070815] lg:max-w-[1320px] md:max-w-[1120] px-6 pt-24 pb-24 md:pb-10 md:pt-24" id="projects"> 
+      <div className="mb-6">
+        <Link href="/#projects-1" className="text-sm text-white/50 hover:text-white">
          {t('back_button')}
         </Link>
 
-        <h1 className="mt-4 text-3xl font-medium  tracking-tight text-white">
+        <h1 className="mt-2 text-3xl font-medium  tracking-tight text-white">
           {t('work_title')}
         </h1>
-        <p className="mt-2 max-w-xl text-white/60">
+        <p className="mt-2 max-w-xl text-[14px] text-white/50">
           {t('work_desc')}
         </p>
       </div>
@@ -65,7 +65,7 @@ export default function WorkPage() {
       </div>
     </main>
 
-     <CTASection/>
+     <CTASection compact/>
      <Footer  workHref="#projects" />
 
       </> 

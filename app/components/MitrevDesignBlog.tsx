@@ -82,7 +82,7 @@ const DEFAULT_POSTS: Post[] = [
 
 function PostCard({ post }: { post: Post }) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-lg shadow-lg hover:translate-y-[-2px] duration-300">
+    <article className="flex flex-col overflow-hidden rounded-sm shadow-lg hover:translate-y-[-2px] duration-300">
       <div className="flex-shrink-0">
         <img
           className="h-48 w-full object-cover"

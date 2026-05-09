@@ -215,7 +215,7 @@ function Services() {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 text-center md:text-left">
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div className="rounded-sm border border-white/10 bg-white/5 p-6">
         <div className="flex items-center justify-center md:justify-start gap-3">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code-icon lucide-code relative -top-[1px]"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
           <h3 className="text-lg font-black">{t("custom_title")}
@@ -226,7 +226,7 @@ function Services() {
           </p>
         </div>
 
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div className="rounded-sm border border-white/10 bg-white/5 p-6">
         <div className="flex items-center justify-center md:justify-start gap-3">
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-layout-grid-icon lucide-layout-grid relative -top-[1px]"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
           <h3 className="text-lg font-black">{t('webflow_title')}</h3>
@@ -280,7 +280,7 @@ function ProjectsSection() {
   const locale = useLocale();
   const t = useTranslations("SelectedProjects")
   return (
-    <section className="mt-16 md:mt-16 max-w-6xl mx-auto px-5  " id="projects-1">
+    <section className="mt-16 md:mb-6 md:mt-16 max-w-6xl mx-auto px-5  " id="projects-1">
       <div className="mb-10 text-center md:text-left">
         <h2 className="text-3xl font-black tracking-tight">{t('selected_title')}</h2>
         <p className="mt-2 max-w-xl mx-auto text-white/60 text-center md:text-left md:mx-0">
@@ -315,8 +315,8 @@ function ProjectsSection() {
       <a
         href={`/${locale}/work`}
         className="
-         mt-10 inline-flex items-center justify-center 
-        rounded-xl border border-white/10
+         mt-6 inline-flex items-center justify-center 
+        rounded-sm border border-white/10
         bg-white/5 px-6 py-3 text-sm font-black text-white
         transition-colors hover:bg-white/10
          "
@@ -332,7 +332,7 @@ function ProjectsSection() {
 function Approach() {
   const t = useTranslations('Approach')
   return (
-    <section id="approach" className="mx-auto max-w-6xl px-6 py-24 md:py-36 text-center md:text-left relative overflow-hidden" >
+    <section id="approach" className="mx-auto max-w-6xl px-6 py-24 md:pt-32 md:pb-24 text-center md:text-left relative overflow-hidden" >
       <div className="pointer-events-none absolute inset-0 -z-10"/>
        <div className="absolute right-[20%] top-[20%] h-[420px] w-[420px]  rounded-full
       bg-gradient-to-br from-fuchsia-500/30 to-indigo-500/30 blur-3xl" />

@@ -54,7 +54,7 @@ function SocialIcon({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/70 transition-colors hover:bg-white/10 hover:text-white"
+      className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-white/10 bg-white/5 text-white/70 transition-colors hover:bg-white/10 hover:text-white"
     >
       {children}
     </a>
@@ -76,7 +76,7 @@ export default function TeamSection() {
         <h2 className="mt-2 text-3xl font-black tracking-tight md:text-4xl">
           {t('team_title')}
         </h2>
-        <p className="mt-3 text-sm text-zinc-300/90 md:text-base">
+        <p className="mt-3 text-sm text-white/50 md:text-[15px]">
           {t('team_desc')}
         </p>
       </div>
@@ -85,7 +85,7 @@ export default function TeamSection() {
         {TEAM.map((m) => (
           <div
             key={m.name}
-            className="group max-w-[310px] overflow-hidden rounded-2xl border border-white/10 bg-white/5"
+            className="group max-w-[310px] overflow-hidden rounded-sm border border-white/10 bg-white/5"
           >
             <div className="aspect-[1/1] overflow-hidden">
               <img
@@ -133,7 +133,7 @@ export default function TeamSection() {
       </div>
 
       {/* Optional video link (discrete) */}
-      <div className="mt-10 rounded-2xl border border-white/10 bg-white/5 p-5 flex items-center justify-between  ">
+      <div className="mt-10 rounded-sm border border-white/10 bg-white/5 p-5 flex items-center justify-between  ">
         <p className="text-sm text-zinc-300">{t('team_video_text')}</p>
 
         <button

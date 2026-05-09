@@ -355,7 +355,7 @@
     },
 
     "Team":{
-      "team_span":"team",
+      "team_span":"Team",
       "team_title": "Small team Full focus",
       "team_desc": "You will work directly with the people designing and building your website. - No layers no handoffs",
 
@@ -365,7 +365,7 @@
 
     "Testimonial": {
       "testimonial_title1": "What our",
-      "testimonial_span_title": "clients",
+      "testimonial_span_title": "Clients",
       "testimonial_title2": "say",
 
       "span1": "Client service was great throughout",

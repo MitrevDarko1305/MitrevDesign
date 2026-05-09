@@ -10,7 +10,7 @@ export default function AnnouncementBanner() {
   if (!visible) return null;
 
   return (
-    <div className="fixed top-0 inset-x-0 z-[60] flex items-center justify-center gap-3 px-4 py-6 bg-[#0a0b1f] border-b border-fuchsia-500/20 flex-wrap">
+    <div className="fixed top-0 inset-x-0 z-[60] flex items-center justify-center gap-3 px-4 md:py-6 py-4 bg-[#0a0b1f] border-b border-fuchsia-500/20 flex-wrap">
       <span className="bg-fuchsia-500/15 text-fuchsia-300 text-[11px] font-semibold px-2.5 py-0.5 rounded-full border border-fuchsia-500/20 whitespace-nowrap">
         {t("badge")}
       </span>
@@ -26,7 +26,7 @@ export default function AnnouncementBanner() {
       </a>
       <button
         onClick={() => setVisible(false)}
-        className="absolute cursor-pointer top-6 md:top-8 right-6 lg:right-8 md:right-8 text-white/40 hover:text-white/70 transition-colors text-lg leading-none"
+        className="absolute cursor-pointer top-4 md:top-8 right-6 lg:right-8 md:right-8 text-white/40 hover:text-white/70 transition-colors text-lg leading-none"
       >
         <X size={16} />
       </button>

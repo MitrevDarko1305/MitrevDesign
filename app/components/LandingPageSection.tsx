@@ -59,7 +59,7 @@ export default function LandingPageMockup() {
       {/* Floating card */}
       <div className="relative z-10 text-center md:text-left mx-auto -mt-24 max-w-6xl bg-[#0a0a0f] px-6 pb-16 sm: -mt-24
   ">
-        <div className="rounded-3xl border border-white/10  p-6 md:p-8 shadow-2xl bg-[#14141f]
+        <div className="rounded-sm border border-white/10  p-6 md:p-8 shadow-2xl bg-[#14141f]
   ">
           <h2 className="text-2xl text-center md:text-left font-black tracking-tight text-white">
             {t('floatingcardtitle')} 
