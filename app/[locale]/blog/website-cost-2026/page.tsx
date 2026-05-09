@@ -21,7 +21,7 @@ export default function BlogArticleWebsiteCost() {
   return (
     <>
       <Header />
-      <article className="space-y-8 text-[17px] bg-[#070815] leading-relaxed text-white/80 container pt-28 md:pt-32 pb-12 mx-auto">
+      <article className="space-y-8 text-[17px] bg-[#070815] leading-relaxed text-white/80 container pt-28 md:pt-32 pb-20 mx-auto">
         <div className="mx-auto max-w-2xl px-6 space-y-16 leading-normal text-white/60 text-[15px]">
 
           {/* Title */}
