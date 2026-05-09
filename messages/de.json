@@ -379,7 +379,8 @@
 
 "Blog": {
   "blog_header": "Design das funktioniert",
-  "blog_subheader": "Praktische Einblicke zu Klarheit, UX und leistungsstarken Websites"
+  "blog_subheader": "Praktische Einblicke zu Klarheit, UX und leistungsstarken Websites",
+  "blog_button": "Mehr Blogs Lesen"
 },
 
 "Footer": {

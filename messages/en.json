@@ -421,7 +421,8 @@
 
     "Blog": {
       "blog_header": "Design that works",
-      "blog_subheader": "Practical insights on clarity, UX, and high-performing websites"
+      "blog_subheader": "Practical insights on clarity, UX, and high-performing websites",
+      "blog_button": "Read More Blogs"
     },
 
     "Footer": {

@@ -157,7 +157,7 @@ export default function ColumnPosts({
   const resolvedTitle = title ?? t('blog_header') ?? "Design that works"
   const resolvedSubtitle = subtitle ?? t('blog_subheader') ?? "Practical insights on clarity, UX and high-performing websites"
   return (
-    <section className={`relative bg-amber-100 px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28 ${className}`}>
+    <section id="blog-posts" className={`relative bg-amber-100 px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28 ${className}`}>
       <div className="absolute inset-0" aria-hidden="true">
         <div className="h-1/3  sm:h-2/3" />
       </div>
@@ -177,6 +177,17 @@ export default function ColumnPosts({
             <PostCard key={`${post.title}-${post.dateTime}`} post={post} />
           ))}
         </div>
+      <a
+        href={"/blog-page"}
+        className="
+         md:mt-4 mt-2 mb-8 md:mb-4 inline-flex items-center justify-center shadow-lg 
+        rounded-sm border border-white/10
+        bg-white/70 px-6 py-3  text-sm font-medium text-black
+        transition-colors hover:bg-white/10
+         "
+        >
+      {t('blog_button')}
+      </a>
       </div>
     </section>
   );
