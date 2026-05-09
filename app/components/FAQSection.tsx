@@ -33,7 +33,7 @@ export default function FAQSection() {
             <button
               key={index}
               onClick={() => setOpenIndex(isOpen ? null : index)}
-              className="w-full text-left cursor-pointer md:rounded-sm rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10"
+              className="w-full text-left cursor-pointer md:rounded-sm rounded-sm border border-white/10 bg-white/5 p-5 transition hover:bg-white/10"
             >
               <div className="flex items-center justify-between">
                 <span className="font-black text-white ">{faq.question}</span>

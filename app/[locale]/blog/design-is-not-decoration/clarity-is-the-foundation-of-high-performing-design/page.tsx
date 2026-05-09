@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "Creativity gets attention, but clarity earns trust. This is why the best websites feel obvious and convert better.",
     url: "https://mitrevdarko.dev/blog/design-is-not-decoration/clarity-is-the-foundation-of-high-performing-design",
     type: "article",
-    images: [{ url: "https://mitrevdarko.dev/Projects-Images/Concrete-blog.webp", width: 1200, height: 630 }],
+    images: [{ url: "https://mitrevdarko.dev/Projects-Images/Blog-Post-2-Graph.png", width: 1200, height: 630 }],
   },
   authors: [{ name: "Mike Tretyak" }],
 };

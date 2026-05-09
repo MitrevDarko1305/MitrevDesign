@@ -11,7 +11,7 @@ interface CTASectionProps {
 export default function CTASection({ compact = false }: CTASectionProps) {
   const t = useTranslations('CTA')
   return (
-    <section id="book-a-call"  className={`relative bg-slate-950 overflow-hidden ${compact ? 'md:pt-32 md:pb-12' : 'py-12 md:py-36'}`}>
+    <section id="book-a-call"  className={`relative bg-slate-950 overflow-hidden ${compact ? 'md:pt-32 md:pb-12' : 'py-30 md:py-36'}`}>
       {/* ambient section glow */}
       <div className="absolute right-[42%] top-[25%] h-[380px] w-[200px] rounded-full bg-gradient-to-br from-fuchsia-500/25 to-indigo-500/25 blur-3xl z-10" />
 

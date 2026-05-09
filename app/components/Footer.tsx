@@ -14,7 +14,7 @@ export default function Footer({ workHref = "/work" }: FooterProps) {
       {/* Ambient glow */}
       <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_60%_30%,rgba(139,92,246,0.14),transparent_60%)]" />
 
-      <div className="mx-auto max-w-6xl px-6 md:pt-12 md:pb-10 pt-12 pb-16">
+      <div className="mx-auto max-w-6xl px-6 md:pt-12 md:pb-10 pt-12 pb-12">
 
         {/* Big statement */}
         <div className="md:mt-20 mt-16 text-center md:text-start overflow-hidden">

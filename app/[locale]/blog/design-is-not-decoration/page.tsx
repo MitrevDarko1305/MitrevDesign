@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "Your website is not just a visual asset. It's a decision making tool - and most sites quietly lose opportunities without anyone noticing.",
     url: "https://mitrevdarko.dev/blog/design-is-not-decoration",
     type: "article",
-    images: [{ url: "https://mitrevdarko.dev/Projects-Images/Desk-Home-2.jpg", width: 1200, height: 630 }],
+    images: [{ url: "https://mitrevdarko.dev/Projects-Images/Blog-Post-1-Graph.png", width: 1200, height: 630 }],
   },
   authors: [{ name: "Darko Mitrev" }],
 };

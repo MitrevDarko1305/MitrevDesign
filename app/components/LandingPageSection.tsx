@@ -16,7 +16,7 @@ export default function LandingPageMockup() {
             <br className="hidden sm:block" />
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-zinc-400">
+          <p className="mt-6 max-w-xl text-[15px] leading-normal text-white/50">
            {t('landingdescription1')}
           </p>
 

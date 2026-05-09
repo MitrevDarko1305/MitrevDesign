@@ -44,7 +44,7 @@ export default function HighlightProjects({ projects = [] }: ProjectsSectionProp
   };
 
     return (
-  <section id="projects" className="md:py-20 py-12 bg-black overflow-hidden">
+  <section id="projects" className="md:py-20 py-8 bg-black overflow-hidden">
     
     {/* Header */}
     <div className="w-full pl-12 mx-auto px-6 md:mb-4 mb-4 flex items-end justify-between">

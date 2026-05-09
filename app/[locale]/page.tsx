@@ -315,7 +315,7 @@ function ProjectsSection() {
       <a
         href={`/${locale}/work`}
         className="
-         mt-6 inline-flex items-center justify-center 
+         md:mt-4 mt-2 mb-8 md:mb-4 inline-flex items-center justify-center 
         rounded-sm border border-white/10
         bg-white/5 px-6 py-3 text-sm font-black text-white
         transition-colors hover:bg-white/10

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: "Premium websites are not about visuals alone. They are systems built through strategy, structure and precise execution.",
     url: "https://mitrevdarko.dev/blog/design-is-not-decoration/what-actually-goes-into-high-converting-website",
     type: "article",
-    images: [{ url: "https://mitrevdarko.dev/Projects-Images/Concrete-blog-2.jpeg", width: 1200, height: 630 }],
+    images: [{ url: "https://mitrevdarko.dev/Projects-Images/Blog-Post-3-Graph.png", width: 1200, height: 630 }],
   },
   authors: [{ name: "Darko Mitrev" }],
 };
