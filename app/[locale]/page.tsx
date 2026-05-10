@@ -19,6 +19,7 @@ import HighlightProjects from "../components/HighligtsProjects";
 import {projects} from "@/data/highlightedprojects";
 import { useTranslations } from "next-intl";
 import { useLocale } from 'next-intl';
+import AuditSignup from "../components/AuditSignup";
 
 
 export default function Page() {
@@ -46,6 +47,7 @@ const hrefTo = useHrefTo();
       <TailWindTestimonial/>
       <CTASection/>
       <ColumnPosts/>
+      <AuditSignup/>
       <Footer/> 
       <WhatsAppFloatingButton
        phone="4915753137292"
