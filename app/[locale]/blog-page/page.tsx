@@ -38,11 +38,24 @@ const ALL_POSTS: Post[] = [
   excerpt: "One agency quotes 800€, another 12.000€, Here is the honest breakdown.",
    href: "/blog/website-cost-2026",
   coverImageUrl: "/Projects-Images/Blog-Images/Blog-Image-2.png",
-  authorName: "Darko Mitrev",
-  authorAvatarUrl: "/Projects-Images/Darko-team.webp",
+  authorName: "Mike Tretyak",
+  authorAvatarUrl: "/Projects-Images/Mike-team.jpg",
   dateLabel: "May 09, 2026",
   dateTime: "2026-05-09",
   readTime: "12 min read",
+},
+
+{
+  typeLabel: "Article",
+  title: "Lokales SEO für kleine Unternehmen in Deutschland.",
+  excerpt: "Wie kleine Unternehmen in Deutschland bei Google gefunden werden.",
+  href: "/blog/lokales-seo",
+  coverImageUrl: "/Projects-Images/Blog-Images/Cafe-Stuttgart.jpg",
+  authorName: "Darko Mitrev",
+  authorAvatarUrl: "/Projects-Images/Darko-team.webp",
+  dateLabel: "May 12, 2026",
+  dateTime: "2026-05-12",
+  readTime: "10 min read",
 }
 ];
 
@@ -92,7 +105,7 @@ export default function BlogPage() {
       <Header />
       <section className="relative bg-amber-100  px-6 pt-32 pb-20 lg:px-8">
 
-        <div className="mx-auto max-w-6xl text-center mb-16">
+        <div className="mx-auto max-w-6xl text-center md:mb-16 mb-8">
           <h1 className="mt-3 text-3xl font-black tracking-tight text-gray-900">
             Web & Design Insights
           </h1>
@@ -113,12 +126,12 @@ export default function BlogPage() {
           </div>
         )}
 
-        <div className="mx-auto max-w-6xl mt-12">
+        <div className="mx-auto max-w-6xl mt-8">
           <Link
             href="/#blog-posts"
             className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-800 transition-colors"
           >
-            ← Back to home
+            ← Back home
           </Link>
         </div>
 
