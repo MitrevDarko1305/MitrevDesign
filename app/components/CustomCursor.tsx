@@ -7,8 +7,15 @@ export default function CustomCursor() {
   const [visible, setVisible] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [label, setLabel] = useState('');
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
+    setIsDesktop(window.matchMedia('(pointer: fine)').matches);
+  }, []);
+
+  useEffect(() => {
+    if (!isDesktop) return;
+
     const dot = cursorDot.current;
     const ring = cursorRing.current;
     if (!dot || !ring) return;
@@ -60,11 +67,12 @@ export default function CustomCursor() {
       document.removeEventListener('mouseover', handleMouseOver);
       document.removeEventListener('mouseout', handleMouseOut);
     };
-  }, []);
+  }, [isDesktop]);
+
+  if (!isDesktop) return null;
 
   return (
     <>
-      {/* Dot */}
       <div
         ref={cursorDot}
         className={`fixed z-[999] pointer-events-none -translate-x-1/2 -translate-y-1/2 transition-opacity duration-300 ${
@@ -75,7 +83,6 @@ export default function CustomCursor() {
         <div className="w-2 h-2 rounded-full bg-purple-400" />
       </div>
 
-      {/* Ring */}
       <div
         ref={cursorRing}
         className={`fixed z-[998] pointer-events-none -translate-x-1/2 -translate-y-1/2 transition-opacity duration-300 ${
