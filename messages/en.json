@@ -2,13 +2,13 @@
     "Banner": {
     "badge": "Launch offer",
     "text": "Get 40% off your first project —",
-    "highlight": "ends June 31st",
+    "highlight": "ends August 31st",
     "cta": "Claim now"
    },
   
   
     "hero" : {
-      "badge":  "Avaliable for new projects",
+      "badge":  "Available for new projects",
       "headline": "Websites that",
       "headline_colored": "bring you clients",
       "subheadline": "We build custom sites that turn visitors into paying customers",

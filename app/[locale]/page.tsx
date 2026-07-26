@@ -20,6 +20,7 @@ import {projects} from "@/data/highlightedprojects";
 import { useTranslations } from "next-intl";
 import { useLocale } from 'next-intl';
 import AuditSignup from "../components/AuditSignup";
+import ComparisonTable from "../components/ComparisonTable";
 
 
 export default function Page() {
@@ -40,6 +41,7 @@ const hrefTo = useHrefTo();
       <WorkWithUs/>
       <LandingPageSection/>
       <Services />
+      <ComparisonTable />
       <ProjectsSection/>
       <Approach/>
       <FAQSection/>
