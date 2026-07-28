@@ -432,5 +432,29 @@
       "footer_span2": "Avaliable for new projects",
       "footer_link": "View our work",
       "footer_built": "Built with Next.js"
+    },
+
+    "ComparisonTable": {
+      "comparison_eyebrow": "What sets us apart",
+      "comparison_title": "Why",
+      "comparison_title_span": "MitrevDesign",
+      "comparison_title_2": "See how we compare to template builders and large agencies",
+      "comparison_span": "Feature",
+      "comparison_span_2": "You are here",
+      "comparison_span_3": "Big Agency",
+      "custom_design": "Custom Design",
+      "affordable_price": "Affordable Price",
+      "fast_delivery": "Fast Delivery",
+      "unique_code": "Unique code",
+      "direct_contact": "Direct personal contact",
+      "seo_optimized": "SEO optimized",
+      "scalable": "Scalable & flexible",
+      "no_fees": "No monthly fees",
+      "code_ownership": "Full code ownership",
+      "performance": "Performance optimized",
+      "included": "Included",
+      "not_included": "Not included",
+      "partial": "Partial",
+      "cta": "Get a free estimate"
+     }
     }
-   }

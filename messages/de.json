@@ -390,5 +390,29 @@
   "footer_span2": "Verfügbar für neue Projekte",
   "footer_link": "Unsere Arbeit ansehen",
   "footer_built": "Erstellt mit Next.js"
-}
-}
+},
+
+"ComparisonTable": {
+  "comparison_eyebrow": "Was uns auszeichnet",
+  "comparison_title": "Warum",
+  "comparison_title_span": "MitrevDesign",
+  "comparison_title_2": "Ein ehrlicher Vergleich",
+  "comparison_span": "Merkmal",
+  "comparison_span_2": "Sie sind hier",
+  "comparison_span_3": "Große Agentur",
+  "custom_design": "Individuelles Design",
+  "affordable_price": "Fairer Price",
+  "fast_delivery": "Schnelle Lieferung (7-14 Tage)",
+  "unique_code": "Einzigartiger, handgeschriebener Code",
+  "direct_contact": "Direkter persönlicher Kontakt",
+  "seo_optimized": "SEO-optimiert",
+  "scalable": "Skalierbar & flexibel",
+  "no_fees": "Keine monatlichen Gebühren",
+  "code_ownership": "Vollständiges Code-Eigentum",
+  "performance": "Performance-optimiert",
+  "included": "Enthalten",
+  "not_included": "Nicht enthalten",
+  "partial": "Teilweise",
+  "cta": "Kostenloses Angebot erhalten"
+  }
+  }
