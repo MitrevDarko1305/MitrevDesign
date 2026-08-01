@@ -56,7 +56,20 @@ const ALL_POSTS: Post[] = [
   dateLabel: "May 12, 2026",
   dateTime: "2026-05-12",
   readTime: "10 min read",
-}
+},
+
+{
+  typeLabel: "Article",
+  title: "How Long Does a Custom Website Take to Build?",
+  excerpt: "Everyone assumes a real website takes months. Here's what happened when I actually timed it.",
+  href: "/blog/custom-website",
+  coverImageUrl: "/Projects-Images/Blog-Images/Blog-Post-3.png",
+  authorName: "Darko Mitrev",
+  authorAvatarUrl: "/Projects-Images/Darko-team.webp",
+  dateLabel: "July 31, 2026",
+  dateTime: "2026-07-31",
+  readTime: "15 min read",
+},
 ];
 
 function PostCard({ post }: { post: Post }) {
