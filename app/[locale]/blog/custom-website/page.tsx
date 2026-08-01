@@ -2,6 +2,8 @@ import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import CTASection from "@/app/components/CTASection";
 import { Metadata } from "next";
+import Link from "next/link";
+import AuditSignup from "@/app/components/AuditSignup";
 
 export const metadata: Metadata = {
     title: "How Long Does a Custom Website Actually Take to Build? | Darko Mitrev",
@@ -45,7 +47,10 @@ export default function BlogArticleWebsiteTimeline() {
             </h2>
             <div className="text-base space-y-6">
               <p>
-                To put the timeline question to the test, I built a complete real estate platform from scratch — Vardar Estates, a functional luxury real-estate agency website. It is not a stripped-down landing page. It includes live property listings with filtering by city and status, an interactive map, dynamic property detail pages, full bilingual support, team profiles, and a 100 Lighthouse performance score.
+                To put the timeline question to the test, I built a complete real estate platform from scratch —{" "},
+                 <Link href="https://vardar-estates.mitrevdarko.dev" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-white/80">
+                  Vardar Estates
+                 </Link> a functional luxury real-estate agency website. It is not a stripped-down landing page. It includes live property listings with filtering by city and status, an interactive map, dynamic property detail pages, full bilingual support, team profiles, and a 100 Lighthouse performance score.
                 All of it, built and live in days, not weeks.
               </p>
             </div>
@@ -91,7 +96,11 @@ export default function BlogArticleWebsiteTimeline() {
                 We build focused, custom websites without the drawn-out timelines usually associated with "custom." If you have been putting off getting a proper website because it felt like too big a commitment, that assumption might be exactly what is costing you the most.
               </p>
               <p>
-                Reach out and we will give you a real timeline for your specific project, no estimates or lost time.
+               Want to see what that actually looks like?{" "}
+               <Link href="https://vardar-estates.mitrevdarko.dev" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-white/80">
+                 Check out vardar estates 
+               </Link>
+                , or reach out and we will give you a real timeline for your specific project, no estimates and lost time.
               </p>
             </div>
           </section>
