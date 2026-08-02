@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 export default function AuditSignup() {
   const [email, setEmail] = useState("");
@@ -22,6 +23,7 @@ export default function AuditSignup() {
         setStatus("success");
         setEmail("");
         setUrl("");
+        trackEvent('form_submission', { event_label: 'audit_signup' }); // ✅ add this
       } else {
         setStatus("error");
       }
