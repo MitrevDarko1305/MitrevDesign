@@ -1,11 +1,10 @@
 {
-    "Banner": {
+  "Banner": {
     "badge": "Launch offer",
     "text": "Get 40% off your first project —",
     "highlight": "ends August 31st",
     "cta": "Claim now"
    },
-  
   
     "hero" : {
       "badge":  "Available for new projects",
@@ -73,17 +72,17 @@
 
     "LandingPage": {
       "landingtitle": "Focused Landing Page",
-      "landingdescription1": " A fast, conversion-focused landing page to launch, test, and capture leads — without committing to a full website system.",
+      "landingdescription1": " A fast, ready-to-launch landing page for your business, — built and live in days, no long commitment, no big upfront risks.",
       "landingbutton1": "Start your landing page",
       "landingbutton2": "View demo",
-      "landingdescription2":"After checkout, you’ll receive a confirmation email and we’ll schedule a short consultation to get started.",
-      "landingprice": "Complete landing page project - 599€",
+      "landingdescription2":"After checkout,you will get a quick form to share your content and branding - then your page goes live in days",
+      "landingprice": "Landing page - 199€",
 
       "floatingcardtitle": "What's included",
       "floating_desc1":"- A streamlined landing page, built with efficiency and structured to grow when needed.",
       "floating_desc2": "- Clear layout designed. to guide visitors  without unnecessary complexity",
       "floating_desc3": "- Clean maintanable code, delivered without wasted time or overhead",
-      "floating_desc4": "Optimized for speed, responsiveness and reliability"
+      "floating_desc4": "- Optimized for speed, responsiveness and reliability"
     },
 
     "Services": {

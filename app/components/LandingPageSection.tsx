@@ -8,7 +8,7 @@ export default function LandingPageMockup() {
   return (
     <section className="relative overflow-hidden bg-neutral-950">
       {/* Hero */}
-      <div className=" mx-auto min-w-0 overflow-hidden max-w-6xl text-center md:text-left px-8 py-4 sm:py-12 lg:grid lg:grid-cols-2 lg:gap-16 lg:py-28">
+      <div className=" mx-auto min-w-0 overflow-hidden max-w-6xl text-center md:text-left px-8 py-4 sm:py-12 lg:grid lg:grid-cols-2 lg:gap-16 lg:pt-20 lg:pb-28">
         {/* Text */}
         <div>
           <h1 className="text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-4xl">
@@ -22,7 +22,7 @@ export default function LandingPageMockup() {
 
           <div className="mt-10 justify-center md:justify-start flex flex-col gap-4 sm:flex-row">
             <Link
-              href="https://buy.stripe.com/14A6oJ8d59Jj7pMf7O1ck0d" target="_blank"
+              href="https://buy.stripe.com/6oUdRbbph3kV7pM5xe1ck0g" target="_blank"
               onClick={() => trackEvent('landing_page_cta_click', { event_label: 'start_your_landing_page' })} /* tracking events google analytics for the button  */
               className="rounded-2xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-5 py-3 text-center text-sm font-black text-white shadow-sm hover:opacity-95
               transition-all duration-300 ease-out
@@ -47,7 +47,7 @@ export default function LandingPageMockup() {
         </div>
 
         {/* Mockup */}
-        <div className="mt-0   grid place-items-center lg:mt-0">
+        <div className="mt-0 grid place-items-center lg:mt-0">
           <img
             src="/Projects-Images/MitrevDesign-Mockup.png"
             alt="Landing page preview"
@@ -57,7 +57,7 @@ export default function LandingPageMockup() {
       </div>
 
       {/* Floating card */}
-      <div className="relative z-10 text-center md:text-left mx-auto -mt-24 max-w-6xl bg-[#0a0a0f] px-6 pb-16 sm: -mt-24
+      <div className="relative z-10 text-center md:text-left mx-auto -mt-24 max-w-6xl bg-[#0a0a0f] px-6 pb-16 md:pb-28 sm:-mt-24
   ">
         <div className="rounded-sm border border-white/10  p-6 md:p-8 shadow-2xl bg-[#14141f]
   ">

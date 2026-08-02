@@ -38,8 +38,8 @@ const hrefTo = useHrefTo();
       <Header/>
       <Hero />
       <HighlightProjects projects={projects}/>
-      <WorkWithUs/>
       <LandingPageSection/>
+      <WorkWithUs/>
       <Services />
       <ComparisonTable />
       <ProjectsSection/>
