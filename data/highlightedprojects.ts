@@ -37,6 +37,7 @@ export const projects = [
     projectUrl: "https://smilo-care.mitrevdarko.dev",
   },
 
+  /*
   {
     projectVideo: "/highlightedimages//Fuji-Video.mp4",
     projectImage: "/highlightedimages/Fuji-IMac.png",
@@ -55,4 +56,5 @@ export const projects = [
     projectTags: ["Bootstrap", "Html"],
     projectUrl: "https://siayvo.mitrevdarko.dev",
   },
+  */
 ];
