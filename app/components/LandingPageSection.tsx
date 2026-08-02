@@ -11,7 +11,7 @@ export default function LandingPageMockup() {
       <div className=" mx-auto min-w-0 overflow-hidden max-w-6xl text-center md:text-left px-8 py-4 sm:py-12 lg:grid lg:grid-cols-2 lg:gap-16 lg:pt-20 lg:pb-28">
         {/* Text */}
         <div>
-          <h1 className="text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-4xl">
+          <h1 className="text-3xl font-black leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl">
             {t('landingtitle')}
             <br className="hidden sm:block" />
           </h1>
