@@ -9,12 +9,12 @@ import { useTranslations } from "next-intl";
 export default function WorkPage() {
   const t = useTranslations('WorkPage')
   const PROJECTS = [
-  { title: t('title'), description: t('desc'), tag: t('tag'), image: "/Projects-Images/Omnifood-Project-2.webp", href: "https://omnifood.mitrevdarko.dev" },
-  { title: t('fitness_title'), description: t('fitness_desc'), tag: t('fitness_tag'), image: "/Projects-Images/Mike-Project.webp", href: "https://mike-athletics.mitrevdarko.dev" },
+  { title: t('title'), description: t('desc'), tag: t('tag'), image: "/Projects-Images/Noir-Blade.png", href: "https://noir-blade.mitrevdarko.dev/" },
+  { title: t('fitness_title'), description: t('fitness_desc'), tag: t('fitness_tag'), image: "/Projects-Images/Sama-Fitness.png", href: "https://sama.mitrevdarko.dev/" },
   { title: t('music_title'), description: t('music_desc'), tag: t('music_tag'), image: "/Projects-Images/Classico-Band-Project.webp", href: "https://classico-band.mitrevdarko.dev" },
-  { title: t('texas_title'), description: t('texas_desc'), tag: t('texas_tag'), image: "/Projects-Images/Texas-Project.webp", href: "https://texas-steakhouse.mitrevdarko.dev" },
+  { title: t('electric_title'), description: t('electric_desc'), tag: t('electric_tag'), image: "/Projects-Images/Chargeway.png", href: "https://chargeway.mitrevdarko.dev/" },
   { title: t('siayvo_title'), description: t('siayvo_desc'), tag: t('siayvo_tag'), image: "/Projects-Images/Siayvo-Project-2.webp", href: "https://siayvo.mitrevdarko.dev" },
-  { title: t('photography_title'), description: t('photography_desc'), tag: t('photography_tag'), image: "/Projects-Images/Photography-screenshot.png", href: "https://photography.mitrevdarko.dev/" },
+  { title: t('real_estate_title'), description: t('real_estate_desc'), tag: t('real_estate_tag'), image: "/Projects-Images/Vardar.png", href: "https://vardar-estates.mitrevdarko.dev/" },
  ];
   return (
     <>
@@ -34,7 +34,7 @@ export default function WorkPage() {
       </div>
 
       {/* Denser grid than homepage */}
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((p) => (
           <a
             key={p.title}
